@@ -9,7 +9,7 @@ collections:
   - name: "options"
     label: "Options"
     files:
-      - file: "src/options/global.md"
+      - file: "src/options/global.yml"
         label: "Options"
         name: "options"
         fields:
