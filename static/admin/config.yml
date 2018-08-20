@@ -14,9 +14,10 @@ collections:
       - file: "src/options/global.yml"
         label: "Options"
         name: "options"
+        extension: "yml"
         fields:
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Body", name: "body", widget: "text"}
 
   - name: "blog"
     label: "Blog"
