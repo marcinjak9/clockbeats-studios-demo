@@ -3923,6 +3923,13 @@ gatsby-transformer-sharp@^1.6.21:
     fs-extra "^4.0.2"
     probe-image-size "^4.0.0"
 
+gatsby-transformer-yaml-netlify@^1.0.0-alpha.1:
+  version "1.0.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-yaml-netlify/-/gatsby-transformer-yaml-netlify-1.0.0-alpha.1.tgz#c8d1dea770e87bfbf5d9a6ed765f9ef8c689cb22"
+  dependencies:
+    js-yaml "^3.10.0"
+    lodash "^4.17.4"
+
 gatsby-transformer-yaml@^1.5.18:
   version "1.5.18"
   resolved "https://registry.yarnpkg.com/gatsby-transformer-yaml/-/gatsby-transformer-yaml-1.5.18.tgz#b1f64f2a0a8941fb67b6b146bf49b887d3380347"

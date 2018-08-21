@@ -5,6 +5,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
+    
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -19,12 +20,11 @@ module.exports = {
         name: 'images',
       },
     },
-    'gatsby-transformer-yaml',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/options`,
-        name: 'options',
+        name: 'websiteSettings',
       },
     },
     'gatsby-plugin-sharp',

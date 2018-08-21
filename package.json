@@ -17,6 +17,7 @@
     "gatsby-transformer-remark": "^1.7.33",
     "gatsby-transformer-sharp": "^1.6.21",
     "gatsby-transformer-yaml": "^1.5.18",
+    "gatsby-transformer-yaml-netlify": "^1.0.0-alpha.1",
     "lodash": "^4.17.5",
     "lodash-webpack-plugin": "^0.11.4",
     "netlify-cms": "^1.7.0",
