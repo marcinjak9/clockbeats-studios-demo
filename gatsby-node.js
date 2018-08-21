@@ -7,7 +7,11 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
   return graphql(`
     {
-      allMarkdownRemark(limit: 1000) {
+      allMarkdownRemark(filter:{
+        frontmatter:{
+          templateKey: { regex: "/page$/" }
+        }
+      }, limit:1000) {
         edges {
           node {
             id
@@ -22,6 +26,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         }
       }
     }
+    
   `).then(result => {
     if (result.errors) {
       result.errors.forEach(e => console.error(e.toString()))

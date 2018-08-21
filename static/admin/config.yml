@@ -11,10 +11,9 @@ collections:
     editor:
       preview: false
     files:
-      - file: "src/options/global.yml"
+      - file: "src/options/global.md"
         label: "Options"
         name: "options"
-        extension: "yaml-frontmatter"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "text"}
