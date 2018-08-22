@@ -17,11 +17,11 @@ collections:
         create: true
         extension: yml
         fields:
+          - {label: Data Name, name: dataName, widget: hidden, default: siteMetadata}
           - label: Header Metadata Information
             name: headerMeta
             widget: object
             fields: 
-              - {label: Data Name, name: dataName, widget: hidden, default: siteMetadata}
               - {label: Site Title, name: metaTitle, widget: string}
               - {label: Meta Description, name: metaDescription, widget: text}
               - {label: Keywords, name: keywords, widget: string}
