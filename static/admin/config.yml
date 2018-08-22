@@ -15,7 +15,7 @@ collections:
         label: "Options"
         name: "options"
         fields:
-          - {label: "Data Type", name: "dataType", widget: "hidden", default: "website-options"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "website-options"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "text"}
 
