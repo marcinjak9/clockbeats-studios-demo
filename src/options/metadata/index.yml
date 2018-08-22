@@ -1,3 +1,12 @@
-dataName: siteMetadata
-title: Clockbeats Brescia
-body: Lorem ipsum dolor set
+headerMeta:
+  keywords: 'Musica, produzione, ecc ecc'
+  metaDescription: Lorem ipsum dolor set mortum is.a
+  metaTitle: Clockbeats Brescia
+  ogDescription: Lorem ipsum dolor set mortum is.a
+  ogSiteName: Clockbeats Brescia
+  ogUrl: 'https://brescia.clockbeats.com'
+socialInfos:
+  facebookUrl: 'https://facebook.com'
+  instagramUrl: 'https://instagram.com'
+  soundcloudUrl: 'https://soundcould.com'
+  spotifyUrl: 'https://spotify.com'
