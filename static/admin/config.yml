@@ -11,11 +11,12 @@ collections:
     editor:
       preview: false
     files:
-      - file: "src/options/global.yml"
+      - file: "src/options/metadata/index.yml"
         label: "Options"
         name: "options"
         extension: yml
         fields:
+          - {label: "Data Name", name: "dataName", widget: "hidden", default: "siteMetadata"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "text"}
 

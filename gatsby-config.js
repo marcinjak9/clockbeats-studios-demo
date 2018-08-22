@@ -3,6 +3,14 @@ module.exports = {
     title: 'Gatsby + Netlify CMS Starter',
   },
   plugins: [
+    'gatsby-transformer-yaml',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/options`,
+        name: 'options',
+      },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     
@@ -32,13 +40,6 @@ module.exports = {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/options`,
-        name: 'websiteSettings',
       },
     },
     'gatsby-plugin-netlify', // make sure to keep it last in the array
