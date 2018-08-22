@@ -14,31 +14,48 @@ collections:
       - file: "src/options/metadata/index.yml"
         label: "Options"
         name: "options"
+        create: true
         extension: yml
         fields:
-          - {label: "Data Name", name: "dataName", widget: "hidden", default: "siteMetadata"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "text"}
+          - label: Header Metadata Information
+            name: headerMeta
+            widget: object
+            fields: 
+              - {label: Data Name, name: dataName, widget: hidden, default: siteMetadata}
+              - {label: Site Title, name: metaTitle, widget: string}
+              - {label: Meta Description, name: metaDescription, widget: text}
+              - {label: Keywords, name: keywords, widget: string}
+              - {label: Open Graph url, name: ogUrl, widget: string}
+              - {label: Open Graph site name, name: ogSiteName, widget: string}
+              - {label: Open Graph description, name: ogDescription, widget: text}
+          - label: Social Information
+            name: socialInfos
+            widget: object
+            fields:
+              - {label: Facebook Url, name: facebookUrl, widget: string}
+              - {label: Instagram Url, name: instagramUrl, widget: string}
+              - {label: Soundcloud Url, name: soundcloudUrl, widget: string}
+              - {label: Spotify Url, name: spotifyUrl, widget: string}
 
-  - name: "blog"
-    label: "Blog"
+  - name: blog
+    label: Blog
     folder: "src/pages/blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: Template Key, name: templateKey, widget: hidden, default: blog-post}
+      - {label: Title, name: title, widget: string}
+      - {label: Publish Date, name: date, widget: datetime}
+      - {label: Description, name: description, widget: text}
+      - {label: Body, name: body, widget: markdown}
+      - {label: Tags, name: tags, widget: list}
 
-  - name: "pages"
-    label: "Pages"
+  - name: pages
+    label: Pages
     files:
       - file: "src/pages/about/index.md"
-        label: "About"
-        name: "about"
+        label: About
+        name: about
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
