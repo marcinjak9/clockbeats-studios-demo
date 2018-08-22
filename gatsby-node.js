@@ -9,7 +9,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     {
       allMarkdownRemark(filter:{
         frontmatter:{
-          templateKey: { regex: "/page$/" }
+          templateKey: { regex: "/page$|post$/" }
         }
       }, limit:1000) {
         edges {
