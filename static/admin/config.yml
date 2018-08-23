@@ -53,13 +53,38 @@ collections:
   - name: pages
     label: Pages
     files:
-      - file: "src/pages/about/index.md"
-        label: About
-        name: about
+      - file: "src/pages/index.md"
+        label: HomePage
+        name: home
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home-page"}
+          - label: Hero Section
+            name: heroSection
+            widget: object
+            fields:
+              - {label: Hero Background Image, name: heroBackgroundImage, widget: image}
+              - {label: Hero Title, name: heroTitle, widget: string}
+              - {label: Hero Payoff, name: heroPayoff, widget: text}
+              - label: Hero Cta Form services
+                name: heroCtaFormServices
+                widget: list
+                field: 
+                  - {label: Service, name: heroCtaServiceItem, widget: string}
+          - label: Description Section
+            name: homeDescriptionSection
+            widget: object
+            fields:
+              - {label: Description Title, name: homeDescriptionTitle, widget: string}
+              - label: Feature Columns
+                name: homeFeatureColumn
+                widget: list
+                fields: 
+                  - {label: Feature Icon, name: homeFeatureIcon, widget: string}
+                  - {label: Feature Title, name: homeFeatureTitle, widget: string}
+                  - {label: Feature Body, name: homeFeatureBody, widget: markdown}
+                  - {label: Feature Cta Text, name: homeFeatureCtaText, widget: string}
+                  - {label: Feature Cta Url, name: homeFeatureCtaUrl, widget: string}
+
       - file: "src/pages/products/index.md"
         label: "Products Page"
         name: "products"
