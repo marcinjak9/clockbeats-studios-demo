@@ -68,7 +68,7 @@ collections:
               - label: Hero Cta Form services
                 name: heroCtaFormServices
                 widget: list
-                field: 
+                fields: 
                   - {label: Service, name: heroCtaServiceItem, widget: string}
           - label: Description Section
             name: homeDescriptionSection
