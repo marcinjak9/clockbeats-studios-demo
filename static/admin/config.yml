@@ -75,15 +75,15 @@ collections:
             widget: object
             fields:
               - {label: Description Title, name: homeDescriptionTitle, widget: string}
-              - label: Feature Columns
-                name: homeFeatureColumn
-                widget: list
-                fields: 
-                  - {label: Feature Icon, name: homeFeatureIcon, widget: string}
-                  - {label: Feature Title, name: homeFeatureTitle, widget: string}
-                  - {label: Feature Body, name: homeFeatureBody, widget: markdown}
-                  - {label: Feature Cta Text, name: homeFeatureCtaText, widget: string}
-                  - {label: Feature Cta Url, name: homeFeatureCtaUrl, widget: string}
+              # - label: Feature Columns
+              #   name: homeFeatureColumn
+              #   widget: list
+              #   field: 
+              #     - {label: Feature Icon, name: homeFeatureIcon, widget: string}
+              #     - {label: Feature Title, name: homeFeatureTitle, widget: string}
+              #     - {label: Feature Body, name: homeFeatureBody, widget: markdown}
+              #     - {label: Feature Cta Text, name: homeFeatureCtaText, widget: string}
+              #     - {label: Feature Cta Url, name: homeFeatureCtaUrl, widget: string}
 
       - file: "src/pages/products/index.md"
         label: "Products Page"
