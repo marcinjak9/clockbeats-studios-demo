@@ -85,44 +85,38 @@ collections:
 
   - name: "members"
     label: "Members"
-    editor:
-      ## TODO: REMOVE AFTER DOING TEMPLATE
-      preview: false
-    files:
-      - file: "src/options/members/index.yml"
-        label: "Members"
-        name: "members"
-        create: true
-        extension: yml
-        fields:
-          - label: Avatar
-            name: avatar
-            widget: image
+    folder: "src/options/members"
+    create: true
+    extension: yml
+    fields:
+      - label: Avatar
+        name: avatar
+        widget: image
 
-          - label: Name
-            name: name
-            widget: string
+      - label: Name
+        name: name
+        widget: string
 
-          - label: Profession
-            name: profession
-            widget: string
+      - label: Profession
+        name: profession
+        widget: string
 
-          - label: is Professional?
-            name: isProfessional
-            widget: boolean
-            default: false
+      - label: is Professional?
+        name: isProfessional
+        widget: boolean
+        default: false
 
-          - label: Short Bio
-            name: shortBio
-            widget: text
-          
-          - label: Long Bio
-            name: longBio
-            widget: markdown
+      - label: Short Bio
+        name: shortBio
+        widget: text
+      
+      - label: Long Bio
+        name: longBio
+        widget: markdown
 
-          - label: link
-            name: link
-            widget: string
+      - label: link
+        name: link
+        widget: string
 
 
   - name: pages
