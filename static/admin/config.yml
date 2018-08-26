@@ -88,6 +88,11 @@ collections:
     folder: "src/options/members"
     create: true
     fields:
+      - label: "Template Key"
+        name: "templateKey"
+        widget: "hidden"
+        default: "member"
+        
       - label: Name
         ## title is required for folder collection
         name: title
@@ -140,6 +145,11 @@ collections:
     folder: "src/options/projects"
     create: true
     fields:
+      - label: "Template Key"
+        name: "templateKey"
+        widget: "hidden"
+        default: "project"
+
       - label: Title
         ## title is required for folder collection
         name: title
@@ -170,6 +180,10 @@ collections:
     folder: "src/options/services"
     create: true
     fields:
+      - label: "Template Key"
+        name: "templateKey"
+        widget: "hidden"
+        default: "service"
       - label: Title
         ## title is required for folder collection
         name: title

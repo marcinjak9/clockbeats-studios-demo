@@ -1,4 +1,5 @@
 ---
+templateKey: member
 title: prova
 avatar: /img/chemex.jpg
 profession: lol
