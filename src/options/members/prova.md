@@ -6,5 +6,10 @@ isProfessional: true
 shortBio: ciao
 longBio: sadsad
 link: dasda
+Member Links:
+  Instagram: sad
+  facebook: sad
+  soundcloud: sdas
+  spotify: sad
 ---
 
