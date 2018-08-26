@@ -6,7 +6,7 @@ export const HomePageTemplate = (props) => {
   return (
     <section className="section section--gradient">
       lol template
-      {console.log(props)}
+      {JSON.stringify(props)}
     </section>
   )
 }

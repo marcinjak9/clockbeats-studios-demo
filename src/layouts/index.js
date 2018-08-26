@@ -6,11 +6,11 @@ import Navbar from '../components/Navbar'
 import './all.sass'
 
 const TemplateWrapper = ({ children, data: { metadata: { edges } } }) => {
-  // const title = edges[0].node.title
-  // console.log(title)
+  const title = edges[0].node.title
+  console.log(title)
   return (
     <div>
-      <Helmet title={"title"} />
+      <Helmet title={title} />
       <Navbar />
       <div>{children()}</div>
     </div>
