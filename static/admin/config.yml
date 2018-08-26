@@ -87,15 +87,15 @@ collections:
     label: "Members"
     folder: "src/options/members"
     create: true
-    extension: yml
     fields:
+      - label: Name
+        ## title is required for folder collection
+        name: title
+        widget: string
+
       - label: Avatar
         name: avatar
         widget: image
-
-      - label: Name
-        name: name
-        widget: string
 
       - label: Profession
         name: profession
@@ -112,6 +112,83 @@ collections:
       
       - label: Long Bio
         name: longBio
+        widget: markdown
+
+      - label: link
+        name: link
+        widget: string
+      
+      - label: socials
+        name: Member Links
+        widget: object
+        fields:
+          - label: Facebook
+            name: facebook
+            widget: string
+          - label: Instagram
+            name: Instagram
+            widget: string
+          - label: Soundcloud
+            name: soundcloud
+            widget: string
+          - label: Spotify
+            name: spotify
+            widget: string
+
+  - name: "projects"
+    label: "Projects"
+    folder: "src/options/projects"
+    create: true
+    fields:
+      - label: Title
+        ## title is required for folder collection
+        name: title
+        widget: string
+
+      - label: Image
+        name: avatar
+        widget: image
+
+      - label: Subtitle
+        name: subtitle
+        widget: string
+
+      - label: Short Description
+        name: shortDescription
+        widget: text
+      
+      - label: Long Description
+        name: longDescription
+        widget: markdown
+
+      - label: link
+        name: link
+        widget: string
+
+  - name: "services"
+    label: "Services"
+    folder: "src/options/services"
+    create: true
+    fields:
+      - label: Title
+        ## title is required for folder collection
+        name: title
+        widget: string
+
+      - label: Image
+        name: avatar
+        widget: image
+
+      - label: Subtitle
+        name: subtitle
+        widget: string
+
+      - label: Short Description
+        name: shortDescription
+        widget: text
+      
+      - label: Long Description
+        name: longDescription
         widget: markdown
 
       - label: link
