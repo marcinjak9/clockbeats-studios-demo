@@ -6,7 +6,7 @@ heroSection:
     - HeroCtaServicesItem: Mix
     - HeroCtaServicesItem: Mastering
     - HeroCtaServicesItem: Support
-  heroBackgroundImage: /img/chemex.jpg
+  heroBackgroundImage: /img/things-to-do-in-niagara-falls-1500x609.jpg
   heroPayoff: >-
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, illo!
     Possimus ipsam enim veritatis natus eveniet quae quo dolores harum.
