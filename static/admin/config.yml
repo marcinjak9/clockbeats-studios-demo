@@ -124,7 +124,7 @@ collections:
         widget: string
       
       - label: socials
-        name: Member Links
+        name: socials
         widget: object
         fields:
           - label: Facebook

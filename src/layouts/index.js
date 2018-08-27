@@ -10,7 +10,10 @@ const TemplateWrapper = ({ children, data: { metadata: { edges } } }) => {
   console.log(title)
   return (
     <div>
-      <Helmet title={title} />
+      <Helmet>
+        <title>{title}</title>
+        <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+      </Helmet>
       <Navbar />
       <div>{children()}</div>
     </div>
