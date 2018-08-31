@@ -277,7 +277,15 @@ collections:
                   - label: Feature Cta Url
                     name: homeFeatureCtaUrl
                     widget: string
-      
+      - file: src/pages/services/index.md
+        label: Services
+        name: services
+        fields: 
+          - label: Template Key
+            name: templateKey
+            widget: hidden
+            default: services-page
+            
       - file: "src/pages/products/index.md"
         label: "Products Page"
         name: "products"

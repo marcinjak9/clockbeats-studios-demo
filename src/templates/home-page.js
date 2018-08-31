@@ -92,39 +92,42 @@ export const HomePageTemplate = (props) => {
       <div className="section dark-bg">
         <div className="container is-fluid has-text-centered">
           <h2 className="title is-2 primary-text">Team Section</h2>
+          <div className="column"></div>
 
           <div className="columns">
             <div className="column is-one-third">
-              <div className="box">
+              <div className="box team-box">
+                <div className="image">
+                  <img className="rounded has-shadow" src="https://bulma.io/images/placeholders/128x128.png"></img>
+                </div>
                 <article className="media">
 
-                  <div className="media-content">
+                  <div className="media-content has-text-centered">
                     <div className="content">
                       <p>
-                        <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
-                        <br></br>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas.
-                        Nullam condimentum luctus turpis.</p>
+                        <strong>John Smith</strong> <br></br> <small>graphic designer</small>
+                      </p>
                     </div>
-                    <nav className="level is-mobile">
-                      <div className="level-left">
+                    {/* TODO: centrare bla bla */}
+                    <div className="column is-mobile has-text-centered" style={{ width: "7rem", margin: "auto" }}>
+                      <div className="level">
                         <a className="level-item" aria-label="reply">
                           <span className="icon is-small">
-                            <i className="fas fa-reply" aria-hidden="true"></i>
+                            <i className="fab fa-instagram" aria-hidden="true"></i>
                           </span>
                         </a>
                         <a className="level-item" aria-label="retweet">
                           <span className="icon is-small">
-                            <i className="fas fa-retweet" aria-hidden="true"></i>
+                            <i className="fab fa-facebook" aria-hidden="true"></i>
                           </span>
                         </a>
                         <a className="level-item" aria-label="like">
                           <span className="icon is-small">
-                            <i className="fas fa-heart" aria-hidden="true"></i>
+                            <i className="far fa-envelope" aria-hidden="true"></i>
                           </span>
                         </a>
                       </div>
-                    </nav>
+                    </div>
                   </div>
                 </article>
               </div>
@@ -141,16 +144,28 @@ export const HomePageTemplate = (props) => {
           <h3 className="subtitle is-4">Lorem ipsum dolor sit amet consecutur adipiscit elit, consecutur qua numus adibimus.</h3>
           <div className="columns">
             <div className="column">
-              <h3 className="subtitle is-4">lorem ipsum</h3>
+              <div className="box">
+                <h3 className="title is-4">lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit eniqua re in castra suis admittit</p>
+              </div>
             </div>
             <div className="column">
-              <h3 className="subtitle is-4">lorem ipsum</h3>
+              <div className="box">
+                <h3 className="title is-4">lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit eniqua re in castra suis admittit</p>
+              </div>
             </div>
             <div className="column">
-              <h3 className="subtitle is-4">lorem ipsum</h3>
+              <div className="box">
+                <h3 className="title is-4">lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit eniqua re in castra suis admittit</p>
+              </div>
             </div>
             <div className="column">
-              <h3 className="subtitle is-4">lorem ipsum</h3>
+              <div className="box">
+                <h3 className="title is-4">lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit eniqua re in castra suis admittit</p>
+              </div>
             </div>
           </div>
           <a className="button primary-btn">read more</a>
