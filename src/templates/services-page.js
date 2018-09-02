@@ -18,8 +18,26 @@ export const ServicesTemplate = (props) => {
 
       <div className="section">
         <div className="container is-fluid has-text-centered">
+          <p className="subtitle is-6 is-spaced grey-text">SERVICES</p>
           <div className="title primary-text">General Description Section</div>
           <p>Lorem ipsum dolor sit amet consecutur adipiscit elit, consecutur qua numus adibimus.</p>
+          <div className="columns three-box">
+            <div className="column">
+              <h3 className="title is-3">col 1</h3>
+              <p className="subtitle-is-6">Lorem ipsum dolor sit amet et eniqua res in castra siatdolor sit amet et eniqua res in castra siat, concupiscit abem siat queusque tandem abutere</p>
+              <h3 className="title is-5">Read more about</h3>
+            </div>
+            <div className="column">
+              <h3 className="title is-3">col 1</h3>
+              <p className="subtitle-is-6">Lorem ipsum dolor sit amet et eniqua res in castra siatdolor sit amet et eniqua res in castra siat, concupiscit abem siat queusque tandem abutere</p>
+              <h3 className="title is-5">Read more about</h3>
+            </div>
+            <div className="column">
+              <h3 className="title is-3">col 1</h3>
+              <p className="subtitle-is-6">Lorem ipsum dolor sit amet et eniqua res in castra siatdolor sit amet et eniqua res in castra siat, concupiscit abem siat queusque tandem abutere</p>
+              <h3 className="title is-5">Read more about</h3>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -33,10 +51,21 @@ export const ServicesTemplate = (props) => {
         <div className="container is-fluid has-text-centered">
           <div className="title primary-text">Learn More About Clockbeats!</div>
           <div className="subtitle">Lorem ipsum dolor sit amet consecutur adipiscit elit, consecutur qua numus adibimus.</div>
+          <div className="columns">
+            <div className="column">
+              <div className="box a-box"></div>
+              <div className="box a-box"></div>
+            </div>
+            <div className="column">
+              <div className="box b-box"></div>
+            </div>
+            <div className="column"></div>
+          </div>
         </div>
       </div>
-
     </div>
+
+
   )
 }
 
