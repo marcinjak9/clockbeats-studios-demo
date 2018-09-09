@@ -6,13 +6,13 @@ import Navbar from '../components/Navbar'
 import './all.sass'
 
 const TemplateWrapper = ({ children, data: { metadata: { edges } } }) => {
-  const title = edges[0].node.title
+  const { title } = edges[0].node
   console.log(title)
   return (
-    <div>
+    <div style={{ position: 'relative' }}>
       <Helmet>
         <title>{title}</title>
-        <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" />
       </Helmet>
       <Navbar />
       <div>{children()}</div>

@@ -5,6 +5,12 @@ import Content, { HTMLContent } from '../components/Content'
 import HomePageHero from '../components/Home/HomePageHero'
 import HomeFeatures from '../components/Home/HomeFeatures'
 import DescriptionImageSection from '../components/Home/DescriptionImageSection'
+import TeamSection from '../components/Home/TeamSection'
+import ServicesSection from '../components/Home/ServicesSection'
+import LatestNewsSection from '../components/Home/LatestNewsSection'
+import ClockbeatsMapSection from '../components/Home/ClockbeatsMapSection'
+import InstagramSection from '../components/Home/InstagramSection'
+import HeroForm from '../components/Home/HeroForm'
 
 const features = [
   {
@@ -33,6 +39,14 @@ const features = [
   },
 ]
 
+const tempServices = [
+  { title: 'Produzione assistita', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/', img: 'https://source.unsplash.com/collection/2068121/850x851' },
+  { title: 'Professionals netwok', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/', img: 'https://source.unsplash.com/collection/2068121/850x852' },
+  { title: 'Promotion', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/', img: 'https://source.unsplash.com/collection/2068121/850x853' },
+  { title: 'Live', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/', img: 'https://source.unsplash.com/collection/2068121/850x854' },
+  { title: 'Photo & Video', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/', img: 'https://source.unsplash.com/collection/2068121/850x854' },
+]
+
 export const HomePageTemplate = (props) => {
   const {
     hero, descriptionSection, team, services,
@@ -44,6 +58,7 @@ export const HomePageTemplate = (props) => {
         payoff={hero.payoff}
         backgroundImage={hero.image}
         dropdownOptions={hero.ctaServices}
+        formTitle="Lorem ipsum dolor set morts eres"
       />
       <HomeFeatures
         title="An infrastructure experience development teams love with the features your business needs"
@@ -60,21 +75,37 @@ export const HomePageTemplate = (props) => {
         ]}
       />
 
-      <section className="container-fluid text-center default-section">
-        <h2>Team section</h2>
-      </section>
+      <TeamSection
+        title="Lorem Ipsum dolor set imani not"
+        body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quae distinctio atque accusamus recusandae! Neque, possimus? Architecto optio fugiat, laudantium obcaecati, repellendus porro quo, deleniti velit quasi ea consectetur libero."
+        team={[]}
+      />
 
-      <section className="container-fluid text-center default-section">
-        <h2>Services</h2>
-      </section>
+      <ServicesSection
+        title="What we can you offer?"
+        body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet itaque odit labore omnis assumenda libero aliquid ab explicabo! Pariatur, ut esse. Illum, fuga veniam omnis nostrum consequatur nam? Quae, inventore!"
+        services={tempServices}
+      />
 
-      <section className="container-fluid text-center default-section">
-        <h2>Contact us</h2>
-      </section>
+      <LatestNewsSection
+        title="Some cool thing frow our blog"
+        posts={[1, 2, 3]}
+      />
 
-      <section className="container-fluid text-center default-section">
-        <h2>Instagram</h2>
-      </section>
+      <ClockbeatsMapSection />
+
+      <DescriptionImageSection
+        title="Contact us to boost your career"
+        bodyComponent={() => <HeroForm title="Contact us for a estimate" unstyled dropdownOptions={hero.ctaServices} />}
+        image="https://source.unsplash.com/collection/2068121/1280x850"
+        links={[
+          { name: 'First Cta', url: '/' },
+          { name: 'Second Cta', url: '/' },
+        ]}
+        cardRight
+      />
+
+      <InstagramSection />
 
     </div>
 

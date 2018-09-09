@@ -3,7 +3,7 @@ import HeroForm from './HeroForm'
 
 const HomePageHero = (props) => {
   const {
-    title, payoff, backgroundImage, dropdownOptions,
+    title, payoff, backgroundImage, dropdownOptions, formTitle,
   } = props
   return (
     <section className="container-fluid hero d-flex flex-column justify-content-center" style={{ backgroundImage: `url('${backgroundImage}')` }}>
@@ -17,7 +17,7 @@ const HomePageHero = (props) => {
             </h3>
           </div>
           <div className="col-md-5">
-            <HeroForm dropdownOptions={dropdownOptions} />
+            <HeroForm dropdownOptions={dropdownOptions} title={formTitle} />
           </div>
         </div>
       </div>
