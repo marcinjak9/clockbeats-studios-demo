@@ -1,9 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Link from 'gatsby-link'
 import shortid from 'shortid'
 import UserCard from '../DisplayItems/UserCard'
 
-const TeamSection = ({ title, body, team }) => (
+const TeamSection = ({ title, body, team, showCta }) => (
   <section className="full-wrapper text-center default-section">
     <div className="container">
       <div className="row">
@@ -21,7 +22,7 @@ const TeamSection = ({ title, body, team }) => (
             name="Jon Doe"
             userRole="Sound Producer"
             bio="Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia cumque ipsa quasi dicta repellat consequuntur repellendus possimus praesentium est."
-            url="/"
+            url="/community/jon-doe"
             instagram="/"
             spotify="/"
             soundcloud="/"
@@ -29,13 +30,17 @@ const TeamSection = ({ title, body, team }) => (
         ))}
       </div>
 
-      <div className="row cta-section">
-        <div className="col">
-          <a href="/" className="btn btn-primary btn-lg shadow">
-            See all Professionals and Artists
-          </a>
-        </div>
-      </div>
+      {showCta
+        && (
+          <div className="row cta-section">
+            <div className="col">
+              <Link to="/community" className="btn btn-primary btn-lg shadow">
+                See all Professionals and Artists
+              </Link>
+            </div>
+          </div>
+        )
+      }
 
     </div>
   </section>

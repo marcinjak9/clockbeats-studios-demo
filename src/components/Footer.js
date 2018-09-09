@@ -1,13 +1,14 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faSpotify, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import logo from '../img/cb_logo.png'
 
 const Footer = () => (
   <footer className="full-wrapper">
     <div className="container">
       <div className="row">
         <div className="col-md-4">
-          <h2>LOGO</h2>
+          <img src={logo} className="logo" alt="" />
           <p>Clockbeats SRL ® 2018 All Rights Reserved | P.IVA IT03995070988</p>
           <div className="footer-icons">
             <a href="/" target="_blank">

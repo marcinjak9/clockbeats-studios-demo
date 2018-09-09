@@ -65,6 +65,7 @@
       margin-left: 5px
 
 .card-wrapper
+  margin-bottom: 3rem
   .social-icons
     position: absolute
     bottom: 10px
@@ -158,6 +159,23 @@
       height: 50px
       width: 50px
       border-radius: 50%
+
+.service-card
+  transition: all .3s
+  margin-bottom: 2rem
+  img
+    height: 300px
+    object-fit: cover
+    width: 100%
+  h3
+    font-weight: 600
+    margin-bottom: 20px
+  small
+    font-weight: 400
+    text-transform: uppercase
+    color: $primary
+  &:hover
+    transform: scale(1.01)
 
 
 @include media-breakpoint-down(md)

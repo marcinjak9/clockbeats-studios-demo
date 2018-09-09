@@ -1,87 +1,95 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
+import HomePageHero from '../components/Home/HomePageHero'
+import HomeFeatures from '../components/Home/HomeFeatures'
+import LatestNewsSection from '../components/Home/LatestNewsSection'
+import InstagramSection from '../components/Home/InstagramSection'
+import ServicesSectionCards from '../components/Home/ServicesSectionCards'
+import image from '../img/acoustic-guitar.svg'
 
-export const ServicesTemplate = (props) => {
-  return (
-    <div>
-      <div className="section orange-bg">
-        <div className="container is-fluid">
-          <div className="column is-one-third">
-            <div className="title  white-text">Lorem Ipsum dolor sit amet et eniqua res</div>
-            <div className="subtitle  white-text"><br></br>Quousque tandem abutere, catilina, patientia nostra?
-            Nos habemus in dolore magno resistere, sed etiam tibi divisores mater non concupiscit.
-            Mala tempora currunt, fuisse cum caesar debit!  </div>
-          </div>
-        </div>
-      </div>
+const features = [
+  {
+    id: 1,
+    title: 'Build better apps faster',
+    body: 'From effortless administration tools to robust compute, storage, and networking services, we provide an all-in-one cloud to help teams spend more time building better software for your customers.',
+    cta: 'Learn more about our products',
+    url: '/',
+    img: image,
+  },
+  {
+    id: 2,
+    title: 'Build better apps faster',
+    body: 'From effortless administration tools to robust compute, storage, and networking services, we provide an all-in-one cloud to help teams spend more time building better software for your customers.',
+    cta: 'Learn more about our products',
+    url: '/',
+    img: image,
+  },
+  {
+    id: 3,
+    title: 'Build better apps faster',
+    body: 'From effortless administration tools to robust compute, storage, and networking services, we provide an all-in-one cloud to help teams spend more time building better software for your customers.',
+    cta: 'Learn more about our products',
+    url: '/',
+    img: image,
+  },
+]
 
-      <div className="section">
-        <div className="container is-fluid has-text-centered">
-          <p className="subtitle is-6 is-spaced grey-text">SERVICES</p>
-          <div className="title primary-text">General Description Section</div>
-          <p>Lorem ipsum dolor sit amet consecutur adipiscit elit, consecutur qua numus adibimus.</p>
-          <div className="columns three-box">
-            <div className="column">
-              <h3 className="title is-3">col 1</h3>
-              <p className="subtitle-is-6">Lorem ipsum dolor sit amet et eniqua res in castra siatdolor sit amet et eniqua res in castra siat, concupiscit abem siat queusque tandem abutere</p>
-              <h3 className="title is-5">Read more about</h3>
-            </div>
-            <div className="column">
-              <h3 className="title is-3">col 1</h3>
-              <p className="subtitle-is-6">Lorem ipsum dolor sit amet et eniqua res in castra siatdolor sit amet et eniqua res in castra siat, concupiscit abem siat queusque tandem abutere</p>
-              <h3 className="title is-5">Read more about</h3>
-            </div>
-            <div className="column">
-              <h3 className="title is-3">col 1</h3>
-              <p className="subtitle-is-6">Lorem ipsum dolor sit amet et eniqua res in castra siatdolor sit amet et eniqua res in castra siat, concupiscit abem siat queusque tandem abutere</p>
-              <h3 className="title is-5">Read more about</h3>
-            </div>
-          </div>
-        </div>
-      </div>
+const tempServices = [
+  { title: 'Produzione assistita', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x851' },
+  { title: 'Professionals netwok', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x852' },
+  { title: 'Promotion', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x853' },
+  { title: 'Live', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x854' },
+  { title: 'Photo & Video', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x855' },
+  { title: 'Produzione assistita', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x856' },
+  { title: 'Professionals netwok', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x857' },
+  { title: 'Promotion', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x858' },
+  { title: 'Live', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x859' },
+  { title: 'Photo & Video', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/851x850' },
+]
 
-      <div className="section grey-bg">
-        <div className="container is-fluid has-text-centered">
-          <div className="title primary-text">Services</div>
-        </div>
-      </div>
+export const ServicesTemplate = props => (
+  <div>
+    <HomePageHero
+      title="The simplest cloud platform for developers & teams"
+      payoff="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas adipisci quod voluptatem amet fugit assumenda ipsa dolore iusto repellendus nesciunt deserunt a saepe doloribus, aut est harum, necessitatibus ullam debitis!"
+      backgroundImage="https://source.unsplash.com/collection/2068121/1920x1080"
+      // dropdownOptions={hero.ctaServices}
+      formTitle="Lorem ipsum dolor set morts eres"
+    />
 
-      <div className="section">
-        <div className="container is-fluid has-text-centered">
-          <div className="title primary-text">Learn More About Clockbeats!</div>
-          <div className="subtitle">Lorem ipsum dolor sit amet consecutur adipiscit elit, consecutur qua numus adibimus.</div>
-          <div className="columns">
-            <div className="column">
-              <div className="box a-box"></div>
-              <div className="box a-box"></div>
-            </div>
-            <div className="column">
-              <div className="box b-box"></div>
-            </div>
-            <div className="column"></div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <HomeFeatures
+      title="An infrastructure experience development teams love with the features your business needs"
+      features={features}
+    />
 
+    <ServicesSectionCards
+      title="Complete List of our services "
+      body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet itaque odit labore omnis assumenda libero aliquid ab explicabo! Pariatur, ut esse. Illum, fuga veniam omnis nostrum consequatur nam? Quae, inventore!"
+      services={tempServices}
+    />
 
-  )
-}
+    <LatestNewsSection
+      title="Some cool thing frow our blog"
+      posts={[1, 2, 3]}
+    />
+
+    <InstagramSection />
+
+  </div>
+)
 
 ServicesTemplate.propTypes = {
 }
 
-const Services = (props) => {
-  return (
-    <ServicesTemplate
-      {...props}
-    // contentComponent={HTMLContent}
-    // title={post.frontmatter.title}
-    // content={post.html}
-    />
-  )
-}
+const Services = props => (
+  <ServicesTemplate
+    {...props}
+  // contentComponent={HTMLContent}
+  // title={post.frontmatter.title}
+  // content={post.html}
+  />
+)
 
 Services.propTypes = {
   data: PropTypes.object.isRequired,

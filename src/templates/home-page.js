@@ -6,11 +6,12 @@ import HomePageHero from '../components/Home/HomePageHero'
 import HomeFeatures from '../components/Home/HomeFeatures'
 import DescriptionImageSection from '../components/Home/DescriptionImageSection'
 import TeamSection from '../components/Home/TeamSection'
-import ServicesSection from '../components/Home/ServicesSection'
+import ServicesSectionGrid from '../components/Home/ServicesSectionGrid'
 import LatestNewsSection from '../components/Home/LatestNewsSection'
 import ClockbeatsMapSection from '../components/Home/ClockbeatsMapSection'
 import InstagramSection from '../components/Home/InstagramSection'
 import HeroForm from '../components/Home/HeroForm'
+import image from '../img/acoustic-guitar.svg'
 
 const features = [
   {
@@ -19,7 +20,7 @@ const features = [
     body: 'From effortless administration tools to robust compute, storage, and networking services, we provide an all-in-one cloud to help teams spend more time building better software for your customers.',
     cta: 'Learn more about our products',
     url: '/',
-    img: 'https://placehold.it/64x64',
+    img: image,
   },
   {
     id: 2,
@@ -27,7 +28,7 @@ const features = [
     body: 'From effortless administration tools to robust compute, storage, and networking services, we provide an all-in-one cloud to help teams spend more time building better software for your customers.',
     cta: 'Learn more about our products',
     url: '/',
-    img: 'https://placehold.it/64x64',
+    img: image,
   },
   {
     id: 3,
@@ -35,16 +36,16 @@ const features = [
     body: 'From effortless administration tools to robust compute, storage, and networking services, we provide an all-in-one cloud to help teams spend more time building better software for your customers.',
     cta: 'Learn more about our products',
     url: '/',
-    img: 'https://placehold.it/64x64',
+    img: image,
   },
 ]
 
 const tempServices = [
-  { title: 'Produzione assistita', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/', img: 'https://source.unsplash.com/collection/2068121/850x851' },
-  { title: 'Professionals netwok', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/', img: 'https://source.unsplash.com/collection/2068121/850x852' },
-  { title: 'Promotion', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/', img: 'https://source.unsplash.com/collection/2068121/850x853' },
-  { title: 'Live', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/', img: 'https://source.unsplash.com/collection/2068121/850x854' },
-  { title: 'Photo & Video', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/', img: 'https://source.unsplash.com/collection/2068121/850x854' },
+  { title: 'Produzione assistita', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x851' },
+  { title: 'Professionals netwok', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x852' },
+  { title: 'Promotion', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x853' },
+  { title: 'Live', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x854' },
+  { title: 'Photo & Video', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x854' },
 ]
 
 export const HomePageTemplate = (props) => {
@@ -59,6 +60,7 @@ export const HomePageTemplate = (props) => {
         backgroundImage={hero.image}
         dropdownOptions={hero.ctaServices}
         formTitle="Lorem ipsum dolor set morts eres"
+        showForm
       />
       <HomeFeatures
         title="An infrastructure experience development teams love with the features your business needs"
@@ -79,9 +81,10 @@ export const HomePageTemplate = (props) => {
         title="Lorem Ipsum dolor set imani not"
         body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quae distinctio atque accusamus recusandae! Neque, possimus? Architecto optio fugiat, laudantium obcaecati, repellendus porro quo, deleniti velit quasi ea consectetur libero."
         team={[]}
+        showCta
       />
 
-      <ServicesSection
+      <ServicesSectionGrid
         title="What we can you offer?"
         body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet itaque odit labore omnis assumenda libero aliquid ab explicabo! Pariatur, ut esse. Illum, fuga veniam omnis nostrum consequatur nam? Quae, inventore!"
         services={tempServices}
@@ -92,7 +95,7 @@ export const HomePageTemplate = (props) => {
         posts={[1, 2, 3]}
       />
 
-      <ClockbeatsMapSection />
+      {/* <ClockbeatsMapSection /> */}
 
       <DescriptionImageSection
         title="Contact us to boost your career"

@@ -2,7 +2,6 @@ import React from 'react'
 import Link from 'gatsby-link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes, faAngleRight } from '@fortawesome/free-solid-svg-icons'
-import github from '../img/github-icon.svg'
 import logo from '../img/cb_logo.png'
 
 class Navbar extends React.Component {
@@ -55,34 +54,34 @@ class Navbar extends React.Component {
                 <div className="col-md-6 nav-container d-flex flex-column justify-content-center align-center">
                   <ul className="text-center">
                     <li>
-                      <Link to="/">
+                      <Link to="/" onClick={() => this.setState({ visible: false })}>
                         Home
                         <FontAwesomeIcon icon={faAngleRight} />
                       </Link>
                     </li>
                     <li>
-                      <Link to="/">
+                      <Link to="/services" onClick={() => this.setState({ visible: false })}>
                         Services
                         <FontAwesomeIcon icon={faAngleRight} />
                       </Link>
                     </li>
                     <li>
-                      <Link to="/">
-                        Artists
+                      <Link to="/community" onClick={() => this.setState({ visible: false })}>
+                        Community
                         <FontAwesomeIcon icon={faAngleRight} />
                       </Link>
                     </li>
                     <li>
-                      <Link to="/">
+                      <a href="https://blog.clockbeats.com">
                         Blog
                         <FontAwesomeIcon icon={faAngleRight} />
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link to="/">
+                      <a href="https://clockbeats.com">
                         Platform
                         <FontAwesomeIcon icon={faAngleRight} />
-                      </Link>
+                      </a>
                     </li>
                   </ul>
                 </div>

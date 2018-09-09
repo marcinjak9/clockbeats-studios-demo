@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Link from 'gatsby-link'
 
 const UserCard = ({ name, userRole, bio, url, instagram, spotify, soundcloud }) => (
   <div className="col-md-3 card-wrapper">
@@ -11,12 +12,11 @@ const UserCard = ({ name, userRole, bio, url, instagram, spotify, soundcloud }) 
           <i>{userRole}</i>
         </header>
         <p>{bio}</p>
-        <a href={url} className="card-link">
+        <Link to={url} className="card-link">
           See Profile
-
           {' '}
           <i className="fas fa-angle-right" />
-        </a>
+        </Link>
       </div>
     </div>
     <div className="social-icons">

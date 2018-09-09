@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'gatsby-link'
 import shortid from 'shortid'
 
 const ServicesSection = ({ title, body, services }) => (
@@ -14,7 +15,7 @@ const ServicesSection = ({ title, body, services }) => (
 
       <div className="grid-wrapper">
         {services.map(service => (
-          <a key={shortid.generate()} href={service.url} className="grid-cell" style={{ backgroundImage: `url('${service.img}')` }}>
+          <Link key={shortid.generate()} to={service.url} className="grid-cell" style={{ backgroundImage: `url('${service.img}')` }}>
             <div className="overlay-cell">
               <h3>{service.title}</h3>
               <p className="short">{service.body}</p>
@@ -23,15 +24,15 @@ const ServicesSection = ({ title, body, services }) => (
                 <i className="fas fa-angle-right" />
               </p>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
 
       <div className="row cta-section">
         <div className="col">
-          <a href="/" className="btn btn-primary btn-lg shadow">
+          <Link to="/services" className="btn btn-primary btn-lg shadow">
             See all Services
-          </a>
+          </Link>
         </div>
       </div>
 
