@@ -54,7 +54,7 @@ export const HomePageTemplate = (props) => {
   return (
     <div>
       <HomePageHero
-        title={hero.title}
+        title="The simplest cloud platform for developers & teams"
         payoff={hero.payoff}
         backgroundImage={hero.image}
         dropdownOptions={hero.ctaServices}

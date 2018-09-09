@@ -12,9 +12,9 @@ const HomePageHero = (props) => {
         <div className="row">
           <div className="col-md-7 text-col">
             <h1 className="text-white title">{title}</h1>
-            <h3 className="text-white">
+            <p className="lead text-white">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas adipisci quod voluptatem amet fugit assumenda ipsa dolore iusto repellendus nesciunt deserunt a saepe doloribus, aut est harum, necessitatibus ullam debitis!
-            </h3>
+            </p>
           </div>
           <div className="col-md-5">
             <HeroForm dropdownOptions={dropdownOptions} title={formTitle} />

@@ -9,6 +9,11 @@ const InstagramSection = ({ title, body, services }) => (
       <div className="row section-title">
         <div className="col-md-12">
           <h2>Instagram activity</h2>
+          <p className="lead">
+            <a href="https://instagram.com">
+              <strong>@clockbeats_brescia</strong>
+            </a>
+          </p>
         </div>
         <InstagramPhoto
           id="Bnfx_VLgtvz"

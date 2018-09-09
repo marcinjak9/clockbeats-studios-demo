@@ -28,6 +28,15 @@ const TeamSection = ({ title, body, team }) => (
           />
         ))}
       </div>
+
+      <div className="row cta-section">
+        <div className="col">
+          <a href="/" className="btn btn-primary btn-lg shadow">
+            See all Professionals and Artists
+          </a>
+        </div>
+      </div>
+
     </div>
   </section>
 )

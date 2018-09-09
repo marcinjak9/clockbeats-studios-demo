@@ -26,6 +26,15 @@ const ServicesSection = ({ title, body, services }) => (
           </a>
         ))}
       </div>
+
+      <div className="row cta-section">
+        <div className="col">
+          <a href="/" className="btn btn-primary btn-lg shadow">
+            See all Services
+          </a>
+        </div>
+      </div>
+
     </div>
   </section>
 
