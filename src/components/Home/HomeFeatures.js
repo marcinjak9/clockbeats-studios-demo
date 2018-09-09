@@ -2,18 +2,18 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Feature from '../DisplayItems/Feature'
 
-const HomeFeatures = props => (
-  <section className="container d-flex flex-column justify-content-center text-center features-section">
-    <h2>An infrastructure experience development teams love with the features your business needs</h2>
+const HomeFeatures = ({ title, features }) => (
+  <section className="container default-section d-flex flex-column justify-content-center text-center features-section">
+    <h2>{title}</h2>
     <div className="row">
-      {[1, 2, 3].map(item => (
+      {features.map(feature => (
         <Feature
-          key={item}
-          title="Build better apps faster"
-          body="From effortless administration tools to robust compute, storage, and networking services, we provide an all-in-one cloud to help teams spend more time building better software for your customers."
-          cta="Learn more about our products"
-          url="/"
-          img="https://placehold.it/64x64"
+          key={feature.id}
+          title={feature.title}
+          body={feature.body}
+          cta={feature.cta}
+          url={feature.url}
+          img={feature.img}
         />
       ))}
 
@@ -22,7 +22,15 @@ const HomeFeatures = props => (
 )
 
 HomeFeatures.propTypes = {
-
+  title: PropTypes.string,
+  features: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string,
+    title: PropTypes.string,
+    body: PropTypes.string,
+    cta: PropTypes.string,
+    url: PropTypes.string,
+    img: PropTypes.string,
+  })),
 }
 
 export default HomeFeatures

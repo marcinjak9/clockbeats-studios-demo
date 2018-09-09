@@ -4,6 +4,34 @@ import Link from 'gatsby-link'
 import Content, { HTMLContent } from '../components/Content'
 import HomePageHero from '../components/Home/HomePageHero'
 import HomeFeatures from '../components/Home/HomeFeatures'
+import DescriptionImageSection from '../components/Home/DescriptionImageSection'
+
+const features = [
+  {
+    id: 1,
+    title: 'Build better apps faster',
+    body: 'From effortless administration tools to robust compute, storage, and networking services, we provide an all-in-one cloud to help teams spend more time building better software for your customers.',
+    cta: 'Learn more about our products',
+    url: '/',
+    img: 'https://placehold.it/64x64',
+  },
+  {
+    id: 2,
+    title: 'Build better apps faster',
+    body: 'From effortless administration tools to robust compute, storage, and networking services, we provide an all-in-one cloud to help teams spend more time building better software for your customers.',
+    cta: 'Learn more about our products',
+    url: '/',
+    img: 'https://placehold.it/64x64',
+  },
+  {
+    id: 3,
+    title: 'Build better apps faster',
+    body: 'From effortless administration tools to robust compute, storage, and networking services, we provide an all-in-one cloud to help teams spend more time building better software for your customers.',
+    cta: 'Learn more about our products',
+    url: '/',
+    img: 'https://placehold.it/64x64',
+  },
+]
 
 export const HomePageTemplate = (props) => {
   const {
@@ -17,7 +45,36 @@ export const HomePageTemplate = (props) => {
         backgroundImage={hero.image}
         dropdownOptions={hero.ctaServices}
       />
-      <HomeFeatures />
+      <HomeFeatures
+        title="An infrastructure experience development teams love with the features your business needs"
+        features={features}
+      />
+
+      <DescriptionImageSection
+        title="Lorem Ipsum dolor set"
+        body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis magnam accusamus quo praesentium natus pariatur eum, molestiae cumque aliquam necessitatibus eligendi eos labore harum odio perferendis est modi perspiciatis ex."
+        image="https://source.unsplash.com/collection/2068121/1280x850"
+        links={[
+          { name: 'First Cta', url: '/' },
+          { name: 'Second Cta', url: '/' },
+        ]}
+      />
+
+      <section className="container-fluid text-center default-section">
+        <h2>Team section</h2>
+      </section>
+
+      <section className="container-fluid text-center default-section">
+        <h2>Services</h2>
+      </section>
+
+      <section className="container-fluid text-center default-section">
+        <h2>Contact us</h2>
+      </section>
+
+      <section className="container-fluid text-center default-section">
+        <h2>Instagram</h2>
+      </section>
 
     </div>
 
