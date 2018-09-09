@@ -1,0 +1,54 @@
+footer
+  padding: 10rem 2rem 2rem 2rem
+  background-color: #101010
+  color: #fff
+
+  p
+    font-size: 1.1rem
+
+  ul
+    a
+      color: #fff
+      opacity: .6
+      line-height: 1.7rem
+      transition: all .3s
+
+      &:hover
+        color: #ffffff
+        opacity: 1
+        text-decoration: none
+
+  .footer-icons
+    display: flex
+    width: 50%
+    justify-content: space-between
+    flex-direction: row
+
+    a
+      font-size: 1.5rem
+      color: #fff
+      opacity: .6
+
+      &:hover
+        color: #ffffff
+        opacity: 1
+        text-decoration: none
+
+  .credits
+    margin-top: 3rem
+    p
+      font-size: .9rem
+      font-weight: 300
+      color: rgba(255,255,255,.6)
+
+  .footer-col
+    margin-top: 1.5rem
+
+
+@include media-breakpoint-down(md)
+  footer
+    text-align: center
+
+    .footer-icons
+      width: 100%
+      padding: 0 3rem

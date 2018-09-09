@@ -1,13 +1,18 @@
 const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
+const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators
 
   return graphql(`
     {
-      allMarkdownRemark(limit: 1000) {
+      allMarkdownRemark(filter:{
+        frontmatter:{
+          templateKey: { regex: "/page$|post$/" }
+        }
+      }, limit:1000) {
         edges {
           node {
             id
@@ -22,12 +27,13 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         }
       }
     }
+    
   `).then(result => {
     if (result.errors) {
       result.errors.forEach(e => console.error(e.toString()))
       return Promise.reject(result.errors)
     }
-
+    
     const posts = result.data.allMarkdownRemark.edges
 
     posts.forEach(edge => {
@@ -73,7 +79,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators
-
+  
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
     createNodeField({
@@ -82,4 +88,17 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
       value,
     })
   }
+
+  // const { frontmatter } = node
+  // if (frontmatter) {
+  //   const { image } = frontmatter
+  //   if (image) {
+  //     if (image.indexOf('/img') === 0) {
+  //       frontmatter.imageSharpRef = path.relative(
+  //         path.dirname(node.fileAbsolutePath),
+  //         path.join(__dirname, '/static/', image)
+  //       )
+  //     }
+  //   }
+  // }
 }

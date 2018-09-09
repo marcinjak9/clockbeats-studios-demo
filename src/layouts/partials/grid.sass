@@ -1,0 +1,85 @@
+.grid-wrapper
+  display: grid
+  grid-gap: 32px
+  grid-template-columns: repeat(4, 1fr)
+  grid-template-rows: repeat(3, 200px)
+
+  .grid-cell
+    background-size: cover
+    background-position: center
+    border-radius: 5px
+    transition: all .3s
+    box-shadow: 0 10px 20px rgba(3, 27, 78, 0.1)
+    text-decoration: none
+    &:hover
+      transform: scale(1.01)
+      box-shadow: 0 10px 20px rgba(3, 27, 78, 0.4)
+
+    .overlay-cell
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      width: 100%
+      height: 100%
+      background-color: rgba(0,0,0,0.5)
+      color: #fff
+      padding: 30px
+      border-radius: 5px
+      transition: all .3s
+
+      h3 
+        font-weight: 600
+        transition: all .3s
+      
+      .cta
+        opacity: 0
+        transition: all .3s
+   
+      &:hover
+        background-color: rgba(140, 114, 51, 0.83)
+
+        .brand-text
+          color: #fff
+
+      .cta
+        opacity: 1
+
+    &:nth-child(1)
+      grid-column: 1/span 2
+      grid-row: 1/span 3
+
+    &:nth-child(2)
+      grid-column: 3
+      grid-row: 1/span 2
+
+    &:nth-child(3)
+      grid-column: 4
+      grid-row: 1
+      .short
+        display: none
+
+    &:nth-child(4)
+      grid-column: 4
+      grid-row: 2
+      .short
+        display: none
+
+    &:nth-child(5)
+      grid-column: span 2
+      grid-row: 3
+      .short
+        display: none
+
+
+
+@include media-breakpoint-down(md)
+  .grid-wrapper
+    grid-template-columns: 1fr
+    .grid-cell
+      grid-column: auto !important
+      grid-row: auto !important
+
+
+@include media-breakpoint-down(xs)
+  

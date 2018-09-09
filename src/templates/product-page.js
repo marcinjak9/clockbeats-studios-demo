@@ -16,6 +16,7 @@ export const ProductPageTemplate = ({
   pricing,
 }) => (
   <section className="section section--gradient">
+  product
     <div className="container">
       <div className="section">
         <div className="columns">
@@ -23,7 +24,7 @@ export const ProductPageTemplate = ({
             <div className="content">
               <div
                 className="full-width-image-container margin-top-0"
-                style={{ backgroundImage: `url(${image})` }}
+                // style={{ backgroundImage: `url(${image})` }}
               >
                 <h2
                   className="has-text-weight-bold is-size-1"

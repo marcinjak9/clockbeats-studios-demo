@@ -8,36 +8,284 @@ public_folder: /img
 collections:
   - name: "options"
     label: "Options"
+    editor:
+      preview: false
     files:
-      - file: "src/options/global.md"
+      - file: "src/options/metadata/index.yml"
         label: "Options"
         name: "options"
+        create: true
+        extension: yml
         fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
-  - name: "blog"
-    label: "Blog"
+          - label: Data Name
+            name: dataName
+            widget: hidden
+            default: siteMetadata
+
+          - label: Header Metadata Information
+            name: headerMeta
+            widget: object
+            fields: 
+              - label: Site Title
+                name: metaTitle
+                widget: string
+
+              - label: Meta Description
+                name: metaDescription
+                widget: text
+
+              - label: Keywords
+                name: keywords
+                widget: string
+
+              - label: Open Graph url
+                name: ogUrl
+                widget: string
+
+              - label: Open Graph site name
+                name: ogSiteName
+                widget: string
+
+              - label: Open Graph description
+                name: ogDescription
+                widget: text
+
+          - label: Social Information
+            name: socialInfos
+            widget: object
+            fields:
+              - label: Facebook Url
+                name: facebookUrl
+                widget: string
+
+              - label: Instagram Url
+                name: instagramUrl
+                widget: string
+
+              - label: Soundcloud Url
+                name: soundcloudUrl
+                widget: string
+
+              - label: Spotify Url
+                name: spotifyUrl
+                widget: string
+
+  - name: blog
+    label: Blog
     folder: "src/pages/blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: Template Key, name: templateKey, widget: hidden, default: blog-post}
+      - {label: Title, name: title, widget: string}
+      - {label: Publish Date, name: date, widget: datetime}
+      - {label: Description, name: description, widget: text}
+      - {label: Body, name: body, widget: markdown}
+      - {label: Tags, name: tags, widget: list}
 
-  - name: "pages"
-    label: "Pages"
-    files:
-      - file: "src/pages/about/index.md"
-        label: "About"
-        name: "about"
+  - name: "members"
+    label: "Members"
+    folder: "src/options/members"
+    create: true
+    fields:
+      - label: "Template Key"
+        name: "templateKey"
+        widget: "hidden"
+        default: "member"
+        
+      - label: Name
+        ## title is required for folder collection
+        name: title
+        widget: string
+
+      - label: Avatar
+        name: avatar
+        widget: image
+
+      - label: Profession
+        name: profession
+        widget: string
+
+      - label: is Professional?
+        name: isProfessional
+        widget: boolean
+        default: false
+
+      - label: Short Bio
+        name: shortBio
+        widget: text
+      
+      - label: Long Bio
+        name: longBio
+        widget: markdown
+
+      - label: link
+        name: link
+        widget: string
+      
+      - label: socials
+        name: socials
+        widget: object
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - label: Facebook
+            name: facebook
+            widget: string
+          - label: Instagram
+            name: Instagram
+            widget: string
+          - label: Soundcloud
+            name: soundcloud
+            widget: string
+          - label: Spotify
+            name: spotify
+            widget: string
+
+  - name: "projects"
+    label: "Projects"
+    folder: "src/options/projects"
+    create: true
+    fields:
+      - label: "Template Key"
+        name: "templateKey"
+        widget: "hidden"
+        default: "project"
+
+      - label: Title
+        ## title is required for folder collection
+        name: title
+        widget: string
+
+      - label: Image
+        name: avatar
+        widget: image
+
+      - label: Subtitle
+        name: subtitle
+        widget: string
+
+      - label: Short Description
+        name: shortDescription
+        widget: text
+      
+      - label: Long Description
+        name: longDescription
+        widget: markdown
+
+      - label: link
+        name: link
+        widget: string
+
+  - name: "services"
+    label: "Services"
+    folder: "src/options/services"
+    create: true
+    fields:
+      - label: "Template Key"
+        name: "templateKey"
+        widget: "hidden"
+        default: "service"
+      - label: Title
+        ## title is required for folder collection
+        name: title
+        widget: string
+
+      - label: Image
+        name: avatar
+        widget: image
+
+      - label: Subtitle
+        name: subtitle
+        widget: string
+
+      - label: Short Description
+        name: shortDescription
+        widget: text
+      
+      - label: Long Description
+        name: longDescription
+        widget: markdown
+
+      - label: link
+        name: link
+        widget: string
+
+
+  - name: pages
+    label: Pages
+    files:
+      - file: "src/pages/index.md"
+        label: HomePage
+        name: home
+        fields:
+          - label: "Template Key"
+            name: "templateKey"
+            widget: "hidden"
+            default: "home-page"
+          - label: Hero Section
+            name: heroSection
+            widget: object
+            fields:
+              - label: Hero Background Image
+                name: heroBackgroundImage
+                widget: image
+
+              - label: Hero Title
+                name: heroTitle
+                widget: string
+
+              - label: Hero Payoff
+                name: heroPayoff
+                widget: text
+              
+              - label: Hero Cta Services List
+                name: HeroCtaServices
+                widget: list
+                fields: 
+
+                  - label: Service Name
+                    name: HeroCtaServicesItem
+                    widget: string
+
+          - label: Description Section
+            name: homeDescriptionSection
+            widget: object
+            fields:
+              - label: Description Title
+                name: homeDescriptionTitle
+                widget: string
+
+              - label: Feature Columns
+                name: homeFeatureColumn
+                widget: list
+                fields: 
+                  - label: Feature Icon
+                    name: homeFeatureIcon
+                    widget: image
+
+                  - label: Feature Title
+                    name: homeFeatureTitle
+                    widget: string
+
+                  - label: Feature Body
+                    name: homeFeatureBody
+                    widget: markdown
+
+                  - label: Feature Cta Text
+                    name: homeFeatureCtaText
+                    widget: string
+
+                  - label: Feature Cta Url
+                    name: homeFeatureCtaUrl
+                    widget: string
+      - file: src/pages/services/index.md
+        label: Services
+        name: services
+        fields: 
+          - label: Template Key
+            name: templateKey
+            widget: hidden
+            default: services-page
+            
       - file: "src/pages/products/index.md"
         label: "Products Page"
         name: "products"
