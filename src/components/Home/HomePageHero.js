@@ -1,65 +1,28 @@
 import React from 'react'
-import Card from '../general/Card'
-const HomePageHero = ({ title, payoff, backgroundImage, dropdownOptions }) => (
-  <div>
-    <section className="hero is-medium home-section" style={{ backgroundImage: `url('${backgroundImage}')` }}>
-      <div className="is-overlay dark-overlay"></div>
-      <div className="hero-body">
-        <div className="container">
-          <div className="columns">
-            <div className="column">
-              <h1 className="title is-1 text-white">
-                {title}
-              </h1>
-              <h2 className="subtitle text-white">
-                {payoff}
-              </h2>
-            </div>
+import HeroForm from './HeroForm'
 
-            <div className="column">
-
-              <Card>
-                <div className="field">
-                  <label className="label">Email</label>
-                  <div className="control">
-                    <input className="input is-medium" type="text" placeholder="Your email" />
-                  </div>
-                </div>
-
-
-                <div className="field">
-                  <label className="label">Service to cover</label>
-                  <div className="control">
-                    <div className="select is-medium is-fullwidth">
-                      <select>
-                        <option disabled>Select dropdown</option>
-                        {dropdownOptions && dropdownOptions.map((serviceCta, i) => (
-                          <option key={serviceCta.HeroCtaServicesItem}>{serviceCta.HeroCtaServicesItem}</option>
-                        ))}
-                      </select>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div className="field">
-                  <div className="control is-fullwidth">
-                    <button className="button is-link is-medium is-fullwidth">Submit</button>
-                  </div>
-                </div>
-                <div className="field">
-                  <div className="control is-fullwidth">
-                    <button className="button is-light is-medium is-fullwidth">Open chat</button>
-                  </div>
-                </div>
-              </Card>
-
-            </div>
+const HomePageHero = (props) => {
+  const {
+    title, payoff, backgroundImage, dropdownOptions,
+  } = props
+  return (
+    <section className="container-fluid hero d-flex flex-column justify-content-center" style={{ backgroundImage: `url('${backgroundImage}')` }}>
+      <div className="hero-overlay" />
+      <div className="container">
+        <div className="row">
+          <div className="col-md-7 text-col">
+            <h1 className="text-white title">{title}</h1>
+            <h3 className="text-white">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas adipisci quod voluptatem amet fugit assumenda ipsa dolore iusto repellendus nesciunt deserunt a saepe doloribus, aut est harum, necessitatibus ullam debitis!
+            </h3>
+          </div>
+          <div className="col-md-5">
+            <HeroForm dropdownOptions={dropdownOptions} />
           </div>
         </div>
       </div>
     </section>
-  </div>
-)
+  )
+}
 
 export default HomePageHero
