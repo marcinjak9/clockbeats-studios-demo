@@ -12,6 +12,15 @@ const UserPage = props => (
     avatar="http://i.pravatar.cc/300"
     tag="tutorial"
     newsTitle="Scopri di più"
+    instagram={{
+      user: 'clockbeatsbrescia',
+      photos: [
+        { id: 'BndRVOTAUsf' },
+        { id: 'BnXERRxFXXS' },
+        { id: 'BnUfbKpgire' },
+        { id: 'BnDt1NwDOaa' },
+      ],
+    }}
   // contentComponent={HTMLContent}
   // content={post.html}
   />
