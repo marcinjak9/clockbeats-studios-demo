@@ -37,6 +37,7 @@
     "react": "^16.2.0",
     "react-helmet": "^5.2.0",
     "react-svgmt": "^1.1.6",
+    "scriptjs": "^2.5.8",
     "shortid": "^2.2.13",
     "uuid": "^3.2.1",
     "video-react": "^0.13.0"

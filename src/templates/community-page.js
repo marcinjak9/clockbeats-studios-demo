@@ -59,6 +59,7 @@ export const CommunityTemplate = props => (
 
     <LatestNewsSection
       title="Some cool thing frow our blog"
+      tag="tutorial"
       posts={[1, 2, 3]}
     />
 

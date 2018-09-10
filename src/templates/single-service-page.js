@@ -52,7 +52,7 @@ export const SingleServiceTemplate = props => (
 
     <LatestNewsSection
       title="Scopri di piu"
-      posts={[1, 2, 3]}
+      tag="tutorial"
     />
 
     <InstagramSection />

@@ -13,10 +13,10 @@
 //     },
 //     'gatsby-plugin-react-helmet',
 //     'gatsby-plugin-sass',
-    
+
 //     {
 //       resolve: 'gatsby-source-filesystem',
-//       options: {  
+//       options: {
 //         path: `${__dirname}/src/pages`,
 //         name: 'pages',
 //       },
@@ -48,9 +48,9 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Cup of Data`,
-    author: `Cup of Data Team`,
-    authorLink: `https://github.com/cupofdata`,
+    title: 'Cup of Data',
+    author: 'Cup of Data Team',
+    authorLink: 'https://github.com/cupofdata',
   },
   plugins: [
     'gatsby-transformer-yaml',
@@ -62,30 +62,30 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages`,
-        name: `pages`,
+        name: 'pages',
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/img`,
-        name: `images`,
+        name: 'images',
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/static/img`,
-        name: `static/images`,
+        name: 'static/images',
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: 'gatsby-transformer-remark',
       options: {
-        plugins: [`gatsby-remark-prismjs`, `gatsby-remark-copy-linked-files`],
+        plugins: ['gatsby-remark-prismjs', 'gatsby-remark-copy-linked-files'],
       },
     },
     // {
@@ -113,28 +113,28 @@ module.exports = {
     //   },
     // },
     {
-      resolve: `gatsby-plugin-eslint`,
+      resolve: 'gatsby-plugin-eslint',
       options: {
         exclude: /(node_modules|cache|public)/,
         test: /\.js$|\.jsx$/,
       },
     },
     // `gatsby-plugin-babel-styled-components`,
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-react-next`,
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-offline',
+    'gatsby-plugin-react-next',
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     // `gatsby-plugin-styled-components`,
-    `gatsby-plugin-sharp`,
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-relative-images`,
+            resolve: 'gatsby-remark-relative-images',
           },
           {
-            resolve: `gatsby-remark-images`,
+            resolve: 'gatsby-remark-images',
             options: {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
@@ -145,7 +145,7 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-netlify-cms`,
-    `gatsby-transformer-sharp`,
+    'gatsby-plugin-netlify-cms',
+    'gatsby-transformer-sharp',
   ].filter(Boolean),
 }
