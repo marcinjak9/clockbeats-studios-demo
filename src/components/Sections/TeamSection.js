@@ -16,16 +16,17 @@ const TeamSection = ({ title, body, team, showCta }) => (
     </div>
     <div className="container-fluid users-list-container">
       <div className="row">
-        {[1, 1, 1, 1].map(user => (
+        {team.map(user => (
           <UserCard
             key={shortid.generate()}
-            name="Jon Doe"
-            userRole="Sound Producer"
-            bio="Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia cumque ipsa quasi dicta repellat consequuntur repellendus possimus praesentium est."
-            url="/community/jon-doe"
-            instagram="/"
-            spotify="/"
-            soundcloud="/"
+            name={user.title}
+            userRole={user.profession}
+            bio={user.bio}
+            url={user.link}
+            instagram={user.instagram}
+            spotify={user.spotify}
+            soundcloud={user.soundcloud}
+            avatar={user.avatar}
           />
         ))}
       </div>

@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
-import HomePageHero from '../components/Home/HomePageHero'
-import HomeFeatures from '../components/Home/HomeFeatures'
-import LatestNewsSection from '../components/Home/LatestNewsSection'
-import InstagramSection from '../components/Home/InstagramSection'
+import HeroSection from '../components/Sections/HeroSection'
+import HomeFeatures from '../components/Sections/HomeFeatures'
+import LatestNewsSection from '../components/Sections/LatestNewsSection'
+import InstagramSection from '../components/Sections/InstagramSection'
 import ServiceBody from '../components/ServiceBody'
 import image from '../img/acoustic-guitar.svg'
 
@@ -37,7 +37,7 @@ const features = [
 
 export const SingleServiceTemplate = props => (
   <div>
-    <HomePageHero
+    <HeroSection
       title="Produzione assista"
       payoff="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas adipisci quod voluptatem amet fugit assumenda ipsa dolore iusto repellendus nesciunt deserunt a saepe doloribus, aut est harum, necessitatibus ullam debitis!"
       backgroundImage="https://source.unsplash.com/collection/2068121/1920x1080"
@@ -55,7 +55,7 @@ export const SingleServiceTemplate = props => (
       tag="tutorial"
     />
 
-    <InstagramSection />
+    <InstagramSection instagramUsername="clockbeatsbrescia" photos={[{ id: 'BndRVOTAUsf' }, { id: 'BnXERRxFXXS' }, { id: 'BnUfbKpgire' }, { id: 'BnDt1NwDOaa' }]} />
   </div>
 )
 

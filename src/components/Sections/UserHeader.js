@@ -4,7 +4,7 @@ import { faFacebook, faInstagram, faSpotify, faTwitter } from '@fortawesome/free
 
 const UserHeader = (props) => {
   const {
-    title, payoff, backgroundImage,
+    title, payoff, backgroundImage, userRole, avatar,
   } = props
   return (
     <section className="container-fluid user-header d-flex flex-column justify-content-center" style={{ backgroundImage: `url('${backgroundImage}')` }}>
@@ -12,13 +12,13 @@ const UserHeader = (props) => {
       <div className="container">
         <div className="row">
           <div className="col-md-3 text-center">
-            <img src="http://i.pravatar.cc/300" alt="" className="img-fluid avatar" />
+            <img src={avatar} alt="" className="img-fluid avatar" />
           </div>
           <div className="col-md-7 text-col">
             <h1 className="text-white title">{title}</h1>
-            <h3 className="text-white">Senior Producer</h3>
+            <h3 className="text-white">{userRole}</h3>
             <p className="lead text-white">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas adipisci quod voluptatem amet fugit assumenda ipsa dolore iusto repellendus nesciunt deserunt a saepe doloribus, aut est harum
+              {payoff}
             </p>
             <div className="profile-socials">
               <a href="/" target="_blank">

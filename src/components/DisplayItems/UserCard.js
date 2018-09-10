@@ -2,11 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
-const UserCard = ({ name, userRole, bio, url, instagram, spotify, soundcloud }) => (
+const UserCard = ({ name, userRole, avatar, bio, url, instagram, spotify, soundcloud }) => (
   <div className="col-md-3 card-wrapper">
     <div className="card user-card">
       <div className="card-body">
-        <img src="http://i.pravatar.cc/300" alt="" className="avatar shadow" />
+        <img src={avatar} alt="" className="avatar shadow" />
         <header>
           <p>{name}</p>
           <i>{userRole}</i>

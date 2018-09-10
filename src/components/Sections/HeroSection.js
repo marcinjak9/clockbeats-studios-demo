@@ -1,7 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import HeroForm from './HeroForm'
 
-const HomePageHero = (props) => {
+const HeroSection = (props) => {
   const {
     title, payoff, backgroundImage, dropdownOptions, formTitle, showForm,
   } = props
@@ -13,7 +14,7 @@ const HomePageHero = (props) => {
           <div className="col-md-7 text-col">
             <h1 className="text-white title">{title}</h1>
             <p className="lead text-white">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas adipisci quod voluptatem amet fugit assumenda ipsa dolore iusto repellendus nesciunt deserunt a saepe doloribus, aut est harum, necessitatibus ullam debitis!
+              {payoff}
             </p>
           </div>
           {showForm && (
@@ -27,4 +28,15 @@ const HomePageHero = (props) => {
   )
 }
 
-export default HomePageHero
+HeroSection.propTypes = {
+  title: PropTypes.string,
+  payoff: PropTypes.string,
+  backgroundImage: PropTypes.string,
+  dropdownOptions: PropTypes.arrayOf(PropTypes.shape({
+    HeroCtaServicesItem: PropTypes.string,
+  })),
+  formTitle: PropTypes.string,
+  showForm: PropTypes.bool,
+}
+
+export default HeroSection
