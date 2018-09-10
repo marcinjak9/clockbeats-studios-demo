@@ -4,7 +4,7 @@ import { faFacebook, faInstagram, faSpotify, faTwitter } from '@fortawesome/free
 
 const UserHeader = (props) => {
   const {
-    title, payoff, backgroundImage, userRole, avatar,
+    title, payoff, backgroundImage, userRole, avatar, socials,
   } = props
   return (
     <section className="container-fluid user-header d-flex flex-column justify-content-center" style={{ backgroundImage: `url('${backgroundImage}')` }}>
@@ -21,18 +21,34 @@ const UserHeader = (props) => {
               {payoff}
             </p>
             <div className="profile-socials">
-              <a href="/" target="_blank">
-                <FontAwesomeIcon icon={faFacebook} />
-              </a>
-              <a href="/" target="_blank">
-                <FontAwesomeIcon icon={faInstagram} />
-              </a>
-              <a href="/" target="_blank">
-                <FontAwesomeIcon icon={faSpotify} />
-              </a>
-              <a href="/" target="_blank">
-                <FontAwesomeIcon icon={faTwitter} />
-              </a>
+              {socials.instagram
+                && (
+                  <a href={socials.instagram} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faFacebook} />
+                  </a>
+                )
+              }
+              {socials.facebook
+                && (
+                  <a href={socials.facebook} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faInstagram} />
+                  </a>
+                )
+              }
+              {socials.spotify
+                && (
+                  <a href={socials.spotify} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faSpotify} />
+                  </a>
+                )
+              }
+              {socials.soundcloud
+                && (
+                  <a href={socials.soundcloud} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faTwitter} />
+                  </a>
+                )
+              }
             </div>
           </div>
         </div>

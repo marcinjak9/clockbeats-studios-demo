@@ -3,31 +3,84 @@ import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
 import UserTemplate from './Wrappers/UserTemplate'
 
-const UserPage = props => (
-  <UserTemplate
-    name="Jon Doe"
-    body="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas adipisci quod voluptatem amet fugit assumenda ipsa dolore iusto repellendus nesciunt deserunt a saepe doloribus, aut est harum, necessitatibus ullam debitis!"
-    image="https://source.unsplash.com/collection/2068121/1920x1080"
-    userRole="Senior Producer"
-    avatar="http://i.pravatar.cc/300"
-    tag="tutorial"
-    newsTitle="Scopri di più"
-    instagram={{
-      user: 'clockbeatsbrescia',
-      photos: [
-        { id: 'BndRVOTAUsf' },
-        { id: 'BnXERRxFXXS' },
-        { id: 'BnUfbKpgire' },
-        { id: 'BnDt1NwDOaa' },
-      ],
-    }}
-  // contentComponent={HTMLContent}
-  // content={post.html}
-  />
-)
-
+const UserPage = (props) => {
+  const {
+    data: {
+      markdownRemark: {
+        id, frontmatter: {
+          name, body, image, userRole, avatar, tag, newsTitle, instagram, instagramPhotos, socials,
+        },
+      },
+    },
+  } = props
+  return (
+    <UserTemplate
+      name={name}
+      body={body}
+      image={image}
+      userRole={userRole}
+      avatar={avatar}
+      tag={tag}
+      newsTitle={newsTitle}
+      instagram={instagram}
+      instagramPhotos={instagramPhotos}
+      socials={socials}
+    // contentComponent={HTMLContent}
+    // content={post.html}
+    />
+  )
+}
 UserPage.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.shape({
+      id: PropTypes.string,
+      frontmatter: PropTypes.shape({
+        name: PropTypes.string,
+        body: PropTypes.string,
+        image: PropTypes.string,
+        userRole: PropTypes.string,
+        avatar: PropTypes.string,
+        tag: PropTypes.string,
+        newsTitle: PropTypes.string,
+        instagram: PropTypes.shape({
+          user: PropTypes.string,
+        }),
+        instagramPhotos: PropTypes.arrayOf(PropTypes.shape({
+          id: PropTypes.string,
+        })),
+      }),
+    }),
+  }),
 }
 
 export default UserPage
+
+export const userQuery = graphql`
+  query UserById($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      id
+      html
+      frontmatter {
+        name
+        body
+        image
+        userRole
+        avatar
+        tag
+        newsTitle
+        instagram {
+          user
+        }
+        instagramPhotos {
+          id
+        }
+        socials {
+          instagram
+          facebook
+          soundcloud
+          spotify
+        }
+      }
+    }
+  }
+`

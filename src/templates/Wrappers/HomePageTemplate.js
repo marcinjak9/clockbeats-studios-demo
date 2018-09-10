@@ -58,7 +58,6 @@ const HomePageTemplate = (props) => {
         title={formCta.title}
         bodyComponent={() => <HeroForm title={formCta.formTitle} unstyled dropdownOptions={hero.ctaServices} />}
         image={formCta.image}
-        links={formCta.links}
         cardRight
       />
 
@@ -137,10 +136,6 @@ HomePageTemplate.propTypes = {
   formCta: PropTypes.shape({
     title: PropTypes.string,
     image: PropTypes.string,
-    links: PropTypes.arrayOf(PropTypes.shape({
-      text: PropTypes.string,
-      url: PropTypes.url,
-    })),
   }),
   instagram: PropTypes.shape({
     user: PropTypes.string,

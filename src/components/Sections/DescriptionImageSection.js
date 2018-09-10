@@ -18,7 +18,7 @@ const DescriptionImageSection = ({ title, body, links, image, cardRight, bodyCom
                   <h2>{title}</h2>
                   {body && <p>{body}</p>}
                   <div>
-                    {links.map(link => <a key={shortid.generate()} href={link.url} className="card-link">{link.name}</a>)}
+                    {links.map(link => <a key={shortid.generate()} href={link.url} className="card-link">{link.text}</a>)}
                   </div>
                 </div>
               )

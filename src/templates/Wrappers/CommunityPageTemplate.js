@@ -46,12 +46,18 @@ CommunityTemplate.propTypes = {
     payoff: PropTypes.string,
     image: PropTypes.string,
   }),
-  featuresList: PropTypes.string,
+  featuresList: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string,
+    body: PropTypes.string,
+    cta: PropTypes.string,
+    url: PropTypes.string,
+    img: PropTypes.string,
+  })),
   featuresTitle: PropTypes.string,
   teamSection: PropTypes.shape({
     title: PropTypes.string,
     body: PropTypes.string,
-    list: PropTypes.string,
+    list: PropTypes.array,
   }),
   latestNews: PropTypes.shape({
     title: PropTypes.string,

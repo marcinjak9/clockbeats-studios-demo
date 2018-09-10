@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import shortid from 'shortid'
 import Feature from '../DisplayItems/Feature'
 
 const HomeFeatures = ({ title, features }) => (
@@ -8,7 +9,7 @@ const HomeFeatures = ({ title, features }) => (
     <div className="row">
       {features.map(feature => (
         <Feature
-          key={feature.id}
+          key={shortid.generate()}
           title={feature.title}
           body={feature.body}
           cta={feature.cta}

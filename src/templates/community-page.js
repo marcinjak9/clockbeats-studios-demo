@@ -82,36 +82,115 @@ const features = [
 ]
 
 
-const Community = props => (
-  <CommunityTemplate
-    hero={{
-      title: 'Our rich community of Professionals & Artist',
-      payoff: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas adipisci quod voluptatem amet fugit assumenda ipsa dolore iusto repellendus nesciunt deserunt a saepe doloribus, aut est harum, necessitatibus ullam debitis!',
-      image: 'https://source.unsplash.com/collection/2068121/1920x1080',
-    }}
-    featuresTitle="An infrastructure experience development teams love with the features your business needs"
-    featuresList={features}
-    teamSection={{
-      title: 'Lorem Ipsum dolor set imani not',
-      body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quae distinctio atque accusamus recusandae! Neque, possimus? Architecto optio fugiat, laudantium obcaecati, repellendus porro quo, deleniti velit quasi ea consectetur libero.',
-      list: teamList,
-    }}
-    latestNews={{
-      title: 'Some cool stuff frow our blog',
-      tag: 'tutorial',
-    }}
-    instagram={{
-      user: 'clockbeatsbrescia',
-      photos: [{ id: 'BndRVOTAUsf' }, { id: 'BnXERRxFXXS' }, { id: 'BnUfbKpgire' }, { id: 'BnDt1NwDOaa' }],
-    }}
-  // contentComponent={HTMLContent}
-  // title={post.frontmatter.title}
-  // content={post.html}
-  />
-)
+const Community = ({
+  data: {
+    community: {
+      frontmatter: {
+        title, heroSection, featuresTitle, featuresList, team, latestNews, instagram, instagramPhotos,
+      },
+    },
+  },
+}) => {
+  const ciao = ''
+  return (
+    <CommunityTemplate
+      hero={{
+        title,
+        payoff: heroSection.payoff,
+        image: heroSection.image,
+      }}
+      featuresTitle={featuresTitle}
+      featuresList={featuresList}
+      teamSection={{
+        title: team.title,
+        body: team.body,
+        list: teamList,
+      }}
+      latestNews={{
+        title: latestNews.title,
+        tag: latestNews.tag,
+      }}
+      instagram={{
+        user: instagram.user,
+        photos: instagramPhotos,
+      }}
+    // contentComponent={HTMLContent}
+    // title={post.frontmatter.title}
+    // content={post.html}
+    />
+  )
+}
 
 Community.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.shape({
+    community: PropTypes.shape({
+      frontmatter: PropTypes.shape({
+        title: PropTypes.string,
+        heroSection: PropTypes.shape({
+          image: PropTypes.string,
+          payoff: PropTypes.string,
+        }),
+        featuresTitle: PropTypes.string,
+        featuresList: PropTypes.arrayOf(PropTypes.shape({
+          title: PropTypes.string,
+          body: PropTypes.string,
+          cta: PropTypes.string,
+          url: PropTypes.string,
+          img: PropTypes.string,
+        })),
+        team: PropTypes.shape({
+          title: PropTypes.string,
+          body: PropTypes.string,
+        }),
+        latestNews: PropTypes.shape({
+          title: PropTypes.string,
+          tag: PropTypes.string,
+        }),
+        instagram: PropTypes.shape({
+          user: PropTypes.string,
+        }),
+        instagramPhotos: PropTypes.arrayOf(PropTypes.shape({
+          id: PropTypes.string,
+        })),
+      }),
+    }),
+  }),
 }
 
 export default Community
+
+export const communityQuery = graphql`
+  query CommunityQuery {
+    community: markdownRemark(frontmatter: {templateKey: {eq: "community-page"}}) {
+      frontmatter {
+        title
+        heroSection {
+          image
+          payoff
+        }
+        featuresTitle
+        featuresList {
+          title
+          body
+          cta
+          url
+          img
+        }
+        team {
+          title
+          body
+        }
+        latestNews {
+          title
+          tag
+        }
+        instagram {
+          user
+        }
+        instagramPhotos {
+          id
+        }
+      }
+    }
+  }
+`

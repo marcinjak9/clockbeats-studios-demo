@@ -6,7 +6,7 @@ import LatestNewsSection from '../../components/Sections/LatestNewsSection'
 import InstagramSection from '../../components/Sections/InstagramSection'
 import ServiceBody from '../../components/ServiceBody'
 
-const UserTemplate = ({ name, body, image, avatar, tag, newsTitle, userRole, instagram }) => (
+const UserTemplate = ({ name, body, image, avatar, tag, newsTitle, userRole, instagram, instagramPhotos, socials }) => (
   <div>
     <UserHeader
       title={name}
@@ -14,6 +14,7 @@ const UserTemplate = ({ name, body, image, avatar, tag, newsTitle, userRole, ins
       backgroundImage={image}
       userRole={userRole}
       avatar={avatar}
+      socials={socials}
     />
 
     <ServiceBody />
@@ -25,7 +26,7 @@ const UserTemplate = ({ name, body, image, avatar, tag, newsTitle, userRole, ins
 
     <InstagramSection
       instagramUsername={instagram.user}
-      photos={instagram.photos}
+      photos={instagramPhotos}
     />
   </div>
 )
@@ -40,9 +41,15 @@ UserTemplate.propTypes = {
   userRole: PropTypes.string,
   instagram: PropTypes.shape({
     user: PropTypes.string,
-    photos: PropTypes.arrayOf(PropTypes.shape({
-      id: PropTypes.string,
-    })),
+  }),
+  instagramPhotos: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string,
+  })),
+  socials: PropTypes.shape({
+    instagram: PropTypes.string,
+    facebook: PropTypes.string,
+    soundcloud: PropTypes.string,
+    spotify: PropTypes.string,
   }),
 }
 
