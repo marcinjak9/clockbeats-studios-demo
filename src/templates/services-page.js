@@ -1,82 +1,157 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import ServicesTemplate from './Wrappers/ServicesTemplate'
-import image from '../img/acoustic-guitar.svg'
 
-const features = [
-  {
-    id: 1,
-    title: 'Build better apps faster',
-    body: 'From effortless administration tools to robust compute, storage, and networking services, we provide an all-in-one cloud to help teams spend more time building better software for your customers.',
-    cta: 'Learn more about our products',
-    url: '/',
-    img: image,
-  },
-  {
-    id: 2,
-    title: 'Build better apps faster',
-    body: 'From effortless administration tools to robust compute, storage, and networking services, we provide an all-in-one cloud to help teams spend more time building better software for your customers.',
-    cta: 'Learn more about our products',
-    url: '/',
-    img: image,
-  },
-  {
-    id: 3,
-    title: 'Build better apps faster',
-    body: 'From effortless administration tools to robust compute, storage, and networking services, we provide an all-in-one cloud to help teams spend more time building better software for your customers.',
-    cta: 'Learn more about our products',
-    url: '/',
-    img: image,
-  },
-]
-
-const tempServices = [
-  { title: 'Produzione assistita', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x851' },
-  { title: 'Professionals netwok', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x852' },
-  { title: 'Promotion', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x853' },
-  { title: 'Live', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x854' },
-  { title: 'Photo & Video', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x855' },
-  { title: 'Produzione assistita', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x856' },
-  { title: 'Professionals netwok', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x857' },
-  { title: 'Promotion', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x858' },
-  { title: 'Live', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x859' },
-  { title: 'Photo & Video', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/851x850' },
-]
-
-const Services = props => (
-  <ServicesTemplate
-    hero={{
-      title: 'The simplest cloud platform for developers & teams',
-      payoff: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, illo! Possimus ipsam enim veritatis natus eveniet quae quo dolores harum.',
-      image: 'https://source.unsplash.com/collection/2068121/1920x1080',
-    }}
-    features={{
-      title: 'Lorem Ipsum dolor set inem ami mortes tua.',
-      list: features,
-    }}
-    services={{
-      title: 'What can we offer you?',
-      body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet itaque odit labore omnis assumenda libero aliquid ab explicabo! Pariatur, ut esse. Illum, fuga veniam omnis nostrum consequatur nam? Quae, inventore!',
-      list: tempServices,
-    }}
-    latestNews={{
-      title: 'Check out our cool Blog',
-      tag: 'tutorial',
-    }}
-    instagram={{
-      user: 'clockbeatsbrescia',
-      photos: [
-        { id: 'BndRVOTAUsf' },
-        { id: 'BnXERRxFXXS' },
-        { id: 'BnUfbKpgire' },
-        { id: 'BnDt1NwDOaa' },
-      ],
-    }}
-  />
-)
+const Services = (props) => {
+  const {
+    data: {
+      markdownRemark: {
+        frontmatter: {
+          title, heroSection, featuresTitle, featuresList, services, latestNews, instagram, instagramPhotos,
+        },
+      },
+      servicesList,
+    },
+  } = props
+  const servicesRef = servicesList.edges.map(({ node: { id, frontmatter, fields: { slug } } }) => ({
+    id,
+    img: frontmatter.heroSection.image,
+    url: slug,
+    body: frontmatter.heroSection.payoff,
+    title: frontmatter.title,
+  }))
+  return (
+    <ServicesTemplate
+      hero={{
+        title,
+        payoff: heroSection.payoff,
+        image: heroSection.image,
+      }}
+      features={{
+        title: featuresTitle,
+        list: featuresList,
+      }}
+      services={{
+        title: services.title,
+        body: services.body,
+        list: servicesRef,
+      }}
+      latestNews={{
+        title: latestNews.title,
+        tag: latestNews.tag,
+      }}
+      instagram={{
+        user: instagram.user,
+        photos: instagramPhotos,
+      }}
+    />
+  )
+}
 
 Services.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.shape({
+      frontmatter: PropTypes.shape({
+        title: PropTypes.string,
+        heroSection: PropTypes.shape({
+          image: PropTypes.string,
+          payoff: PropTypes.string,
+        }),
+        featuresTitle: PropTypes.string,
+        featuresList: PropTypes.arrayOf(PropTypes.shape({
+          title: PropTypes.string,
+          body: PropTypes.string,
+          cta: PropTypes.string,
+          url: PropTypes.string,
+          img: PropTypes.string,
+        })),
+        services: PropTypes.shape({
+          title: PropTypes.string,
+          body: PropTypes.string,
+        }),
+        latestNews: PropTypes.shape({
+          title: PropTypes.string,
+          tag: PropTypes.string,
+        }),
+        instagram: PropTypes.shape({
+          user: PropTypes.string,
+        }),
+        instagramPhotos: PropTypes.arrayOf(PropTypes.shape({
+          id: PropTypes.string,
+        })),
+      }),
+    }),
+
+    servicesList: PropTypes.shape({
+      edges: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.string,
+        fields: PropTypes.shape({
+          slug: PropTypes.string,
+        }),
+        frontmatter: PropTypes.shape({
+          title: PropTypes.string,
+          heroSection: PropTypes.shape({
+            image: PropTypes.string,
+            payoff: PropTypes.string,
+          }),
+        }),
+      })),
+    }),
+  }),
 }
 
 export default Services
+
+export const servicesQuery = graphql`
+  query ServicesQuery {
+    markdownRemark(frontmatter: {templateKey: {eq: "services-page"}}) {
+      frontmatter {
+        title
+        heroSection {
+          image
+          payoff
+        }
+        featuresTitle
+        featuresList {
+          title
+          body
+          cta
+          url
+          img
+        }
+        services {
+          title
+          body
+        }
+        latestNews {
+          title
+          tag
+        }
+        instagram {
+          user
+        }
+        instagramPhotos {
+          id
+        }
+      }
+    }
+
+    servicesList: allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "single-service-page"}}}) {
+      edges {
+        node {
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            heroSection {
+              image
+              payoff
+            }
+          }
+        }
+      }
+    }
+  }
+`

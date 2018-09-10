@@ -7,7 +7,7 @@ const UserPage = (props) => {
   const {
     data: {
       markdownRemark: {
-        id, frontmatter: {
+        frontmatter: {
           name, body, image, userRole, avatar, tag, newsTitle, instagram, instagramPhotos, socials,
         },
       },

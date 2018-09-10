@@ -1,106 +1,38 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import image from '../img/acoustic-guitar.svg'
 import HomePageTemplate from './Wrappers/HomePageTemplate'
 
-const teamList = [
-  {
-    id: '1',
-    title: 'Paolo Mantini',
-    avatar: 'http://i.pravatar.cc/300',
-    link: '/community/jon-doe',
-    profession: 'Record producer & Clockbeats CEO',
-    bio: 'Paolo Mantini is a sound designer, musician, a poli-intrumentalist. He has an extensive network of professionals in the music industry worldwide.',
-    instagram: 'https://intstagram.com',
-    facebook: 'https://facebook.com',
-    soundcloud: 'https://soundcloud.com',
-    spotify: 'https://spotify.com',
-  },
-  {
-    id: '1',
-    title: 'Paolo Mantini',
-    avatar: 'http://i.pravatar.cc/300',
-    link: '/community/jon-doe',
-    profession: 'Record producer & Clockbeats CEO',
-    bio: 'Paolo Mantini is a sound designer, musician, a poli-intrumentalist. He has an extensive network of professionals in the music industry worldwide.',
-    instagram: 'https://intstagram.com',
-    facebook: 'https://facebook.com',
-    soundcloud: 'https://soundcloud.com',
-    spotify: 'https://spotify.com',
-  },
-  {
-    id: '1',
-    title: 'Paolo Mantini',
-    avatar: 'http://i.pravatar.cc/300',
-    link: '/community/jon-doe',
-    profession: 'Record producer & Clockbeats CEO',
-    bio: 'Paolo Mantini is a sound designer, musician, a poli-intrumentalist. He has an extensive network of professionals in the music industry worldwide.',
-    instagram: 'https://intstagram.com',
-    facebook: 'https://facebook.com',
-    soundcloud: 'https://soundcloud.com',
-    spotify: 'https://spotify.com',
-  },
-  {
-    id: '1',
-    title: 'Paolo Mantini',
-    avatar: 'http://i.pravatar.cc/300',
-    link: '/community/jon-doe',
-    profession: 'Record producer & Clockbeats CEO',
-    bio: 'Paolo Mantini is a sound designer, musician, a poli-intrumentalist. He has an extensive network of professionals in the music industry worldwide.',
-    instagram: 'https://intstagram.com',
-    facebook: 'https://facebook.com',
-    soundcloud: 'https://soundcloud.com',
-    spotify: 'https://spotify.com',
-  },
-]
-
-const tempFeatures = [
-  {
-    id: 1,
-    title: 'Build better apps faster',
-    body: 'From effortless administration tools to robust compute, storage, and networking services, we provide an all-in-one cloud to help teams spend more time building better software for your customers.',
-    cta: 'Learn more about our products',
-    url: '/',
-    img: image,
-  },
-  {
-    id: 2,
-    title: 'Build better apps faster',
-    body: 'From effortless administration tools to robust compute, storage, and networking services, we provide an all-in-one cloud to help teams spend more time building better software for your customers.',
-    cta: 'Learn more about our products',
-    url: '/',
-    img: image,
-  },
-  {
-    id: 3,
-    title: 'Build better apps faster',
-    body: 'From effortless administration tools to robust compute, storage, and networking services, we provide an all-in-one cloud to help teams spend more time building better software for your customers.',
-    cta: 'Learn more about our products',
-    url: '/',
-    img: image,
-  },
-]
-
-const tempServices = [
-  { title: 'Produzione assistita', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x851' },
-  { title: 'Professionals netwok', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x852' },
-  { title: 'Promotion', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x853' },
-  { title: 'Live', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x854' },
-  { title: 'Photo & Video', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x854' },
-]
-
-
-const HomePage = ({
-  data: {
-    home: {
-      frontmatter: {
-        title, heroSection, featuresTitle, featuresList, descriptionImage, descriptionImageLinks,
-        team, services, latestNews, formCta, formCtaLinks, instagram, instagramPhotos,
+const HomePage = (props) => {
+  const {
+    data: {
+      home: {
+        frontmatter: {
+          title, heroSection, featuresTitle, featuresList, descriptionImage, descriptionImageLinks,
+          team, services, latestNews, formCta, instagram, instagramPhotos,
+        },
       },
+      users, servicesList,
     },
-  },
-}) => {
-  const ciao = 'ciao'
+  } = props
+  const teamList = users.edges.map(({ node: { id, frontmatter, fields: { slug } } }) => ({
+    id,
+    title: frontmatter.name,
+    avatar: frontmatter.avatar,
+    link: slug,
+    profession: frontmatter.userRole,
+    bio: frontmatter.body,
+    instagram: frontmatter.socials.instagram,
+    facebook: frontmatter.socials.facebook,
+    soundcloud: frontmatter.socials.soundcloud,
+    spotify: frontmatter.socials.spotify,
+  }))
+  const servicesRef = servicesList.edges.map(({ node: { id, frontmatter, fields: { slug } } }) => ({
+    id,
+    img: frontmatter.heroSection.image,
+    url: slug,
+    body: frontmatter.heroSection.payoff,
+    title: frontmatter.title,
+  }))
   return (
     <HomePageTemplate
       hero={{
@@ -128,7 +60,7 @@ const HomePage = ({
       services={{
         title: services.title,
         body: services.body,
-        list: tempServices,
+        list: servicesRef,
       }}
       latestNews={{
         title: latestNews.title,
@@ -203,19 +135,19 @@ HomePage.propTypes = {
       }),
     }),
 
-    team: PropTypes.shape({
+    users: PropTypes.shape({
       edges: PropTypes.arrayOf(PropTypes.shape({
         id: PropTypes.string,
+        fields: PropTypes.shape({
+          slug: PropTypes.string,
+        }),
         frontmatter: PropTypes.shape({
-          title: PropTypes.string,
+          name: PropTypes.string,
+          body: PropTypes.string,
+          userRole: PropTypes.string,
           avatar: PropTypes.string,
-          link: PropTypes.string,
-          profession: PropTypes.string,
-          isProfessional: PropTypes.bool,
-          shortBio: PropTypes.string,
-          longBio: PropTypes.string,
           socials: PropTypes.shape({
-            Instagram: PropTypes.string,
+            instagram: PropTypes.string,
             facebook: PropTypes.string,
             soundcloud: PropTypes.string,
             spotify: PropTypes.string,
@@ -223,16 +155,18 @@ HomePage.propTypes = {
         }),
       })),
     }),
-    services: PropTypes.shape({
+    servicesList: PropTypes.shape({
       edges: PropTypes.arrayOf(PropTypes.shape({
         id: PropTypes.string,
+        fields: PropTypes.shape({
+          slug: PropTypes.string,
+        }),
         frontmatter: PropTypes.shape({
           title: PropTypes.string,
-          subtitle: PropTypes.string,
-          avatar: PropTypes.string,
-          link: PropTypes.string,
-          shortDescription: PropTypes.string,
-          longDescription: PropTypes.string,
+          heroSection: PropTypes.shape({
+            image: PropTypes.string,
+            payoff: PropTypes.string,
+          }),
         }),
       })),
     }),
@@ -300,21 +234,21 @@ export const homePageQuery = graphql`
         }
       }
     }
-    team: allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "member"}, isProfessional: {eq: true}}}) {
+    
+    users: allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "user-page"}}} limit: 8) {
       edges {
         node {
           id
+          fields {
+            slug
+          }
           frontmatter {
-            title
+            name
+            body
+            userRole
             avatar
-            link
-            profession
-            isProfessional
-            shortBio
-            longBio
-            link
             socials {
-              Instagram
+              instagram
               facebook
               soundcloud
               spotify
@@ -323,17 +257,20 @@ export const homePageQuery = graphql`
         }
       }
     }
-    services: allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "service"}}}) {
+
+    servicesList: allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "single-service-page"}}}, limit: 5) {
       edges {
         node {
           id
+          fields {
+            slug
+          }
           frontmatter {
             title
-            subtitle
-            avatar
-            link
-            shortDescription
-            longDescription
+            heroSection {
+              image
+              payoff
+            }
           }
         }
       }

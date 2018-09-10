@@ -3,95 +3,29 @@ import PropTypes from 'prop-types'
 import image from '../img/acoustic-guitar.svg'
 import CommunityTemplate from './Wrappers/CommunityPageTemplate'
 
-const teamList = [
-  {
-    id: '1',
-    title: 'Paolo Mantini',
-    avatar: 'http://i.pravatar.cc/300',
-    link: '/community/jon-doe',
-    profession: 'Record producer & Clockbeats CEO',
-    bio: 'Paolo Mantini is a sound designer, musician, a poli-intrumentalist. He has an extensive network of professionals in the music industry worldwide.',
-    instagram: 'https://intstagram.com',
-    facebook: 'https://facebook.com',
-    soundcloud: 'https://soundcloud.com',
-    spotify: 'https://spotify.com',
-  },
-  {
-    id: '1',
-    title: 'Paolo Mantini',
-    avatar: 'http://i.pravatar.cc/300',
-    link: '/community/jon-doe',
-    profession: 'Record producer & Clockbeats CEO',
-    bio: 'Paolo Mantini is a sound designer, musician, a poli-intrumentalist. He has an extensive network of professionals in the music industry worldwide.',
-    instagram: 'https://intstagram.com',
-    facebook: 'https://facebook.com',
-    soundcloud: 'https://soundcloud.com',
-    spotify: 'https://spotify.com',
-  },
-  {
-    id: '1',
-    title: 'Paolo Mantini',
-    avatar: 'http://i.pravatar.cc/300',
-    link: '/community/jon-doe',
-    profession: 'Record producer & Clockbeats CEO',
-    bio: 'Paolo Mantini is a sound designer, musician, a poli-intrumentalist. He has an extensive network of professionals in the music industry worldwide.',
-    instagram: 'https://intstagram.com',
-    facebook: 'https://facebook.com',
-    soundcloud: 'https://soundcloud.com',
-    spotify: 'https://spotify.com',
-  },
-  {
-    id: '1',
-    title: 'Paolo Mantini',
-    avatar: 'http://i.pravatar.cc/300',
-    link: '/community/jon-doe',
-    profession: 'Record producer & Clockbeats CEO',
-    bio: 'Paolo Mantini is a sound designer, musician, a poli-intrumentalist. He has an extensive network of professionals in the music industry worldwide.',
-    instagram: 'https://intstagram.com',
-    facebook: 'https://facebook.com',
-    soundcloud: 'https://soundcloud.com',
-    spotify: 'https://spotify.com',
-  },
-]
-
-const features = [
-  {
-    id: 1,
-    title: 'Build better apps faster',
-    body: 'From effortless administration tools to robust compute, storage, and networking services, we provide an all-in-one cloud to help teams spend more time building better software for your customers.',
-    cta: 'Learn more about our products',
-    url: '/',
-    img: image,
-  },
-  {
-    id: 2,
-    title: 'Build better apps faster',
-    body: 'From effortless administration tools to robust compute, storage, and networking services, we provide an all-in-one cloud to help teams spend more time building better software for your customers.',
-    cta: 'Learn more about our products',
-    url: '/',
-    img: image,
-  },
-  {
-    id: 3,
-    title: 'Build better apps faster',
-    body: 'From effortless administration tools to robust compute, storage, and networking services, we provide an all-in-one cloud to help teams spend more time building better software for your customers.',
-    cta: 'Learn more about our products',
-    url: '/',
-    img: image,
-  },
-]
-
-
-const Community = ({
-  data: {
-    community: {
-      frontmatter: {
-        title, heroSection, featuresTitle, featuresList, team, latestNews, instagram, instagramPhotos,
+const Community = (props) => {
+  const {
+    data: {
+      community: {
+        frontmatter: {
+          title, heroSection, featuresTitle, featuresList, team, latestNews, instagram, instagramPhotos,
+        },
       },
+      users,
     },
-  },
-}) => {
-  const ciao = ''
+  } = props
+  const teamList = users.edges.map(({ node: { id, frontmatter, fields: { slug } } }) => ({
+    id,
+    title: frontmatter.name,
+    avatar: frontmatter.avatar,
+    link: slug,
+    profession: frontmatter.userRole,
+    bio: frontmatter.body,
+    instagram: frontmatter.socials.instagram,
+    facebook: frontmatter.socials.facebook,
+    soundcloud: frontmatter.socials.soundcloud,
+    spotify: frontmatter.socials.spotify,
+  }))
   return (
     <CommunityTemplate
       hero={{
@@ -154,6 +88,27 @@ Community.propTypes = {
         })),
       }),
     }),
+
+    users: PropTypes.shape({
+      edges: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.string,
+        fields: PropTypes.shape({
+          slug: PropTypes.string,
+        }),
+        frontmatter: PropTypes.shape({
+          name: PropTypes.string,
+          body: PropTypes.string,
+          userRole: PropTypes.string,
+          avatar: PropTypes.string,
+          socials: PropTypes.shape({
+            instagram: PropTypes.string,
+            facebook: PropTypes.string,
+            soundcloud: PropTypes.string,
+            spotify: PropTypes.string,
+          }),
+        }),
+      })),
+    }),
   }),
 }
 
@@ -189,6 +144,28 @@ export const communityQuery = graphql`
         }
         instagramPhotos {
           id
+        }
+      }
+    }
+    users: allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "user-page"}}}) {
+      edges {
+        node {
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            name
+            body
+            userRole
+            avatar
+            socials {
+              instagram
+              facebook
+              soundcloud
+              spotify
+            }
+          }
         }
       }
     }
