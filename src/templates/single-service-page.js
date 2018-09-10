@@ -1,11 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Content, { HTMLContent } from '../components/Content'
-import HeroSection from '../components/Sections/HeroSection'
-import HomeFeatures from '../components/Sections/HomeFeatures'
-import LatestNewsSection from '../components/Sections/LatestNewsSection'
-import InstagramSection from '../components/Sections/InstagramSection'
-import ServiceBody from '../components/ServiceBody'
+import SingleServiceTemplate from './Wrappers/SingleServiceTemplate'
 import image from '../img/acoustic-guitar.svg'
 
 const features = [
@@ -35,36 +30,42 @@ const features = [
   },
 ]
 
-export const SingleServiceTemplate = props => (
-  <div>
-    <HeroSection
-      title="Produzione assista"
-      payoff="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas adipisci quod voluptatem amet fugit assumenda ipsa dolore iusto repellendus nesciunt deserunt a saepe doloribus, aut est harum, necessitatibus ullam debitis!"
-      backgroundImage="https://source.unsplash.com/collection/2068121/1920x1080"
-    />
-
-    <HomeFeatures
-      title="Come funziona la produzione assistita?"
-      features={features}
-    />
-
-    <ServiceBody />
-
-    <LatestNewsSection
-      title="Scopri di piu"
-      tag="tutorial"
-    />
-
-    <InstagramSection instagramUsername="clockbeatsbrescia" photos={[{ id: 'BndRVOTAUsf' }, { id: 'BnXERRxFXXS' }, { id: 'BnUfbKpgire' }, { id: 'BnDt1NwDOaa' }]} />
-  </div>
-)
-
-SingleServiceTemplate.propTypes = {
-}
+const tempServices = [
+  { title: 'Produzione assistita', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x851' },
+  { title: 'Professionals netwok', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x852' },
+  { title: 'Promotion', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x853' },
+  { title: 'Live', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', url: '/services/produzione-assistita', img: 'https://source.unsplash.com/collection/2068121/850x854' },
+]
 
 const SingleService = props => (
   <SingleServiceTemplate
-    {...props}
+    hero={{
+      title: 'The simplest cloud platform for developers & teams',
+      payoff: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, illo! Possimus ipsam enim veritatis natus eveniet quae quo dolores harum.',
+      image: 'https://source.unsplash.com/collection/2068121/1920x1080',
+    }}
+    features={{
+      title: 'Lorem Ipsum dolor set inem ami mortes tua.',
+      list: features,
+    }}
+    services={{
+      title: 'What can we offer you?',
+      body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet itaque odit labore omnis assumenda libero aliquid ab explicabo! Pariatur, ut esse. Illum, fuga veniam omnis nostrum consequatur nam? Quae, inventore!',
+      list: tempServices,
+    }}
+    latestNews={{
+      title: 'Check out our cool Blog',
+      tag: 'tutorial',
+    }}
+    instagram={{
+      user: 'clockbeatsbrescia',
+      photos: [
+        { id: 'BndRVOTAUsf' },
+        { id: 'BnXERRxFXXS' },
+        { id: 'BnUfbKpgire' },
+        { id: 'BnDt1NwDOaa' },
+      ],
+    }}
   // contentComponent={HTMLContent}
   // title={post.frontmatter.title}
   // content={post.html}
