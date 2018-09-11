@@ -93,67 +93,67 @@ collections:
           name: ogUrl
           widget: string
 
-        - label: name
-          name: title
-          widget: string
+    - label: name
+      name: title
+      widget: string
 
-        - label: body
-          name: body
-          widget: text
+    - label: body
+      name: body
+      widget: text
 
-        - label: Cover Image
-          name: image
-          widget: image
+    - label: Cover Image
+      name: image
+      widget: image
 
-        - label: User Role/Professione
-          name: userRole
+    - label: User Role/Professione
+      name: userRole
+      widget: string
+    
+    - label: avatar
+      name: avatar
+      widget: image
+
+    - label: Blog section title
+      name: newsTitle
+      widget: string
+
+    - label: Instagram data 
+      name: instagram
+      widget: object
+      fields:
+        - label: username 
+          name: user
           widget: string
         
-        - label: avatar
-          name: avatar
-          widget: image
-
-        - label: Blog section title
-          name: newsTitle
+    - label: Instagram Photos 
+      name: instagramPhotos
+      widget: list
+      fields:
+        - label: ID 
+          name: id
           widget: string
-
-        - label: Instagram data 
+    
+    - label: User Socials
+      name: socials
+      widget: object
+      fields: 
+        - label: Instagram
           name: instagram
-          widget: object
-          fields:
-            - label: username 
-              name: user
-              widget: string
-            
-        - label: Instagram Photos 
-          name: instagramPhotos
-          widget: list
-          fields:
-            - label: ID 
-              name: id
-              widget: string
-        
-        - label: User Socials
-          name: socials
-          widget: object
-          fields: 
-            - label: Instagram
-              name: instagram
-              widget: string
-              required: false
-            - label: Facebook
-              name: facebook
-              widget: string
-              required: false
-            - label: Souncloud
-              name: soundcloud
-              widget: string
-              required: false
-            - label: Spotify
-              name: spotify
-              widget: string
-              required: false
-        
+          widget: string
+          required: false
+        - label: Facebook
+          name: facebook
+          widget: string
+          required: false
+        - label: Souncloud
+          name: soundcloud
+          widget: string
+          required: false
+        - label: Spotify
+          name: spotify
+          widget: string
+          required: false
+    
 
     
       
