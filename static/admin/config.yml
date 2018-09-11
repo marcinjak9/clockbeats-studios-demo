@@ -103,7 +103,7 @@ collections:
       widget: string
 
     - label: User Body
-      name: body
+      name: userBody
       widget: text
 
     - label: Cover Image
@@ -158,8 +158,6 @@ collections:
           name: spotify
           widget: string
           required: false
-    
-
     
       
   ######

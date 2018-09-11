@@ -62,7 +62,7 @@ export const userQuery = graphql`
       html
       frontmatter {
         title
-        body
+        body: userBody
         image
         userRole
         avatar

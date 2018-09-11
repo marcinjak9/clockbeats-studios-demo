@@ -244,7 +244,7 @@ export const homePageQuery = graphql`
           }
           frontmatter {
             title
-            body
+            body: userBody
             userRole
             avatar
             socials {

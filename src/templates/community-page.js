@@ -156,7 +156,7 @@ export const communityQuery = graphql`
           }
           frontmatter {
             title
-            body
+            body: userBody
             userRole
             avatar
             socials {
