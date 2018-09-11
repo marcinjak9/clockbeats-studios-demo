@@ -54,7 +54,7 @@ collections:
                 name: ogUrl
                 widget: string
   
-  - folder: src/pages/community
+  - folder: src/pages/community/list
     label: Community
     name: users
     create: true
