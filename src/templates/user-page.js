@@ -8,14 +8,14 @@ const UserPage = (props) => {
     data: {
       markdownRemark: {
         frontmatter: {
-          name, body, image, userRole, avatar, tag, newsTitle, instagram, instagramPhotos, socials,
+          title, body, image, userRole, avatar, tag, newsTitle, instagram, instagramPhotos, socials,
         },
       },
     },
   } = props
   return (
     <UserTemplate
-      name={name}
+      name={title}
       body={body}
       image={image}
       userRole={userRole}
@@ -35,7 +35,7 @@ UserPage.propTypes = {
     markdownRemark: PropTypes.shape({
       id: PropTypes.string,
       frontmatter: PropTypes.shape({
-        name: PropTypes.string,
+        title: PropTypes.string,
         body: PropTypes.string,
         image: PropTypes.string,
         userRole: PropTypes.string,
@@ -61,7 +61,7 @@ export const userQuery = graphql`
       id
       html
       frontmatter {
-        name
+        title
         body
         image
         userRole

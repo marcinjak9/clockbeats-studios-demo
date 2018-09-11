@@ -16,7 +16,7 @@ const Community = (props) => {
   } = props
   const teamList = users.edges.map(({ node: { id, frontmatter, fields: { slug } } }) => ({
     id,
-    title: frontmatter.name,
+    title: frontmatter.title,
     avatar: frontmatter.avatar,
     link: slug,
     profession: frontmatter.userRole,
@@ -96,7 +96,7 @@ Community.propTypes = {
           slug: PropTypes.string,
         }),
         frontmatter: PropTypes.shape({
-          name: PropTypes.string,
+          title: PropTypes.string,
           body: PropTypes.string,
           userRole: PropTypes.string,
           avatar: PropTypes.string,
@@ -155,7 +155,7 @@ export const communityQuery = graphql`
             slug
           }
           frontmatter {
-            name
+            title
             body
             userRole
             avatar
