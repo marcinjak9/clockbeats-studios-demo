@@ -318,7 +318,7 @@ collections:
       #####
       - file: src/pages/index.md
         label: HomePage
-        name: home
+        name: home-page
         fields:
           - label: Template Key
             name: templateKey
@@ -519,7 +519,7 @@ collections:
       #####
       - file: src/pages/services/index.md
         label: Services
-        name: services
+        name: services-page
         fields: 
           - label: Template Key
             name: templateKey
@@ -650,7 +650,7 @@ collections:
 
       - file: src/pages/community.md
         label: Community
-        name: community
+        name: community-page
         fields: 
           - label: Template Key
             name: templateKey
