@@ -6,200 +6,63 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "options"
-    label: "Options"
-    editor:
-      preview: false
-    files:
-      - file: "src/options/metadata/index.yml"
-        label: "Options"
-        name: "options"
-        create: true
-        extension: yml
-        fields:
-          - label: Data Name
-            name: dataName
-            widget: hidden
-            default: siteMetadata
 
-          - label: Header Metadata Information
-            name: headerMeta
+  ######
+  # OPTIONS
+  #####
+
+  - name: "options"
+    label: "Site Options"
+    files:
+      - file: src/options/index.md
+        label: SEO and site options
+        name: configuration
+        editor:
+          preview: false
+        fields: 
+          - label: Data type
+            name: dataType
+            widget: hidden
+            default: options-site
+
+          - label: SEO Section
+            name: generalSeoSection
             widget: object
             fields: 
-              - label: Site Title
-                name: metaTitle
+              - label: SEO Page title
+                name: seoTitle
                 widget: string
 
-              - label: Meta Description
-                name: metaDescription
+              - label: SEO Page description
+                name: seoDescription
                 widget: text
 
-              - label: Keywords
-                name: keywords
+              - label: SEO Keywords
+                name: seoKeywords
                 widget: string
 
-              - label: Open Graph url
+              - label: Open Graph Title
+                name: ogTitle
+                widget: string
+              
+              - label: Open Graph Image
+                name: ogImage
+                widget: image
+
+              - label: Open Graph Url
                 name: ogUrl
                 widget: string
 
-              - label: Open Graph site name
-                name: ogSiteName
-                widget: string
-
-              - label: Open Graph description
-                name: ogDescription
-                widget: text
-
-          - label: Social Information
-            name: socialInfos
-            widget: object
-            fields:
-              - label: Facebook Url
-                name: facebookUrl
-                widget: string
-
-              - label: Instagram Url
-                name: instagramUrl
-                widget: string
-
-              - label: Soundcloud Url
-                name: soundcloudUrl
-                widget: string
-
-              - label: Spotify Url
-                name: spotifyUrl
-                widget: string
-
-  - name: "members"
-    label: "Members"
-    folder: "src/options/members"
-    create: true
-    fields:
-      - label: "Template Key"
-        name: "templateKey"
-        widget: "hidden"
-        default: "member"
-        
-      - label: Name
-        ## title is required for folder collection
-        name: title
-        widget: string
-
-      - label: Avatar
-        name: avatar
-        widget: image
-
-      - label: Profession
-        name: profession
-        widget: string
-
-      - label: is Professional?
-        name: isProfessional
-        widget: boolean
-        default: false
-
-      - label: Short Bio
-        name: shortBio
-        widget: text
-      
-      - label: Long Bio
-        name: longBio
-        widget: markdown
-
-      - label: link
-        name: link
-        widget: string
-      
-      - label: socials
-        name: socials
-        widget: object
-        fields:
-          - label: Facebook
-            name: facebook
-            widget: string
-          - label: Instagram
-            name: Instagram
-            widget: string
-          - label: Soundcloud
-            name: soundcloud
-            widget: string
-          - label: Spotify
-            name: spotify
-            widget: string
-
-  - name: "projects"
-    label: "Projects"
-    folder: "src/options/projects"
-    create: true
-    fields:
-      - label: "Template Key"
-        name: "templateKey"
-        widget: "hidden"
-        default: "project"
-
-      - label: Title
-        ## title is required for folder collection
-        name: title
-        widget: string
-
-      - label: Image
-        name: avatar
-        widget: image
-
-      - label: Subtitle
-        name: subtitle
-        widget: string
-
-      - label: Short Description
-        name: shortDescription
-        widget: text
-      
-      - label: Long Description
-        name: longDescription
-        widget: markdown
-
-      - label: link
-        name: link
-        widget: string
-
-  - name: "services"
-    label: "Services"
-    folder: "src/options/services"
-    create: true
-    fields:
-      - label: "Template Key"
-        name: "templateKey"
-        widget: "hidden"
-        default: "service"
-      - label: Title
-        ## title is required for folder collection
-        name: title
-        widget: string
-
-      - label: Image
-        name: avatar
-        widget: image
-
-      - label: Subtitle
-        name: subtitle
-        widget: string
-
-      - label: Short Description
-        name: shortDescription
-        widget: text
-      
-      - label: Long Description
-        name: longDescription
-        widget: markdown
-
-      - label: link
-        name: link
-        widget: string
-
+  ######
+  # PAGES
+  #####
 
   - name: pages
     label: Pages
     files:
+      ######
+      # HOMEPAGE
+      #####
       - file: "src/pages/index.md"
         label: HomePage
         name: home
@@ -208,62 +71,163 @@ collections:
             name: "templateKey"
             widget: "hidden"
             default: "home-page"
-          - label: Hero Section
+
+          - label: Title (shown in Hero) 
+            name: title
+            widget: string
+
+          - label: Hero Section 
             name: heroSection
             widget: object
             fields:
-              - label: Hero Background Image
-                name: heroBackgroundImage
+              - label: Hero Background Image 
+                name: image
                 widget: image
 
-              - label: Hero Title
-                name: heroTitle
-                widget: string
-
-              - label: Hero Payoff
-                name: heroPayoff
+              - label: Hero Payoff 
+                name: payoff
                 widget: text
+
+              - label: Hero form title 
+                name: formTitle
+                widget: string
               
-              - label: Hero Cta Services List
-                name: HeroCtaServices
+              - label: Hero Cta Services List 
+                name: services
                 widget: list
                 fields: 
-
-                  - label: Service Name
+                  - label: Service Name 
                     name: HeroCtaServicesItem
                     widget: string
+              
+          - label: Features Section title 
+            name: featuresTitle
+            widget: string
 
-          - label: Description Section
-            name: homeDescriptionSection
-            widget: object
+          - label: Features Section items 
+            name: featuresList
+            widget: list
             fields:
-              - label: Description Title
-                name: homeDescriptionTitle
+
+              - label: Title 
+                name: title
                 widget: string
 
-              - label: Feature Columns
-                name: homeFeatureColumn
-                widget: list
-                fields: 
-                  - label: Feature Icon
-                    name: homeFeatureIcon
-                    widget: image
+              - label: Body 
+                name: body
+                widget: text
 
-                  - label: Feature Title
-                    name: homeFeatureTitle
-                    widget: string
+              - label: Cta text 
+                name: cta
+                widget: string
 
-                  - label: Feature Body
-                    name: homeFeatureBody
-                    widget: markdown
+              - label: Cta url 
+                name: url
+                widget: string
 
-                  - label: Feature Cta Text
-                    name: homeFeatureCtaText
-                    widget: string
+              - label: Image 
+                name: img
+                widget: image
+          - label: Description Image 
+            name: descriptionImage
+            widget: object
+            fields:
+              - label: Title 
+                name: title
+                widget: string
+              - label: Body 
+                name: body
+                widget: text
+              - label: Image 
+                name: image
+                widget: image
+          - label: Description Images Links 
+            name: descriptionImageLinks
+            widget: list
+            fields:
+              - label: Text 
+                name: text
+                widget: string
+              - label: url 
+                name: url
+                widget: string
 
-                  - label: Feature Cta Url
-                    name: homeFeatureCtaUrl
-                    widget: string
+          - label: Team Section 
+            name: team
+            widget: object
+            fields:
+              - label: Title 
+                name: title
+                widget: string
+              - label: Body 
+                name: body
+                widget: text
+
+          - label: Services Section 
+            name: services
+            widget: object
+            fields:
+              - label: Title 
+                name: title
+                widget: string
+              - label: Body 
+                name: body
+                widget: text
+
+          - label: Latest News 
+            name: latestNews
+            widget: object
+            fields:
+              - label: Title 
+                name: title
+                widget: string
+              - label: Blog Tag 
+                name: tag
+                widget: string
+
+          - label: Form Call to action 
+            name: formCta
+            widget: object
+            fields:
+              - label: Title 
+                name: title
+                widget: string
+              - label: Form Title 
+                name: formTitle
+                widget: string
+              - label: Image 
+                name: image
+                widget: image
+
+          - label: Form Call to action links 
+            name: formCtaLinks
+            widget: list
+            fields:
+              - label: Text 
+                name: text
+                widget: string
+              - label: url 
+                name: url
+                widget: string
+          - label: Instagram data 
+            name: instagram
+            widget: object
+            fields:
+              - label: username 
+                name: user
+                widget: string
+              
+          - label: Instagram Photos 
+            name: instagramPhotos
+            widget: list
+            fields:
+              - label: ID 
+                name: id
+                widget: string
+    
+      ######
+      # SERVICES
+      #####
       - file: src/pages/services/index.md
         label: Services
         name: services
@@ -272,3 +236,182 @@ collections:
             name: templateKey
             widget: hidden
             default: services-page
+          
+          - label: Title (shown in Hero) 
+            name: title
+            widget: string
+
+          - label: Hero Section 
+            name: heroSection
+            widget: object
+            fields:
+              - label: Hero Background Image 
+                name: image
+                widget: image
+
+              - label: Hero Payoff 
+                name: payoff
+                widget: text
+
+          - label: Features Section title 
+            name: featuresTitle
+            widget: string
+
+          - label: Features Section items 
+            name: featuresList
+            widget: list
+            fields:
+
+              - label: Title 
+                name: title
+                widget: string
+
+              - label: Body 
+                name: body
+                widget: text
+
+              - label: Cta text 
+                name: cta
+                widget: string
+
+              - label: Cta url 
+                name: url
+                widget: string
+
+              - label: Image 
+                name: img
+                widget: image
+
+          - label: Services Section 
+            name: services
+            widget: object
+            fields:
+              - label: Title 
+                name: title
+                widget: string
+              - label: Body 
+                name: body
+                widget: text
+
+          - label: Latest News 
+            name: latestNews
+            widget: object
+            fields:
+              - label: Title 
+                name: title
+                widget: string
+              - label: Blog Tag 
+                name: tag
+                widget: string
+
+          - label: Instagram data 
+            name: instagram
+            widget: object
+            fields:
+              - label: username 
+                name: user
+                widget: string
+              
+          - label: Instagram Photos 
+            name: instagramPhotos
+            widget: list
+            fields:
+              - label: ID 
+                name: id
+                widget: string
+
+      #######
+      # COMMUNITY
+      ######
+
+      - file: src/pages/community/index.md
+        label: Community
+        name: community
+        fields: 
+          - label: Template Key
+            name: templateKey
+            widget: hidden
+            default: community-page
+          
+          - label: Title (shown in Hero) 
+            name: title
+            widget: string
+
+          - label: Hero Section 
+            name: heroSection
+            widget: object
+            fields:
+              - label: Hero Background Image 
+                name: image
+                widget: image
+
+              - label: Hero Payoff 
+                name: payoff
+                widget: text
+
+          - label: Features Section title 
+            name: featuresTitle
+            widget: string
+
+          - label: Features Section items 
+            name: featuresList
+            widget: list
+            fields:
+
+              - label: Title 
+                name: title
+                widget: string
+
+              - label: Body 
+                name: body
+                widget: text
+
+              - label: Cta text 
+                name: cta
+                widget: string
+
+              - label: Cta url 
+                name: url
+                widget: string
+
+              - label: Image 
+                name: img
+                widget: image
+
+          - label: Team Section 
+            name: team
+            widget: object
+            fields:
+              - label: Title 
+                name: title
+                widget: string
+              - label: Body 
+                name: body
+                widget: text
+
+          - label: Latest News 
+            name: latestNews
+            widget: object
+            fields:
+              - label: Title 
+                name: title
+                widget: string
+              - label: Blog Tag 
+                name: tag
+                widget: string
+
+          - label: Instagram data 
+            name: instagram
+            widget: object
+            fields:
+              - label: username 
+                name: user
+                widget: string
+              
+          - label: Instagram Photos 
+            name: instagramPhotos
+            widget: list
+            fields:
+              - label: ID 
+                name: id
+                widget: string

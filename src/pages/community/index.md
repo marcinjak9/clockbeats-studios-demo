@@ -1,6 +1,5 @@
 ---
 templateKey: community-page
-path: /community
 
 title: Our rich community of Professionals & Artist
 heroSection:

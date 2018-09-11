@@ -1,7 +1,6 @@
 ---
 templateKey: home-page
 title: The simplest cloud platform for developers & teams
-
 heroSection:
   services:
     - HeroCtaServicesItem: Production
@@ -45,32 +44,26 @@ team:
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quae distinctio atque accusamus recusandae! 
     Neque, possimus? Architecto optio fugiat, laudantium obcaecati, repellendus porro quo, deleniti velit quasi ea 
     consectetur libero.
-
 services:
   title: What can we offer you?
   body: >-
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet itaque odit labore omnis assumenda
     libero aliquid ab explicabo! Pariatur, ut esse. Illum, fuga veniam omnis nostrum consequatur nam?
     Quae, inventore!
-
 latestNews:
   title: Check out our cool Blog
   tag: tutorial
-
 formCta:
   title: Lorem ipsum dolor set
   image: https://source.unsplash.com/collection/2068121/1280x850
   formTitle: Contact us for an estimate
-
 formCtaLinks:
   - text: First CTA
     url: /
   - text: Second CTA
     url: /
-
 instagram:
   user: clockbeatsbrescia
-
 instagramPhotos:
   - id: BndRVOTAUsf
   - id: BnXERRxFXXS
