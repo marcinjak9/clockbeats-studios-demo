@@ -1,7 +1,7 @@
 ---
 templateKey: user-page
 
-name: Jon Doe
+title: Jon Doe
 body: >-
   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure laboriosam placeat consequatur magnam omnis culpa libero, sed rem cum, maxime veniam praesentium beatae saepe. Tenetur animi eius laboriosam cum accusamus.
 image: https://source.unsplash.com/collection/2068121/1920x1080

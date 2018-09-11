@@ -13,12 +13,13 @@ collections:
 
   - name: "options"
     label: "Site Options"
+    editor:
+      preview: false
     files:
       - file: src/options/index.md
         label: SEO and site options
         name: configuration
-        editor:
-          preview: false
+        
         fields: 
           - label: Data type
             name: dataType
@@ -52,7 +53,110 @@ collections:
               - label: Open Graph Url
                 name: ogUrl
                 widget: string
+  
+  - folder: src/pages/community
+    label: Community
+    name: users
+    create: true
+    fields:
 
+    - label: SEO Section
+      name: seoSection
+      widget: object
+      fields: 
+        - label: Template Key
+          name: templateKey
+          widget: hidden
+          default: user-page
+
+        - label: SEO Page title
+          name: seoTitle
+          widget: string
+
+        - label: SEO Page description
+          name: seoDescription
+          widget: text
+
+        - label: SEO Keywords
+          name: seoKeywords
+          widget: string
+
+        - label: Open Graph Title
+          name: ogTitle
+          widget: string
+        
+        - label: Open Graph Image
+          name: ogImage
+          widget: image
+
+        - label: Open Graph Url
+          name: ogUrl
+          widget: string
+
+        - label: name
+          name: title
+          widget: string
+
+        - label: body
+          name: body
+          widget: text
+
+        - label: Cover Image
+          name: image
+          widget: image
+
+        - label: User Role/Professione
+          name: userRole
+          widget: string
+        
+        - label: avatar
+          name: avatar
+          widget: image
+
+        - label: Blog section title
+          name: newsTitle
+          widget: string
+
+        - label: Instagram data 
+          name: instagram
+          widget: object
+          fields:
+            - label: username 
+              name: user
+              widget: string
+            
+        - label: Instagram Photos 
+          name: instagramPhotos
+          widget: list
+          fields:
+            - label: ID 
+              name: id
+              widget: string
+        
+        - label: User Socials
+          name: socials
+          widget: object
+          fields: 
+            - label: Instagram
+              name: instagram
+              widget: string
+              required: false
+            - label: Facebook
+              name: facebook
+              widget: string
+              required: false
+            - label: Souncloud
+              name: soundcloud
+              widget: string
+              required: false
+            - label: Spotify
+              name: spotify
+              widget: string
+              required: false
+        
+
+    
+      
   ######
   # PAGES
   #####
@@ -71,6 +175,35 @@ collections:
             name: "templateKey"
             widget: "hidden"
             default: "home-page"
+          
+          - label: SEO Section
+            name: seoSection
+            widget: object
+            fields: 
+              - label: SEO Page title
+                name: seoTitle
+                widget: string
+
+              - label: SEO Page description
+                name: seoDescription
+                widget: text
+
+              - label: SEO Keywords
+                name: seoKeywords
+                widget: string
+
+              - label: Open Graph Title
+                name: ogTitle
+                widget: string
+              
+              - label: Open Graph Image
+                name: ogImage
+                widget: image
+
+              - label: Open Graph Url
+                name: ogUrl
+                widget: string
+
 
           - label: Title (shown in Hero) 
             name: title
@@ -236,6 +369,34 @@ collections:
             name: templateKey
             widget: hidden
             default: services-page
+
+          - label: SEO Section
+            name: seoSection
+            widget: object
+            fields: 
+              - label: SEO Page title
+                name: seoTitle
+                widget: string
+
+              - label: SEO Page description
+                name: seoDescription
+                widget: text
+
+              - label: SEO Keywords
+                name: seoKeywords
+                widget: string
+
+              - label: Open Graph Title
+                name: ogTitle
+                widget: string
+              
+              - label: Open Graph Image
+                name: ogImage
+                widget: image
+
+              - label: Open Graph Url
+                name: ogUrl
+                widget: string
           
           - label: Title (shown in Hero) 
             name: title
@@ -332,6 +493,34 @@ collections:
             name: templateKey
             widget: hidden
             default: community-page
+          
+          - label: SEO Section
+            name: seoSection
+            widget: object
+            fields: 
+              - label: SEO Page title
+                name: seoTitle
+                widget: string
+
+              - label: SEO Page description
+                name: seoDescription
+                widget: text
+
+              - label: SEO Keywords
+                name: seoKeywords
+                widget: string
+
+              - label: Open Graph Title
+                name: ogTitle
+                widget: string
+              
+              - label: Open Graph Image
+                name: ogImage
+                widget: image
+
+              - label: Open Graph Url
+                name: ogUrl
+                widget: string
           
           - label: Title (shown in Hero) 
             name: title
