@@ -11,8 +11,8 @@ collections:
   # OPTIONS
   #####
 
-  - name: "options"
-    label: "Site Options"
+  - name: options
+    label: Site Options
     editor:
       preview: false
     files:
@@ -54,11 +54,16 @@ collections:
                 name: ogUrl
                 widget: string
   
-  - folder: src/pages/community/list
+  - folder: src/pages/community
     label: Community
     name: users
     create: true
     fields:
+
+    - label: Template Key
+      name: templateKey
+      widget: hidden
+      default: user-page
 
     - label: SEO Section
       name: seoSection
@@ -97,7 +102,7 @@ collections:
       name: title
       widget: string
 
-    - label: body
+    - label: User Body
       name: body
       widget: text
 
@@ -167,14 +172,14 @@ collections:
       ######
       # HOMEPAGE
       #####
-      - file: "src/pages/index.md"
+      - file: src/pages/index.md
         label: HomePage
         name: home
         fields:
-          - label: "Template Key"
-            name: "templateKey"
-            widget: "hidden"
-            default: "home-page"
+          - label: Template Key
+            name: templateKey
+            widget: hidden
+            default: home-page
           
           - label: SEO Section
             name: seoSection
@@ -485,7 +490,7 @@ collections:
       # COMMUNITY
       ######
 
-      - file: src/pages/community/index.md
+      - file: src/pages/community.md
         label: Community
         name: community
         fields: 
