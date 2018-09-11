@@ -7,6 +7,7 @@ const UserPage = (props) => {
   const {
     data: {
       markdownRemark: {
+        html,
         frontmatter: {
           title, body, image, userRole, avatar, tag, newsTitle, instagram, instagramPhotos, socials,
         },
@@ -25,8 +26,8 @@ const UserPage = (props) => {
       instagram={instagram}
       instagramPhotos={instagramPhotos}
       socials={socials}
-    // contentComponent={HTMLContent}
-    // content={post.html}
+      contentComponent={HTMLContent}
+      content={html}
     />
   )
 }
@@ -34,6 +35,7 @@ UserPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       id: PropTypes.string,
+      html: PropTypes.string,
       frontmatter: PropTypes.shape({
         title: PropTypes.string,
         body: PropTypes.string,

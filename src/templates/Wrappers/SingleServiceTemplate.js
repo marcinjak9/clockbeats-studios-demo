@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+
 import Content, { HTMLContent } from '../../components/Content'
 import HeroSection from '../../components/Sections/HeroSection'
 import HomeFeatures from '../../components/Sections/HomeFeatures'
@@ -8,39 +9,41 @@ import InstagramSection from '../../components/Sections/InstagramSection'
 import ServicesSectionCards from '../../components/Sections/ServicesSectionCards'
 import ServiceBody from '../../components/ServiceBody'
 
-const SingleServiceTemplate = ({ hero, features, services, latestNews, instagram }) => (
-  <div>
-    <HeroSection
-      title={hero.title}
-      payoff={hero.payoff}
-      backgroundImage={hero.image}
-    />
+const SingleServiceTemplate = ({ hero, features, services, latestNews, instagram, contentComponent, content }) => {
+  const PostContent = contentComponent || Content
+  return (
+    <div>
+      <HeroSection
+        title={hero.title}
+        payoff={hero.payoff}
+        backgroundImage={hero.image}
+      />
 
-    <HomeFeatures
-      title={features.title}
-      features={features.list}
-    />
+      <HomeFeatures
+        title={features.title}
+        features={features.list}
+      />
 
-    <ServiceBody />
+      <ServiceBody content={content} contentComponent={PostContent} />
 
-    <LatestNewsSection
-      title={latestNews.title}
-      tag={latestNews.tag}
-    />
+      <LatestNewsSection
+        title={latestNews.title}
+        tag={latestNews.tag}
+      />
 
-    <ServicesSectionCards
-      title={services.title}
-      body={services.body}
-      services={services.list}
-    />
+      <ServicesSectionCards
+        title={services.title}
+        body={services.body}
+        services={services.list}
+      />
 
-    <InstagramSection
-      instagramUsername={instagram.user}
-      photos={instagram.photos}
-    />
-  </div>
-)
-
+      <InstagramSection
+        instagramUsername={instagram.user}
+        photos={instagram.photos}
+      />
+    </div>
+  )
+}
 SingleServiceTemplate.propTypes = {
   hero: PropTypes.shape({
     title: PropTypes.string,

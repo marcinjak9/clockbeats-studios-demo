@@ -6,30 +6,33 @@ import LatestNewsSection from '../../components/Sections/LatestNewsSection'
 import InstagramSection from '../../components/Sections/InstagramSection'
 import ServiceBody from '../../components/ServiceBody'
 
-const UserTemplate = ({ name, body, image, avatar, tag, newsTitle, userRole, instagram, instagramPhotos, socials }) => (
-  <div>
-    <UserHeader
-      title={name}
-      payoff={body}
-      backgroundImage={image}
-      userRole={userRole}
-      avatar={avatar}
-      socials={socials}
-    />
+const UserTemplate = ({ name, body, image, avatar, tag, newsTitle, userRole, instagram, instagramPhotos, socials, contentComponent, content }) => {
+  const PostContent = contentComponent || Content
+  return (
+    <div>
+      <UserHeader
+        title={name}
+        payoff={body}
+        backgroundImage={image}
+        userRole={userRole}
+        avatar={avatar}
+        socials={socials}
+      />
 
-    <ServiceBody />
+      <ServiceBody contentComponent={PostContent} content={content} />
 
-    <LatestNewsSection
-      title={newsTitle}
-      tag={tag}
-    />
+      <LatestNewsSection
+        title={newsTitle}
+        tag={tag}
+      />
 
-    <InstagramSection
-      instagramUsername={instagram.user}
-      photos={instagramPhotos}
-    />
-  </div>
-)
+      <InstagramSection
+        instagramUsername={instagram.user}
+        photos={instagramPhotos}
+      />
+    </div>
+  )
+}
 
 UserTemplate.propTypes = {
   name: PropTypes.string,

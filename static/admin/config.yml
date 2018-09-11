@@ -32,26 +32,32 @@ collections:
             fields: 
               - label: SEO Page title
                 name: seoTitle
+                required: false
                 widget: string
 
               - label: SEO Page description
                 name: seoDescription
+                required: false
                 widget: text
 
               - label: SEO Keywords
                 name: seoKeywords
+                required: false
                 widget: string
 
               - label: Open Graph Title
                 name: ogTitle
+                required: false
                 widget: string
               
               - label: Open Graph Image
                 name: ogImage
+                required: false
                 widget: image
 
               - label: Open Graph Url
                 name: ogUrl
+                required: false
                 widget: string
   
   - folder: src/pages/community
@@ -67,43 +73,45 @@ collections:
 
     - label: SEO Section
       name: seoSection
+      required: false
       widget: object
       fields: 
-        - label: Template Key
-          name: templateKey
-          widget: hidden
-          default: user-page
-
         - label: SEO Page title
           name: seoTitle
+          required: false
           widget: string
 
         - label: SEO Page description
           name: seoDescription
+          required: false
           widget: text
 
         - label: SEO Keywords
           name: seoKeywords
+          required: false
           widget: string
 
         - label: Open Graph Title
           name: ogTitle
+          required: false
           widget: string
         
         - label: Open Graph Image
           name: ogImage
+          required: false
           widget: image
 
         - label: Open Graph Url
           name: ogUrl
+          required: false
           widget: string
 
     - label: name
       name: title
       widget: string
 
-    - label: User Body
-      name: userBody
+    - label: Service Body
+      name: serviceBody
       widget: text
 
     - label: Cover Image
@@ -117,6 +125,10 @@ collections:
     - label: avatar
       name: avatar
       widget: image
+
+    - label: Service Full Content
+      name: body
+      widget: markdown
 
     - label: Blog section title
       name: newsTitle
@@ -158,6 +170,140 @@ collections:
           name: spotify
           widget: string
           required: false
+
+
+  - folder: src/pages/services
+    label: Services
+    name: services
+    create: true
+    fields:
+
+    - label: Template Key
+      name: templateKey
+      widget: hidden
+      default: single-service-page
+
+    - label: SEO Section
+      name: seoSection
+      required: false
+      widget: object
+      fields: 
+        - label: SEO Page title
+          name: seoTitle
+          required: false
+          widget: string
+
+        - label: SEO Page description
+          name: seoDescription
+          required: false
+          widget: text
+
+        - label: SEO Keywords
+          name: seoKeywords
+          required: false
+          widget: string
+
+        - label: Open Graph Title
+          name: ogTitle
+          required: false
+          widget: string
+        
+        - label: Open Graph Image
+          name: ogImage
+          required: false
+          widget: image
+
+        - label: Open Graph Url
+          name: ogUrl
+          required: false
+          widget: string
+
+    - label: Titolo
+      name: title
+      widget: string
+    
+    - label: Hero Section 
+      name: heroSection
+      widget: object
+      fields:
+        - label: Hero Background Image 
+          name: image
+          widget: image
+
+        - label: Hero Payoff 
+          name: payoff
+          widget: text
+
+    - label: Features Section title 
+      name: featuresTitle
+      widget: string
+
+    - label: Features Section items 
+      name: featuresList
+      widget: list
+      fields:
+
+        - label: Title 
+          name: title
+          widget: string
+
+        - label: Body 
+          name: body
+          widget: text
+
+        - label: Cta text 
+          name: cta
+          widget: string
+
+        - label: Cta url 
+          name: url
+          widget: string
+
+        - label: Image 
+          name: img
+          widget: image
+
+    - label: Service Full Content
+      name: body
+      widget: markdown
+
+    - label: Services
+      name: services
+      widget: object
+      fields:
+        - label: Title
+          name: title
+          widget: string
+        - label: Body
+          name: body
+          widget: text
+
+    - label: Blog section
+      name: latestNews
+      widget: object
+      fields:
+        - label: Title
+          name: title
+          widget: string
+        - label: Tag
+          name: tag
+          widget: string
+
+    - label: Instagram data 
+      name: instagram
+      widget: object
+      fields:
+        - label: username 
+          name: user
+          widget: string
+        
+    - label: Instagram Photos 
+      name: instagramPhotos
+      widget: list
+      fields:
+        - label: ID 
+          name: id
+          widget: string
     
       
   ######
@@ -181,30 +327,37 @@ collections:
           
           - label: SEO Section
             name: seoSection
+            required: false
             widget: object
             fields: 
               - label: SEO Page title
                 name: seoTitle
+                required: false
                 widget: string
 
               - label: SEO Page description
                 name: seoDescription
+                required: false
                 widget: text
 
               - label: SEO Keywords
                 name: seoKeywords
+                required: false
                 widget: string
 
               - label: Open Graph Title
                 name: ogTitle
+                required: false
                 widget: string
               
               - label: Open Graph Image
                 name: ogImage
+                required: false
                 widget: image
 
               - label: Open Graph Url
                 name: ogUrl
+                required: false
                 widget: string
 
 
@@ -375,30 +528,37 @@ collections:
 
           - label: SEO Section
             name: seoSection
+            required: false
             widget: object
             fields: 
               - label: SEO Page title
                 name: seoTitle
+                required: false
                 widget: string
 
               - label: SEO Page description
                 name: seoDescription
+                required: false
                 widget: text
 
               - label: SEO Keywords
                 name: seoKeywords
+                required: false
                 widget: string
 
               - label: Open Graph Title
                 name: ogTitle
+                required: false
                 widget: string
               
               - label: Open Graph Image
                 name: ogImage
+                required: false
                 widget: image
 
               - label: Open Graph Url
                 name: ogUrl
+                required: false
                 widget: string
           
           - label: Title (shown in Hero) 
@@ -499,30 +659,37 @@ collections:
           
           - label: SEO Section
             name: seoSection
+            required: false
             widget: object
             fields: 
               - label: SEO Page title
                 name: seoTitle
+                required: false
                 widget: string
 
               - label: SEO Page description
                 name: seoDescription
+                required: false
                 widget: text
 
               - label: SEO Keywords
                 name: seoKeywords
+                required: false
                 widget: string
 
               - label: Open Graph Title
                 name: ogTitle
+                required: false
                 widget: string
               
               - label: Open Graph Image
                 name: ogImage
+                required: false
                 widget: image
 
               - label: Open Graph Url
                 name: ogUrl
+                required: false
                 widget: string
           
           - label: Title (shown in Hero) 

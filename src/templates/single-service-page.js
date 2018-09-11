@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Content, { HTMLContent } from '../components/Content'
 import SingleServiceTemplate from './Wrappers/SingleServiceTemplate'
 import image from '../img/acoustic-guitar.svg'
 
@@ -7,6 +8,7 @@ const SingleService = (props) => {
   const {
     data: {
       markdownRemark: {
+        html,
         frontmatter: {
           title, heroSection, featuresTitle, featuresList, services, latestNews, instagram, instagramPhotos,
         },
@@ -45,9 +47,8 @@ const SingleService = (props) => {
         user: instagram.user,
         photos: instagramPhotos,
       }}
-    // contentComponent={HTMLContent}
-    // title={post.frontmatter.title}
-    // content={post.html}
+      contentComponent={HTMLContent}
+      content={html}
     />
   )
 }
@@ -55,6 +56,7 @@ const SingleService = (props) => {
 SingleService.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
+      html: PropTypes.string,
       frontmatter: PropTypes.shape({
         title: PropTypes.string,
         heroSection: PropTypes.shape({
@@ -109,6 +111,7 @@ export default SingleService
 export const singleServiceQuery = graphql`
   query SingleServiceQuery($id: String!) {
     markdownRemark(id: { eq: $id }) {
+      html
       frontmatter {
         title
         heroSection {
