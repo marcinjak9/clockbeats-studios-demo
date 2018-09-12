@@ -3,7 +3,7 @@ templateKey: home-page
 title: Clockbeats Studio Brescia
 heroSection:
   formTitle: Contact Us for an estimate
-  image: /img/plexus.jpg
+  image: /img/studio1b.jpg
   payoff: >-
     Clockbeats Studio Brescia è una struttura ubicata a Brescia, composta da
     studi di produzione, registrazione, post-produzione audio e video.
