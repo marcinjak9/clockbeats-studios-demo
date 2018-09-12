@@ -134,6 +134,10 @@ collections:
       name: newsTitle
       widget: string
 
+    - label: Blog post tag
+      name: tag
+      widget: string
+
     - label: Instagram data 
       name: instagram
       widget: object

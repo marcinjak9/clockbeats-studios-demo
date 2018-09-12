@@ -235,7 +235,7 @@ export const homePageQuery = graphql`
       }
     }
     
-    users: allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "user-page"}}} limit: 8) {
+    users: allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "user-page"}}} limit: 4) {
       edges {
         node {
           id

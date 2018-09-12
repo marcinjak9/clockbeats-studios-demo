@@ -18,18 +18,19 @@ const UserCard = ({ name, userRole, avatar, bio, url, instagram, spotify, soundc
           <i className="fas fa-angle-right" />
         </Link>
       </div>
+      <div className="social-icons">
+        <a href={instagram} target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-instagram" />
+        </a>
+        <a href={spotify} target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-spotify" />
+        </a>
+        <a href={soundcloud} target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-soundcloud" />
+        </a>
+      </div>
     </div>
-    <div className="social-icons">
-      <a href={instagram} target="_blank" rel="noopener noreferrer">
-        <i className="fab fa-instagram" />
-      </a>
-      <a href={spotify} target="_blank" rel="noopener noreferrer">
-        <i className="fab fa-spotify" />
-      </a>
-      <a href={soundcloud} target="_blank" rel="noopener noreferrer">
-        <i className="fab fa-soundcloud" />
-      </a>
-    </div>
+
   </div>
 )
 
