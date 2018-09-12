@@ -10,34 +10,34 @@ class HeroForm extends Component {
     success: false,
   }
 
-  // handleOnSubmit = (e) => {
-  //   console.log('submit')
-  //   e.preventDefault()
-  //   const { email, service } = this.state
-  //   console.log(email, service)
-  //   if (email && service) {
-  //     fetch('/', {
-  //       method: 'POST',
-  //       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-  //       body: this.encode({ 'form-name': 'contact-form', name, service }),
-  //     })
-  //       .then(() => {
-  //         alert('Success!')
-  //         this.setState({ email: '', service: '' })
-  //       })
-  //       .catch((error) => {
-  //         alert(error)
-  //         this.setState({ email: '', service: '' })
-  //       });
-  //   }
-  // }
+  handleOnSubmit = (e) => {
+    console.log('submit')
+    e.preventDefault()
+    const { email, service } = this.state
+    console.log(email, service)
+    if (email && service) {
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: this.encode({ 'form-name': 'contact-form', name, service }),
+      })
+        .then(() => {
+          alert('Success!')
+          this.setState({ email: '', service: '' })
+        })
+        .catch((error) => {
+          alert(error)
+          this.setState({ email: '', service: '' })
+        });
+    }
+  }
 
   render() {
     const { dropdownOptions, unstyled, title } = this.props
     const { email, service } = this.state
     if (unstyled) {
       return (
-        <form className="card-body d-flex flex-column justify-content-center text-center" onSubmit={this.handleSubmit}>
+        <form className="card-body d-flex flex-column justify-content-center text-center" name="contact-form" data-netlify="true" onSubmit={this.handleSubmit} data-netlify-honeypot="bot-field">
           <h2 className="form-title">{title}</h2>
           <Input type="email" value={email} placeholder="Email" onChange={e => this.setState({ email: e.target.value })} />
           <Dropdown value={service} placeholder="Select a service" dropdownOptions={dropdownOptions} onChange={e => this.setState({ service: e.target.value })} />
