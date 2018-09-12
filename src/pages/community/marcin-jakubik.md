@@ -3,7 +3,8 @@ templateKey: user-page
 seoSection:
   seoTitle: ''
 title: Marcin Jakubik
-serviceBody: Nerd since 1993 (born in 1994)...
+userBody: >- 
+  Nerd since 1993 (born in 1994)...
 image: /img/cb_map_mockup-2.jpg
 userRole: Full stack Developer
 avatar: /img/21368855_1700045736681203_8066659086080257016_o.jpg

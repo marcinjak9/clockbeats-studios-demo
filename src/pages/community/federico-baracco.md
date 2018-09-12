@@ -11,7 +11,7 @@ seoSection:
   seoKeywords: 'ciao, due, tre'
   seoTitle: Federico Baracco
 title: Federico Baracco
-serviceBody: sdasdasd
+userBody: sdasdasd
 image: 'https://source.unsplash.com/collection/2068121/1920x1080'
 userRole: Senior Producer
 avatar: 'http://i.pravatar.cc/300'

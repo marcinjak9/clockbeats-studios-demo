@@ -110,8 +110,8 @@ collections:
       name: title
       widget: string
 
-    - label: Service Body
-      name: serviceBody
+    - label: User Summary
+      name: userBody
       widget: text
 
     - label: Cover Image

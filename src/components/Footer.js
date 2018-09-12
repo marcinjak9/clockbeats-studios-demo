@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faInstagram, faSpotify, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faInstagram, faSpotify, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import logo from '../img/cb_logo.png'
 
 const Footer = () => (
@@ -9,19 +9,27 @@ const Footer = () => (
       <div className="row">
         <div className="col-md-4">
           <img src={logo} className="logo" alt="" />
-          <p>Clockbeats SRL ® 2018 All Rights Reserved | P.IVA IT03995070988</p>
+          <p>
+            Clockbeats SRL ® 2018 All Rights Reserved
+            <br />
+            P.IVA IT03995070988
+
+          </p>
           <div className="footer-icons">
-            <a href="/" target="_blank">
+            <a href="https://facebook.com/clockbeats" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faFacebook} />
             </a>
-            <a href="/" target="_blank">
+            <a href="https://instagram.com/clockbeats_official" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
-            <a href="/" target="_blank">
+            {/* <a href="/" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faSpotify} />
-            </a>
-            <a href="/" target="_blank">
+            </a> */}
+            <a href="https://twitter.com/clockbeats" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faTwitter} />
+            </a>
+            <a href="https://linkedin.com/company/clock-beats" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </div>
         </div>
@@ -32,16 +40,16 @@ const Footer = () => (
               <p className="title">Company</p>
               <ul className="list-unstyled">
                 <li>
-                  <a href="/">About</a>
+                  <a href="https://blog.clockbeats.com/about" target="_blank" rel="noopener noreferrer">About</a>
                 </li>
                 <li>
-                  <a href="/">Team</a>
+                  <a href="https://blog.clockbeats.com/team" target="_blank" rel="noopener noreferrer">Team</a>
                 </li>
                 <li>
-                  <a href="/">Blog</a>
+                  <a href="https://blog.clockbeats.com/" target="_blank" rel="noopener noreferrer">Blog</a>
                 </li>
                 <li>
-                  <a href="/">Events</a>
+                  <a href="https://store.clockbeats.com" target="_blank" rel="noopener noreferrer">Store</a>
                 </li>
               </ul>
             </div>
@@ -49,16 +57,16 @@ const Footer = () => (
               <p className="title">Studios</p>
               <ul className="list-unstyled">
                 <li>
-                  <a href="/">Brescia</a>
+                  Brescia
                 </li>
                 <li>
-                  <a href="/">Bergamo</a>
+                  Bergamo
                 </li>
                 <li>
-                  <a href="/">Milano</a>
+                  Milano
                 </li>
                 <li>
-                  <a href="/">Verona</a>
+                  <a href="https://blog.clockbeats.com/studios" className="brand-text" target="_blank" rel="noopener noreferrer">Many more</a>
                 </li>
               </ul>
             </div>
@@ -66,10 +74,10 @@ const Footer = () => (
               <p className="title">Support</p>
               <ul className="list-unstyled">
                 <li>
-                  <a href="/">FAQ</a>
+                  <a href="http://support.clockbeats.com" target="_blank" rel="noopener noreferrer">FAQ</a>
                 </li>
                 <li>
-                  <a href="/">Contact</a>
+                  <a href="/" target="_blank" rel="noopener noreferrer">Contact</a>
                 </li>
               </ul>
             </div>

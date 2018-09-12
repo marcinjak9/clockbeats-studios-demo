@@ -1,7 +1,7 @@
 ---
 templateKey: user-page
 title: Jon Doe
-serviceBody: Lorem ipsum
+userBody: Lorem ipsum
 image: 'https://source.unsplash.com/collection/2068121/1920x1080'
 userRole: Senior Producer
 avatar: 'http://i.pravatar.cc/300'
