@@ -11,7 +11,7 @@ const HomePage = (props) => {
           team, services, latestNews, formCta, instagram, instagramPhotos,
         },
       },
-      users, servicesList,
+      users, servicesList, config,
     },
   } = props
   const teamList = users.edges.map(({ node: { id, frontmatter, fields: { slug } } }) => ({
@@ -74,6 +74,9 @@ const HomePage = (props) => {
       instagram={{
         user: instagram.user,
         photos: instagramPhotos,
+      }}
+      config={{
+        branch: config.backend.branch,
       }}
     />
   )
@@ -169,6 +172,11 @@ HomePage.propTypes = {
           }),
         }),
       })),
+    }),
+    config: PropTypes.shape({
+      backend: PropTypes.shape({
+        branch: PropTypes.string,
+      }),
     }),
   }),
 }
@@ -273,6 +281,13 @@ export const homePageQuery = graphql`
             }
           }
         }
+      }
+    }
+
+    config: adminYaml {
+      id
+      backend {
+        branch
       }
     }
   }

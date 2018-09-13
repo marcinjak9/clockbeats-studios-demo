@@ -12,7 +12,7 @@ import HeroForm from '../../components/Sections/HeroForm'
 
 const HomePageTemplate = (props) => {
   const {
-    hero, features, descriptionImage, team, services, latestNews, formCta, instagram,
+    hero, features, descriptionImage, team, services, latestNews, formCta, instagram, config,
   } = props
   return (
     <div>
@@ -23,6 +23,7 @@ const HomePageTemplate = (props) => {
         dropdownOptions={hero.ctaServices}
         formTitle={hero.formTitle}
         showForm
+        formName={`${config.branch}-form`}
       />
       <HomeFeatures
         title={features.title}
@@ -142,6 +143,9 @@ HomePageTemplate.propTypes = {
     photos: PropTypes.arrayOf(PropTypes.shape({
       id: PropTypes.string,
     })),
+  }),
+  config: PropTypes.shape({
+    branch: PropTypes.string,
   }),
 }
 
