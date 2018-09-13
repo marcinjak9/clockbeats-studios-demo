@@ -1,6 +1,6 @@
 ---
 templateKey: home-page
-title: Clockbeats Studio Brescia
+title: Clockbeats Studio Brescia true Brescia
 heroSection:
   formTitle: Contact Us for an estimate Brescia
   image: /img/studio1b.jpg
