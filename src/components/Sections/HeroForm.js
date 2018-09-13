@@ -22,7 +22,7 @@ class HeroForm extends Component {
       fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: this.encode({ 'form-name': formName, name, service }),
+        body: this.encode({ 'form-name': formName, email, service }),
       })
         .then(() => {
           alert('Success!')
