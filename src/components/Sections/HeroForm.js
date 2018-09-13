@@ -10,11 +10,13 @@ class HeroForm extends Component {
     success: false,
   }
 
+  encode = data => Object.keys(data)
+    .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+    .join('&')
+
   handleOnSubmit = (e) => {
-    console.log('submit')
     e.preventDefault()
     const { email, service } = this.state
-    console.log(email, service)
     if (email && service) {
       fetch('/', {
         method: 'POST',
@@ -33,11 +35,11 @@ class HeroForm extends Component {
   }
 
   render() {
-    const { dropdownOptions, unstyled, title } = this.props
+    const { dropdownOptions, unstyled, title, formName } = this.props
     const { email, service } = this.state
     if (unstyled) {
       return (
-        <form className="card-body d-flex flex-column justify-content-center text-center" name="contact-form" data-netlify="true" onSubmit={this.handleSubmit} data-netlify-honeypot="bot-field">
+        <form className="card-body d-flex flex-column justify-content-center text-center" name={formName} data-netlify="true" onSubmit={e => this.handleSubmit(e)} data-netlify-honeypot="bot-field">
           <h2 className="form-title">{title}</h2>
           <Input type="email" value={email} placeholder="Email" onChange={e => this.setState({ email: e.target.value })} />
           <Dropdown value={service} placeholder="Select a service" dropdownOptions={dropdownOptions} onChange={e => this.setState({ service: e.target.value })} />
@@ -46,14 +48,14 @@ class HeroForm extends Component {
       )
     }
     return (
-      <form className="card form-card f-height">
-        <div className="card-body d-flex flex-column justify-content-center text-center">
+      <div className="card form-card f-height">
+        <form className="card-body d-flex flex-column justify-content-center text-center" name={formName} data-netlify="true" onSubmit={e => this.handleOnSubmit(e)} data-netlify-honeypot="bot-field">
           <h2 className="form-title">{title}</h2>
           <Input type="email" value={email} placeholder="Email" onChange={e => this.setState({ email: e.target.value })} />
           <Dropdown value={service} placeholder="Select a service" dropdownOptions={dropdownOptions} onChange={e => this.setState({ service: e.target.value })} />
           <button type="submit" className="btn btn-primary btn-block">Submit</button>
-        </div>
-      </form>
+        </form>
+      </div>
     )
   }
 }
@@ -64,6 +66,7 @@ HeroForm.propTypes = {
   dropdownOptions: PropTypes.arrayOf(PropTypes.shape({
     HeroCtaServicesItem: PropTypes.string,
   })),
+  formName: PropTypes.string,
 }
 
 export default HeroForm
