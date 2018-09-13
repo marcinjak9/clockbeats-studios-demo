@@ -4,7 +4,7 @@ import HeroForm from './HeroForm'
 
 const HeroSection = (props) => {
   const {
-    title, payoff, backgroundImage, dropdownOptions, formTitle, showForm,
+    title, payoff, backgroundImage, dropdownOptions, formTitle, showForm, formName,
   } = props
   return (
     <section className="container-fluid hero d-flex flex-column justify-content-center" style={{ backgroundImage: `url('${backgroundImage}')` }}>
@@ -19,7 +19,7 @@ const HeroSection = (props) => {
           </div>
           {showForm && (
             <div className="col-md-5">
-              <HeroForm dropdownOptions={dropdownOptions} title={formTitle} />
+              <HeroForm formName={formName} dropdownOptions={dropdownOptions} title={formTitle} />
             </div>
           )}
         </div>
@@ -37,6 +37,7 @@ HeroSection.propTypes = {
   })),
   formTitle: PropTypes.string,
   showForm: PropTypes.bool,
+  formName: PropTypes.string,
 }
 
 export default HeroSection
