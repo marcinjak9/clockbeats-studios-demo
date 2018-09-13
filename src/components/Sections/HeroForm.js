@@ -17,11 +17,12 @@ class HeroForm extends Component {
   handleOnSubmit = (e) => {
     e.preventDefault()
     const { email, service } = this.state
+    const { formName } = this.props
     if (email && service) {
       fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: this.encode({ 'form-name': 'contact-form', name, service }),
+        body: this.encode({ 'form-name': formName, name, service }),
       })
         .then(() => {
           alert('Success!')
