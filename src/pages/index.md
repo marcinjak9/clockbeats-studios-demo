@@ -36,22 +36,21 @@ featuresList:
       puntiamo, lavoriamo insieme le bozze, hai una presenza costante in quello
       che fai).
     cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
+    img: /img/912-squashed.jpg
     title: Ti supportiamo 3 mesi!
     url: /
   - body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
+      Lavoriamo allla traccia per 3 mesi (seguendo una lista di labels a seconda
+      del genere, dalla big alla media).
     cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
-    title: Build better apps faster
+    img: /img/208015-ozk0qo-952-squashed.jpg
+    title: Ti indirizziamo alla giusta label
     url: /
 descriptionImage:
   body: >-
     Lavoriamo allla traccia per 3 mesi (seguendo una lista di labels a seconda
     del genere, dalla big alla media).
-  image: 'https://source.unsplash.com/collection/2068121/1280x850'
+  image: /img/pablo.png
   title: Ti indirizziamo alla giusta label
 descriptionImageLinks:
   - text: First CTA
