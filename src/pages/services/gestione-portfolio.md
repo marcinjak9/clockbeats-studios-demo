@@ -1,38 +1,42 @@
 ---
 templateKey: single-service-page
 seoSection:
-  seoTitle: Prova
+  seoTitle: Produzione Assistita
 title: Produzione assistita
 heroSection:
-  image: /img/things-to-do-in-niagara-falls-1500x609.jpg
+  image: /img/pablo.png
   payoff: >-
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, illo!
-    Possimus ipsam enim veritatis natus eveniet quae quo dolores harum.
+    L’innovativa modalità Clockbeats di produzione assistita porterà l’artista a
+    focalizzarsi sul proprio lavoro con il fine di accelerare la propria
+    carriera musicale. Grazie al costante aiuto di un team di professionisti che
+    valuterà le migliori tecniche di insegnamento per garantire al proprio
+    cliente una base solida,l’artista disporrà degli strumenti più adatti per
+    entrare nel mondo dell’industria musicale. 
 featuresTitle: Lorem Ipsum dolor set inem ami mortes tua.
 featuresList:
-  - title: Build better apps faster
+  - cta: Learn more about our products
+    img: /img/acoustic-guitar.svg
+    title: Build better apps faster
     body: >-
       From effortless administration tools to robust compute, storage, and
       networking services, we provide an all-in-one cloud to help teams spend
       more time building better software for your customers.
-    cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
     url: /
-  - title: Build better apps faster
+  - cta: Learn more about our products
+    img: /img/acoustic-guitar.svg
+    title: Build better apps faster
     body: >-
       From effortless administration tools to robust compute, storage, and
       networking services, we provide an all-in-one cloud to help teams spend
       more time building better software for your customers.
-    cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
     url: /
-  - title: Build better apps faster
+  - cta: Learn more about our products
+    img: /img/acoustic-guitar.svg
+    title: Build better apps faster
     body: >-
       From effortless administration tools to robust compute, storage, and
       networking services, we provide an all-in-one cloud to help teams spend
       more time building better software for your customers.
-    cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
     url: /
 services:
   title: What can we offer you?
@@ -53,8 +57,10 @@ instagramPhotos:
 ---
 ## Cos'è la produzione assistita
 
-> Nessuno nasce imparato
+L’innovativa modalità Clockbeats di produzione assistita porterà l’artista a focalizzarsi sul proprio lavoro con il fine di accelerare la propria carriera musicale. 
 
-![Meeting space](/img/meeting-space.png)
+>
 
-Tutti sono fighi
+![Meeting space](/img/258528-p4hynw-223-squashed.jpg)
+
+Grazie al costante aiuto di un team di professionisti che valuterà le migliori tecniche di insegnamento per garantire al proprio cliente una base solida,l’artista disporrà degli strumenti più adatti per entrare nel mondo dell’industria musicale.
