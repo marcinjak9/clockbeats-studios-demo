@@ -2,7 +2,7 @@
 templateKey: home-page
 title: Clockbeats Studio Brescia
 heroSection:
-  formTitle: Lasciaci la tua mail con il servizio che ti interessa di più!
+  formTitle: Quale servizio ti interessa?
   image: /img/805-squashed.jpg
   payoff: >-
     Clockbeats Studio Brescia è una struttura ubicata a Brescia, composta da
