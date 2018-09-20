@@ -2,9 +2,9 @@
 templateKey: single-service-page
 title: 'Registrazione '
 heroSection:
-  image: /img/things-to-do-in-niagara-falls-1500x609.jpg
+  image: /img/912-squashed.jpg
   payoff: Il meglio della qualitá di registrazione che uno studio ti può offrire
-featuresTitle: Lorem Ipsum dolor set inem ami mortes tua.
+featuresTitle: Registra la tua prossima HIT
 featuresList:
   - cta: Learn more about our products
     img: /img/acoustic-guitar.svg
