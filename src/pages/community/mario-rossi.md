@@ -1,9 +1,7 @@
 ---
 templateKey: user-page
 title: Stefano Pigolotti
-userBody: |-
-  Junior Producer di Clockbeats Studio Brescia. 
-  I suoi generi di punta vanno dall Techno alla House.
+userBody: I suoi generi di punta vanno dall Techno alla House.
 image: /img/401945-pcrx3y-933-squashed.jpg
 userRole: Junior Producer
 avatar: /img/31729898_2110593308981305_6042006395392360448_n.jpg
