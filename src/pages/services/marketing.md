@@ -4,7 +4,7 @@ title: Track Placement
 heroSection:
   image: /img/270953-p5bmqp-240-squashed.jpg
   payoff: ''
-featuresTitle: Lorem Ipsum dolor set inem ami mortes tua.
+featuresTitle: Diventa un produttore di successo
 featuresList:
   - cta: Learn more about our products
     img: /img/acoustic-guitar.svg
