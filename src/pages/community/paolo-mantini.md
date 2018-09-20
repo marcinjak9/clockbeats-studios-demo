@@ -1,15 +1,13 @@
 ---
 templateKey: user-page
-path: /community/jon-doe
-
-title: Jon Doe
-userBody: >-
-  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure laboriosam placeat consequatur magnam omnis culpa libero, sed rem cum, maxime veniam praesentium beatae saepe. Tenetur animi eius laboriosam cum accusamus.
-image: https://source.unsplash.com/collection/2068121/1920x1080
-userRole: Senior Producer
-avatar: http://i.pravatar.cc/300
-tag: tutorial
+title: Nicholas Tango
+userBody: |
+  Video Maker e Fotografo professionista. 
+image: /img/271095-p5bn4d-980-squashed.jpg
+userRole: Videomaker
+avatar: /img/unknown.jpg
 newsTitle: Scopri di più
+tag: tutorial
 instagram:
   user: clockbeatsbrescia
 instagramPhotos:
@@ -18,8 +16,9 @@ instagramPhotos:
   - id: BnUfbKpgire
   - id: BnDt1NwDOaa
 socials:
-  instagram: https://instagram.com
-  facebook: https://instagram.com
-  soundcloud: https://instagram.com
-  spotify: https://instagram.com
+  facebook: 'https://instagram.com'
+  instagram: 'https://instagram.com'
+  soundcloud: 'https://instagram.com'
+  spotify: 'https://instagram.com'
 ---
+Video Maker e Fotografo professionista.
