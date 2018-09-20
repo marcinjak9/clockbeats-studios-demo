@@ -9,7 +9,9 @@ heroSection:
     singola persona o da un singolo studio di produzione musicale.
 featuresTitle: Accelera la tua carriera Musicale
 featuresList:
-  - body: ''
+  - body: >-
+      I nostri servizi sono completamente personalizzati a seconda del tuo
+      talento.
     cta: Learn more about our products
     img: /img/acoustic-guitar.svg
     title: Servizio Personalizzato
