@@ -4,10 +4,11 @@ seoSection:
   seoTitle: Ciao
 title: Studio Immagine
 heroSection:
-  image: /img/things-to-do-in-niagara-falls-1500x609.jpg
+  image: /img/5306-squashed.jpg
   payoff: >-
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, illo!
-    Possimus ipsam enim veritatis natus eveniet quae quo dolores harum.
+    Consigli sulla tua immagine, presenza sui social, marketing, mood e tutto
+    quello che è oltre alle produzioni, ma che nel 2018, costituisce una parte
+    fondamentale del progetto artista.
 featuresTitle: Lorem Ipsum dolor set inem ami mortes tua.
 featuresList:
   - cta: Learn more about our products
