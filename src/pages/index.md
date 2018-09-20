@@ -8,10 +8,12 @@ heroSection:
     Clockbeats Studio Brescia è una struttura ubicata a Brescia, composta da
     studi di produzione, registrazione, post-produzione audio e video.
   services:
-    - HeroCtaServicesItem: Production
+    - HeroCtaServicesItem: Produzione Assistita
     - HeroCtaServicesItem: Mix
     - HeroCtaServicesItem: Mastering
     - HeroCtaServicesItem: Support
+    - HeroCtaServicesItem: Registrazione
+    - HeroCtaServicesItem: Clocksession
 featuresTitle: Accelera la tua carriera musicale con noi!
 featuresList:
   - body: >-
