@@ -47,4 +47,4 @@ instagramPhotos:
   - id: BnUfbKpgire
   - id: BnDt1NwDOaa
 ---
-**Consigli** sulla tua immagine, presenza sui **social**, **marketing**, mood e tutto quello che è oltre alle produzioni, ma che nel 2018, **costituisce** una parte **fondamentale** del **progetto** artista.
+![](/img/5864-squashed.jpg)
