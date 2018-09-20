@@ -8,27 +8,18 @@ featuresTitle: Lorem Ipsum dolor set inem ami mortes tua.
 featuresList:
   - cta: Learn more about our products
     img: /img/acoustic-guitar.svg
-    title: Build better apps faster
-    body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
+    title: Mandaci la tua traccia
+    body: 'Inviaci la tua traccia a studio.brescia@clockbeats.com '
     url: /
   - cta: Learn more about our products
     img: /img/acoustic-guitar.svg
-    title: Build better apps faster
-    body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
+    title: Diventa un produttore di successo
+    body: Fare Release di successo ti porterá ad essere un produttore di successo.
     url: /
   - cta: Learn more about our products
     img: /img/acoustic-guitar.svg
-    title: Build better apps faster
-    body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
+    title: Fai una Release su una TOP Label
+    body: Contattaci per sapere di piú!
     url: /
 services:
   title: What can we offer you?
@@ -47,8 +38,6 @@ instagramPhotos:
   - id: BnUfbKpgire
   - id: BnDt1NwDOaa
 ---
-300 euro per la presa in carico (mando io alle labels a tuo nome, esattamente come fa un management).
+Prendiamo in carico (mandiamo alle labels a tuo nome, esattamente come fa un management).
 
-Lavoro la traccia per 3 mesi (seguendo una lista di labels a seconda del genere, dalla big alla media).
-
-Se la traccia viene accettata e tu accetti di firmare, l’ultimo pagamento è il seguente:
+Lavoriamo la traccia per 3 mesi (seguendo una lista di labels a seconda del genere, dalla big alla media).
