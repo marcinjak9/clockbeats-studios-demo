@@ -9,7 +9,7 @@ heroSection:
     L’innovativa modalità Clockbeats di produzione assistita porterà l’artista a
     focalizzarsi sul proprio lavoro con il fine di accelerare la propria
     carriera musicale. 
-featuresTitle: Lorem Ipsum dolor set inem ami mortes tua.
+featuresTitle: Accelera la tua carriera musicale adesso!
 featuresList:
   - cta: Learn more about our products
     img: /img/acoustic-guitar.svg
