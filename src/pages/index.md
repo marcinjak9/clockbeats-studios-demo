@@ -17,12 +17,9 @@ heroSection:
     - HeroCtaServicesItem: Social Managment
     - HeroCtaServicesItem: Promozione Spotify
     - HeroCtaServicesItem: Tutela Diritti D'Auture
-featuresTitle: Accelera la tua carriera musicale con noi!
+featuresTitle: Accelera la tua Carriera Musicale con noi!
 featuresList:
-  - body: >-
-      Per 300 euro (initial fee) ti creiamo un progetto in base alle tue uscite
-      ecc. per quanto riguarda i piazzamenti che dovresti fare nei 3 mesi
-      successivi (obiettivi).
+  - body: 'Ti creiamo un progetto in base alle tue prossime Release! '
     cta: Learn more about our products
     img: /img/acoustic-guitar.svg
     title: Creiamo il tuo progetto personalizzato
@@ -30,28 +27,28 @@ featuresList:
   - body: >-
       Dopo averti creato il progetto ad hoc, 
 
-      Per i 3 mesi successivi con 100 euro al mese avrai il nostro tutoring (ad
-      es. hai pronta per il piazzamento una traccia, se per noi non è di livello
-      di consigliamo come sistemarla a seconda del goal e dell’etichetta a cui
-      puntiamo, lavoriamo insieme le bozze, hai una presenza costante in quello
-      che fai).
+      Per i 3 mesi successivi avrai il nostro tutoring (ad es. hai pronta per il
+      piazzamento una traccia, se per noi non è di livello di consigliamo come
+      sistemarla a seconda del goal e dell’etichetta a cui puntiamo, lavoriamo
+      insieme le bozze, hai una presenza costante in quello che fai).
     cta: Learn more about our products
-    img: /img/912-squashed.jpg
+    img: /img/acoustic-guitar.svg
     title: Ti supportiamo 3 mesi!
     url: /
   - body: >-
-      Lavoriamo allla traccia per 3 mesi (seguendo una lista di labels a seconda
-      del genere, dalla big alla media).
+      Lavoriamo allla traccia per 3 mesi in modo che tu possa metterti in
+      contatto con la Label piú opportuna!
     cta: Learn more about our products
-    img: /img/208015-ozk0qo-952-squashed.jpg
+    img: /img/acoustic-guitar.svg
     title: Ti indirizziamo alla giusta label
     url: /
 descriptionImage:
-  body: >-
-    Lavoriamo allla traccia per 3 mesi (seguendo una lista di labels a seconda
-    del genere, dalla big alla media).
+  body: |-
+    • Un Servizio Dedicato e Personalizzato 
+    • Supporto a 360 gradi 
+    • Community e Collaborazioni
   image: /img/pablo.png
-  title: Ti indirizziamo alla giusta label
+  title: Con noi sei al sicuro
 descriptionImageLinks:
   - text: First CTA
     url: /
@@ -59,17 +56,20 @@ descriptionImageLinks:
     url: /
 team:
   body: >-
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quae distinctio
-    atque accusamus recusandae!  Neque, possimus? Architecto optio fugiat,
-    laudantium obcaecati, repellendus porro quo, deleniti velit quasi ea 
-    consectetur libero.
-  title: Check our super professional team!
+    L’innovativa modalità Clockbeats di produzione assistita porterà l’artista a
+    focalizzarsi sul proprio lavoro con il fine di accelerare la propria
+    carriera musicale. Grazie al costante aiuto di un team di professionisti che
+    valuterà le migliori tecniche di insegnamento per garantire al proprio
+    cliente una base solida,l’artista disporrà degli strumenti più adatti per
+    entrare nel mondo dell’industria musicale.
+  title: Il nostro Team!
 services:
   body: >-
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet itaque odit
-    labore omnis assumenda libero aliquid ab explicabo! Pariatur, ut esse.
-    Illum, fuga veniam omnis nostrum consequatur nam? Quae, inventore!
-  title: What can we offer you?
+    Grazie al costante aiuto di un team di professionisti che valuterà le
+    migliori tecniche di insegnamento per garantire al proprio cliente una base
+    solida,l’artista disporrà degli strumenti più adatti per entrare nel mondo
+    dell’industria musicale.
+  title: I nostri Servizi
 latestNews:
   tag: tutorial
   title: Check out our cool Blog
