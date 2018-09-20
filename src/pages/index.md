@@ -32,14 +32,14 @@ featuresList:
       sistemarla a seconda del goal e dell’etichetta a cui puntiamo, lavoriamo
       insieme le bozze, hai una presenza costante in quello che fai).
     cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
+    img: /img/rocket.png
     title: Ti supportiamo 3 mesi!
     url: /
   - body: >-
       Lavoriamo allla traccia per 3 mesi in modo che tu possa metterti in
       contatto con la Label piú opportuna!
     cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
+    img: /img/working.png
     title: Ti indirizziamo alla giusta label
     url: /
 descriptionImage:
