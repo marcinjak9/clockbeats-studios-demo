@@ -24,8 +24,8 @@ featuresList:
     title: Supporto a 360 gradi
     url: /
   - body: >
-      lockbeats è una realtà enorme, con più di 10 studi in Italia, un’orchestra
-      e un team preparato e con esperienza nel music business.
+      Clockbeats è una realtà enorme, con più di 10 studi in Italia,
+      un’orchestra e un team preparato e con esperienza nel music business.
 
       Attraverso i suoi servizi, garantisce ed offre un’accelerazione della
       carriera musicale, a qualsiasi livello tu sia parlando di capacità di
@@ -36,9 +36,6 @@ featuresList:
     url: /
 services:
   body: >-
-    Clockbeats è una realtà enorme, con più di 10 studi in Italia, un’orchestra
-    e un team preparato e con esperienza nel music business.
-
     Attraverso i suoi servizi, garantisce ed offre un’accelerazione della
     carriera musicale, a qualsiasi livello tu sia parlando di capacità di
     produzione.
