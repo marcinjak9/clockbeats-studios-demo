@@ -17,17 +17,19 @@ featuresList:
     title: Servizio Personalizzato
     url: /
   - body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
+      Ti supportiamo in ogni fase della creazione, dalla composizione alla post
+      produzione alla promozione!
     cta: Learn more about our products
     img: /img/acoustic-guitar.svg
     title: Supporto a 360 gradi
     url: /
-  - body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
+  - body: >
+      lockbeats è una realtà enorme, con più di 10 studi in Italia, un’orchestra
+      e un team preparato e con esperienza nel music business.
+
+      Attraverso i suoi servizi, garantisce ed offre un’accelerazione della
+      carriera musicale, a qualsiasi livello tu sia parlando di capacità di
+      produzione.
     cta: Learn more about our products
     img: /img/acoustic-guitar.svg
     title: Entra a far parte della nostra community!
