@@ -1,45 +1,53 @@
 ---
 templateKey: community-page
-
 title: Our rich community of Professionals & Artist
 heroSection:
-  image: https://source.unsplash.com/collection/2068121/1920x1080
-  payoff: >-
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas adipisci quod voluptatem amet fugit assumenda ipsa dolore iusto repellendus nesciunt deserunt a saepe doloribus, aut est harum, necessitatibus ullam debitis!
-  
-featuresTitle: An infrastructure experience development teams love with the features your business needs
+  image: 'https://source.unsplash.com/collection/2068121/1920x1080'
+  payoff: "clockbeats.com é stato studiato per collaborare a grandi distanze,\L a noi non serve vederti di persona!\L\n\L\nTi aiuteremo a capire cosa migliorare nelle tue produzioni direttamente dal nostro portale, evitando l’utilizzo di dropbox o altri servizi analoghi.\n                            "
+featuresTitle: >-
+  An infrastructure experience development teams love with the features your
+  business needs
 featuresList:
-  - title: Build better apps faster
-    body: From effortless administration tools to robust compute, storage, and networking services, we provide an all-in-one cloud to help teams spend more time building better software for your customers.
+  - body: >-
+      From effortless administration tools to robust compute, storage, and
+      networking services, we provide an all-in-one cloud to help teams spend
+      more time building better software for your customers.
     cta: Learn more about our products
-    url: /
     img: /img/acoustic-guitar.svg
-  - title: Build better apps faster
-    body: From effortless administration tools to robust compute, storage, and networking services, we provide an all-in-one cloud to help teams spend more time building better software for your customers.
+    title: Build better apps faster
+    url: /
+  - body: >-
+      From effortless administration tools to robust compute, storage, and
+      networking services, we provide an all-in-one cloud to help teams spend
+      more time building better software for your customers.
     cta: Learn more about our products
-    url: /
     img: /img/acoustic-guitar.svg
-  - title: Build better apps faster
-    body: From effortless administration tools to robust compute, storage, and networking services, we provide an all-in-one cloud to help teams spend more time building better software for your customers.
+    title: Build better apps faster
+    url: /
+  - body: >-
+      From effortless administration tools to robust compute, storage, and
+      networking services, we provide an all-in-one cloud to help teams spend
+      more time building better software for your customers.
     cta: Learn more about our products
-    url: /
     img: /img/acoustic-guitar.svg
+    title: Build better apps faster
+    url: /
 team:
-  title: Check our super professional team!
   body: >-
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quae distinctio atque accusamus recusandae! 
-    Neque, possimus? Architecto optio fugiat, laudantium obcaecati, repellendus porro quo, deleniti velit quasi ea 
-    consectetur libero.
+    Essendo Clockbeats un portale web, il nostro piano di marketing ci vede
+    presenti su tutti I portali. Abbiamo ovviamente un’esperienza importante
+    sulla promozione di pagine su Facebook (150k + Likes) , Instagram (40k++
+    Followers) e la nostra Mailing list (60k Artist mail)
+  title: Check our super professional team!
 latestNews:
-  title: Check out our cool Blog
   tag: tutorial
-
+  title: Check out our cool Blog
 instagram:
   user: clockbeatsbrescia
-
 instagramPhotos:
   - id: BndRVOTAUsf
   - id: BnXERRxFXXS
   - id: BnUfbKpgire
   - id: BnDt1NwDOaa
 ---
+
