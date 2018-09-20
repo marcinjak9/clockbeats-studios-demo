@@ -8,27 +8,20 @@ featuresTitle: Lorem Ipsum dolor set inem ami mortes tua.
 featuresList:
   - cta: Learn more about our products
     img: /img/acoustic-guitar.svg
-    title: Build better apps faster
-    body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
+    title: Prenota la tua sessione
+    body: Prenota la tua sessione in studio in pochissimi passaggi!
     url: /
   - cta: Learn more about our products
     img: /img/acoustic-guitar.svg
-    title: Build better apps faster
+    title: Entra in contatto con la nostra community
     body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
+      Entra in contatto con la nostra community e scegli il tuo Fonico
+      preferito!
     url: /
   - cta: Learn more about our products
     img: /img/acoustic-guitar.svg
-    title: Build better apps faster
-    body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
+    title: Registra la tua song!
+    body: Utilizza il meglio che la tecnlogia puó offrire nel mondo Audio!
     url: /
 services:
   title: What can we offer you?
