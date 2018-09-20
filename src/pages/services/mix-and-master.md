@@ -9,31 +9,26 @@ heroSection:
     Consigli sulla tua immagine, presenza sui social, marketing, mood e tutto
     quello che è oltre alle produzioni, ma che nel 2018, costituisce una parte
     fondamentale del progetto artista.
-featuresTitle: Lorem Ipsum dolor set inem ami mortes tua.
+featuresTitle: L'abito fa il monaco!
 featuresList:
   - cta: Learn more about our products
     img: /img/acoustic-guitar.svg
-    title: Build better apps faster
+    title: Entra in contatto con il nostro STAFF
     body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
+      Entra in contatto con il nostro Staff e prenota un appuntamento
+      telefonico!
     url: /
   - cta: Learn more about our products
     img: /img/acoustic-guitar.svg
-    title: Build better apps faster
-    body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
+    title: Costruisci la tua campagna Marketing
+    body: |-
+      Costruisci e personalizza la tua campagna Marketing. 
+      Il segreto per il successo é costruire al meglio la tua immagine artista.
     url: /
   - cta: Learn more about our products
     img: /img/acoustic-guitar.svg
-    title: Build better apps faster
-    body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
+    title: GO!
+    body: Entra nella music industry con la tua nuova immagine!
     url: /
 services:
   title: What can we offer you?
