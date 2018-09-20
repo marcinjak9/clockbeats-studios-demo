@@ -2,7 +2,7 @@
 templateKey: home-page
 title: Clockbeats Studio Brescia
 heroSection:
-  formTitle: Contact Us for an estimate Brescia
+  formTitle: Contattaci per un preventivo!
   image: /img/cbb_09.jpg
   payoff: >-
     Clockbeats Studio Brescia è una struttura ubicata a Brescia, composta da
