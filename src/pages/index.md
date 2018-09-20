@@ -64,7 +64,7 @@ team:
     valuterà le migliori tecniche di insegnamento per garantire al proprio
     cliente una base solida,l’artista disporrà degli strumenti più adatti per
     entrare nel mondo dell’industria musicale.
-  title: Il nostro Team!
+  title: La nostra community di Brescia
 services:
   body: >-
     Grazie al costante aiuto di un team di professionisti che valuterà le
