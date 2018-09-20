@@ -49,7 +49,7 @@ descriptionImage:
 
     Se il genere che fai non é affine al nostro standard verrai indirizzato in
     un altro studio.
-  image: /img/258528-p4hynw-223-squashed.jpg
+  image: /img/pablo.png
   title: Con noi sei al sicuro
 descriptionImageLinks:
   - text: First CTA
