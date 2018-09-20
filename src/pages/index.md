@@ -43,10 +43,12 @@ featuresList:
     title: Ti indirizziamo alla giusta label
     url: /
 descriptionImage:
-  body: |-
-    • Un Servizio Dedicato e Personalizzato 
-    • Supporto a 360 gradi 
-    • Community e Collaborazioni
+  body: >-
+    Siamo uno studio affiliato a clockbeats.com, siamo uno dei 15 studi in
+    Italia!
+
+    Se il genere che fai non é affine al nostro standard verrai indirizzato in
+    un altro studio.
   image: /img/pablo.png
   title: Con noi sei al sicuro
 descriptionImageLinks:
@@ -74,7 +76,7 @@ latestNews:
   tag: tutorial
   title: Check out our cool Blog
 formCta:
-  formTitle: Contact us for an estimate
+  formTitle: Contattaci subito per piú info!
   image: 'https://source.unsplash.com/collection/2068121/1280x850'
   title: Lorem ipsum dolor set
 formCtaLinks:
