@@ -11,31 +11,26 @@ heroSection:
     playlist come ben sai dipendono dal genere.
 
     Viene poi calcolato al momento dell’ascolto della demo.
-featuresTitle: Lorem Ipsum dolor set inem ami mortes tua.
+featuresTitle: Più PLAYS più FAN!
 featuresList:
   - cta: Learn more about our products
     img: /img/acoustic-guitar.svg
-    title: Build better apps faster
-    body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
+    title: Inviaci la tua song!
+    body: Invia la tua song a studio.brescia@clockbeats.com e scopri di piú!
     url: /
   - cta: Learn more about our products
     img: /img/acoustic-guitar.svg
-    title: Build better apps faster
+    title: Aumenta le tue Plays su Youtube!
     body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
+      Attraverso la nostra promozione potrai aumentare le tue plays anche su
+      Youtube!
     url: /
   - cta: Learn more about our products
     img: /img/acoustic-guitar.svg
-    title: Build better apps faster
-    body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
+    title: Aumenta le tue Plays su Spotify
+    body: |-
+      Aumenta le tue Plays su Spotify organicamente. 
+      NO FAKE!
     url: /
 services:
   title: What can we offer you?
