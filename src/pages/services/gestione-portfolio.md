@@ -52,8 +52,4 @@ instagramPhotos:
   - id: BnUfbKpgire
   - id: BnDt1NwDOaa
 ---
-**Cos'è la produzione assistita?**
-
-L’innovativa modalità Clockbeats di produzione assistita porterà l’artista a focalizzarsi sul proprio lavoro con il fine di accelerare la propria carriera musicale. 
-
-_Grazie al costante aiuto di un team di professionisti che valuterà le migliori tecniche di insegnamento per garantire al proprio cliente una base solida,l’artista disporrà degli strumenti più adatti per entrare nel mondo dell’industria musicale._
+![](/img/15133-squashed.jpg)
