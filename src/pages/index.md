@@ -14,23 +14,30 @@ heroSection:
     - HeroCtaServicesItem: Support
     - HeroCtaServicesItem: Registrazione
     - HeroCtaServicesItem: Clocksession
+    - HeroCtaServicesItem: Social Managment
+    - HeroCtaServicesItem: Promozione Spotify
+    - HeroCtaServicesItem: Tutela Diritti D'Auture
 featuresTitle: Accelera la tua carriera musicale con noi!
 featuresList:
   - body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
+      Per 300 euro (initial fee) ti creiamo un progetto in base alle tue uscite
+      ecc. per quanto riguarda i piazzamenti che dovresti fare nei 3 mesi
+      successivi (obiettivi).
     cta: Learn more about our products
     img: /img/acoustic-guitar.svg
-    title: 'Trova il tuo genere '
+    title: Creiamo il tuo progetto personalizzato
     url: /
   - body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
+      Dopo averti creato il progetto ad hoc, 
+
+      Per i 3 mesi successivi con 100 euro al mese avrai il nostro tutoring (ad
+      es. hai pronta per il piazzamento una traccia, se per noi non è di livello
+      di consigliamo come sistemarla a seconda del goal e dell’etichetta a cui
+      puntiamo, lavoriamo insieme le bozze, hai una presenza costante in quello
+      che fai).
     cta: Learn more about our products
     img: /img/acoustic-guitar.svg
-    title: Build better apps faster
+    title: Ti supportiamo 3 mesi!
     url: /
   - body: >-
       From effortless administration tools to robust compute, storage, and
@@ -42,12 +49,10 @@ featuresList:
     url: /
 descriptionImage:
   body: >-
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis magnam
-    accusamus quo praesentium natus pariatur eum, molestiae cumque aliquam
-    necessitatibus eligendi eos labore harum odio perferendis est modi
-    perspiciatis ex.
+    Lavoriamo allla traccia per 3 mesi (seguendo una lista di labels a seconda
+    del genere, dalla big alla media).
   image: 'https://source.unsplash.com/collection/2068121/1280x850'
-  title: Lorem ipsum dolor set
+  title: Ti indirizziamo alla giusta label
 descriptionImageLinks:
   - text: First CTA
     url: /
