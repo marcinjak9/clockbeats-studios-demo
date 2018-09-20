@@ -1,11 +1,12 @@
 ---
 templateKey: user-page
-title: Jon Doe
-userBody: Lorem ipsum
-image: 'https://source.unsplash.com/collection/2068121/1920x1080'
-userRole: Senior Producer
-avatar: 'http://i.pravatar.cc/300'
+title: Dario Oliva
+userBody: Studio Manager di Clockbeats Studio Brescia
+image: /img/401945-pcrx3y-933-squashed.jpg
+userRole: Studio Manager
+avatar: /img/17883520_273648139712910_5088655836243263959_n.jpg
 newsTitle: Scopri di più
+tag: clockbeatsbrescia
 instagram:
   user: clockbeatsbrescia
 instagramPhotos:
@@ -19,4 +20,4 @@ socials:
   soundcloud: 'https://instagram.com'
   spotify: 'https://instagram.com'
 ---
-## JON DOE IS THE BES
+Inizia il suo percorso con Clockbeats Studio Brescia nel 2010.
