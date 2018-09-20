@@ -31,7 +31,7 @@ team:
     presenti su tutti I portali. Abbiamo ovviamente un’esperienza importante
     sulla promozione di pagine su Facebook (150k + Likes) , Instagram (40k++
     Followers) e la nostra Mailing list (60k Artist mail)
-  title: Check our super professional team!
+  title: Scopri la nostra Community!
 latestNews:
   tag: tutorial
   title: Check out our cool Blog
