@@ -38,6 +38,4 @@ instagramPhotos:
   - id: BnUfbKpgire
   - id: BnDt1NwDOaa
 ---
-Prendiamo in carico (mandiamo alle labels a tuo nome, esattamente come fa un management).
-
-Lavoriamo la traccia per 3 mesi (seguendo una lista di labels a seconda del genere, dalla big alla media).
+![](/img/33-squashed.jpg)
