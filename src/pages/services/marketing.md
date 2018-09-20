@@ -3,9 +3,7 @@ templateKey: single-service-page
 title: Track Placement
 heroSection:
   image: /img/270953-p5bmqp-240-squashed.jpg
-  payoff: >
-    Prendiamo in carico la tua traccia, la lavoriamo per 3 mesi (seguendo una
-    lista di labels a seconda del genere, dalla big alla media).
+  payoff: ''
 featuresTitle: Lorem Ipsum dolor set inem ami mortes tua.
 featuresList:
   - cta: Learn more about our products
