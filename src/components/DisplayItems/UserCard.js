@@ -6,7 +6,7 @@ const UserCard = ({ name, userRole, avatar, bio, url, instagram, spotify, soundc
   <div className="col-md-3 card-wrapper">
     <div className="card user-card">
       <div className="card-body">
-        <img src={avatar} alt="" className="avatar shadow" />
+        <img src={avatar} alt="" className="avatar shadow animated-background" />
         <header>
           <p>{name}</p>
           <i>{userRole}</i>

@@ -8,7 +8,7 @@ const DescriptionImageSection = ({ title, body, links, image, cardRight, bodyCom
       ? (
         <div className="row">
           <div className="col-md-8 no-padding">
-            <img src={image} className="img-fluid image-card" alt="" />
+            <img src={image} className="img-fluid image-card animated-background" alt="" />
           </div>
           <div className="col-md-4 card absolute-card card-right">
             {bodyComponent
@@ -39,7 +39,7 @@ const DescriptionImageSection = ({ title, body, links, image, cardRight, bodyCom
           </div>
 
           <div className="col-md-8 no-padding">
-            <img src={image} className="img-fluid image-card" alt="" />
+            <img src={image} className="img-fluid image-card animated-background" alt="" />
           </div>
         </div>
       )

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Content, { HTMLContent } from '../../components/Content'
+// import Content, { HTMLContent } from '../../components/Content'
 import HeroSection from '../../components/Sections/HeroSection'
 import HomeFeatures from '../../components/Sections/HomeFeatures'
 import DescriptionImageSection from '../../components/Sections/DescriptionImageSection'
