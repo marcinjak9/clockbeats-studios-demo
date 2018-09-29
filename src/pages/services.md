@@ -35,10 +35,10 @@ featuresList:
     url: /
 services:
   body: >-
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet itaque odit
-    labore omnis assumenda libero aliquid ab explicabo! Pariatur, ut esse.
-    Illum, fuga veniam omnis nostrum consequatur nam? Quae, inventore!
-  title: What can we offer you?
+    Attraverso i suoi servizi, garantisce ed offre un’accelerazione della
+    carriera musicale, a qualsiasi livello tu sia parlando di capacità di
+    produzione.
+  title: I NOSTRI SERVIZI
 latestNews:
   tag: tutorial
   title: Check out our cool Blog
