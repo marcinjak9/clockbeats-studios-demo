@@ -2,13 +2,13 @@
 templateKey: home-page
 title: Clockbeats Studio Bergamo
 heroSection:
-  formTitle: Contact Us for an estimate
+  formTitle: Quale servizio ti interessa?
   image: /img/studio1b.jpg
   payoff: >-
-    Clockbeats Studio Brescia è una struttura ubicata a Brescia, composta da
-    studi di produzione, registrazione, post-produzione audio e video.
+    Clockbeats Studio Bergamo è una struttura ubicata a Bergamo, composta da uno
+    studio di Produzione/Mix-Master
   services:
-    - HeroCtaServicesItem: Production
+    - HeroCtaServicesItem: Produzione assistita
     - HeroCtaServicesItem: Mix
     - HeroCtaServicesItem: Mastering
     - HeroCtaServicesItem: Support
