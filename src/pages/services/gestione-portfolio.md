@@ -1,36 +1,36 @@
 ---
 templateKey: single-service-page
 seoSection:
-  seoTitle: Prova
+  seoTitle: ''
 title: Produzione assistita
 heroSection:
-  image: /img/things-to-do-in-niagara-falls-1500x609.jpg
+  image: /img/studio1b.jpg
   payoff: >-
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, illo!
-    Possimus ipsam enim veritatis natus eveniet quae quo dolores harum.
-featuresTitle: Lorem Ipsum dolor set inem ami mortes tua.
+    L’innovativa modalità Clockbeats di produzione assistita porterà l’artista a
+    focalizzarsi sul proprio lavoro con il fine di accelerare la propria
+    carriera musicale. 
+featuresTitle: Accelera la tua carriera musicale adesso!
 featuresList:
-  - title: Build better apps faster
+  - title: L'unico servizio targato Clockbeats
     body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
+      L'unica servizio che non troverai da nessuna parte se non nei nostri
+      studi!
     cta: Learn more about our products
     img: /img/acoustic-guitar.svg
     url: /
-  - title: Build better apps faster
+  - title: Crea tracce di successo
     body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
+      Impara a produrre mentre impari le tecniche piú nascoste di produzione con
+      uno dei nostri produttori assistiti.
     cta: Learn more about our products
     img: /img/acoustic-guitar.svg
     url: /
-  - title: Build better apps faster
+  - title: Impara le tecniche di produzione nascoste
     body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
+      Le figure professionali necessarie a produrre musica sono sempre più
+      numerose e pertanto riuscire a gestirle diventa molto dispendioso sia da
+      un punto di vista economico che di tempo. Concludi le tue tracce con i
+      migliori professionisti.
     cta: Learn more about our products
     img: /img/acoustic-guitar.svg
     url: /
