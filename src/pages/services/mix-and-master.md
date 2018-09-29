@@ -5,12 +5,7 @@ seoSection:
 title: Ghost Produzione
 heroSection:
   image: /img/things-to-do-in-niagara-falls-1500x609.jpg
-  payoff: >-
-    Offriamo servizi di produzione Ghost partendo da zero; attraverso soundcloud
-    o link di youtube, una traccia di riferimento è di solito sufficiente per
-    ottenere un punto di partenza per il tuo progetto. 
-
-    Essere specifici e capire la tua idea è fondamentale.
+  payoff: Offriamo servizi di produzione Ghost partendo da zero
 featuresTitle: Lorem Ipsum dolor set inem ami mortes tua.
 featuresList:
   - title: Build better apps faster
