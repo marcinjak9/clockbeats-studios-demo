@@ -50,11 +50,13 @@ descriptionImageLinks:
     url: /
 team:
   body: >-
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quae distinctio
-    atque accusamus recusandae!  Neque, possimus? Architecto optio fugiat,
-    laudantium obcaecati, repellendus porro quo, deleniti velit quasi ea 
-    consectetur libero.
-  title: Check our super professional team!
+    L’innovativa modalità Clockbeats di produzione assistita porterà l’artista a
+    focalizzarsi sul proprio lavoro con il fine di accelerare la propria
+    carriera musicale. Grazie al costante aiuto di un team di professionisti che
+    valuterà le migliori tecniche di insegnamento per garantire al proprio
+    cliente una base solida, l’artista disporrà degli strumenti più adatti per
+    entrare nel mondo dell’industria musicale.
+  title: La nostra community di Bergamo
 services:
   body: >-
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet itaque odit
