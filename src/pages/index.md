@@ -59,10 +59,11 @@ team:
   title: La nostra community di Bergamo
 services:
   body: >-
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet itaque odit
-    labore omnis assumenda libero aliquid ab explicabo! Pariatur, ut esse.
-    Illum, fuga veniam omnis nostrum consequatur nam? Quae, inventore!
-  title: What can we offer you?
+    Grazie al costante aiuto di un team di professionisti che valuterà le
+    migliori tecniche di insegnamento per garantire al proprio cliente una base
+    solida ,l’artista disporrà degli strumenti più adatti per entrare nel mondo
+    dell’industria musicale.
+  title: I nostri Servizi
 latestNews:
   tag: tutorial
   title: Check out our cool Blog
