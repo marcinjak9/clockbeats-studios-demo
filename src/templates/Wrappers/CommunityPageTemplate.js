@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Content, { HTMLContent } from '../../components/Content'
 import HeroSection from '../../components/Sections/HeroSection'
 import HomeFeatures from '../../components/Sections/HomeFeatures'
 import LatestNewsSection from '../../components/Sections/LatestNewsSection'
@@ -15,23 +14,19 @@ const CommunityTemplate = ({ hero, featuresList, featuresTitle, teamSection, lat
       backgroundImage={hero.image}
     // dropdownOptions={hero.ctaServices}
     />
-
     <HomeFeatures
       title={featuresTitle}
       features={featuresList}
     />
-
     <TeamSection
       title={teamSection.title}
       body={teamSection.body}
       team={teamSection.list}
     />
-
     <LatestNewsSection
       title={latestNews.title}
       tag={latestNews.tag}
     />
-
     <InstagramSection
       instagramUsername={instagram.user}
       photos={instagram.photos}
