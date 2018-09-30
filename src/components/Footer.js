@@ -79,6 +79,15 @@ const Footer = () => (
                 <li>
                   <a href="/" target="_blank" rel="noopener noreferrer">Contact</a>
                 </li>
+                <li style={{ marginTop: 10 }}>
+                  <a href="https://www.iubenda.com/privacy-policy/29112863" className="iubenda-nostyle no-brand iubenda-embed " title="Privacy Policy">Privacy Policy</a>
+                  <script type="text/javascript">{(function (w, d) {
+                    let loader = function () {
+                      let s = d.createElement('script'); var
+                        tag = d.getElementsByTagName('script')[0]; s.src = 'https://cdn.iubenda.com/iubenda.js'; tag.parentNode.insertBefore(s, tag);
+                    }; if (w.addEventListener) { w.addEventListener('load', loader, false); } else if (w.attachEvent) { w.attachEvent('onload', loader); } else { w.onload = loader; }
+                  }(window, document))}</script>
+                </li>
               </ul>
             </div>
           </div>
