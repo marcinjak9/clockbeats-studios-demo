@@ -29,7 +29,7 @@ class Navbar extends React.Component {
             <img src={logo} alt="" className="logo" />
           </Link>
 
-          <a className="d-flex align-items-center menu-button" onClick={this.triggerMenu}>
+          <a role="button" className="d-flex align-items-center menu-button" onClick={this.triggerMenu}>
             <div className="menu-text brand-text">MENU</div>
             {!visible && <FontAwesomeIcon icon={faBars} />}
             {visible && <FontAwesomeIcon icon={faTimes} />}

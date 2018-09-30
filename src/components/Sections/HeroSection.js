@@ -6,6 +6,9 @@ const HeroSection = (props) => {
   const {
     title, payoff, backgroundImage, dropdownOptions, formTitle, showForm, formName,
   } = props
+  if (!title) {
+    return null
+  }
   return (
     <section className="container-fluid hero d-flex flex-column justify-content-center" style={{ backgroundImage: `url('${backgroundImage}')` }}>
       <div className="hero-overlay" />
@@ -13,11 +16,15 @@ const HeroSection = (props) => {
         <div className="row">
           <div className="col-md-7 text-col">
             <h1 className="text-white title">{title}</h1>
-            <p className="lead text-white">
-              {payoff}
-            </p>
+            {payoff
+              && (
+                <p className="lead text-white">
+                  {payoff}
+                </p>
+              )
+            }
           </div>
-          {showForm && (
+          {showForm && formTitle && (
             <div className="col-md-5">
               <HeroForm formName={formName} dropdownOptions={dropdownOptions} title={formTitle} />
             </div>
