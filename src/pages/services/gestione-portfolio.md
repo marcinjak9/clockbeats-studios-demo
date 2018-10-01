@@ -4,7 +4,7 @@ seoSection:
   seoTitle: ''
 title: Produzione assistita
 heroSection:
-  image: /img/studio1b.jpg
+  image: /img/7060fb3e-f72a-4ff3-bca4-e4248e94e244-lan.jpeg
   payoff: >-
     L’innovativa modalità Clockbeats di produzione assistita porterà l’artista a
     focalizzarsi sul proprio lavoro con il fine di accelerare la propria
@@ -35,26 +35,13 @@ featuresList:
     img: /img/acoustic-guitar.svg
     url: /
 services:
-  title: What can we offer you?
-  body: >-
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet itaque odit
-    labore omnis assumenda libero aliquid ab explicabo! Pariatur, ut esse.
-    Illum, fuga veniam omnis nostrum consequatur nam? Quae, inventore!
+  title: ''
+  body: ''
 latestNews:
-  tag: tutorial
-  title: Check out our cool Blog
+  tag: ''
+  title: ''
 instagram:
-  user: clockbeatsbrescia
-instagramPhotos:
-  - id: BndRVOTAUsf
-  - id: BnXERRxFXXS
-  - id: BnUfbKpgire
-  - id: BnDt1NwDOaa
+  user: ''
+instagramPhotos: []
 ---
-## Cos'è la produzione assistita
-
-> Nessuno nasce imparato
-
-![Meeting space](/img/meeting-space.png)
-
-Tutti sono fighi
+![](/img/pablo.png)
