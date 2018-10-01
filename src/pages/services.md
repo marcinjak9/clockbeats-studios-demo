@@ -2,7 +2,7 @@
 templateKey: services-page
 title: I nostri servizi
 heroSection:
-  image: /img/things-to-do-in-niagara-falls-1500x609.jpg
+  image: /img/ff21c8fc-8b20-4e74-94c2-44b7396baeeb-lan-copia.jpeg
   payoff: >-
     Il processo di composizione musicale coinvolge una moltitudine di figure
     professionali con differenti competenze, con compiti non esercitabili da una
@@ -43,7 +43,7 @@ latestNews:
   tag: tutorial
   title: Check out our cool Blog
 instagram:
-  user: clockbeatsbrescia
+  user: clockbeatsbergamo
 instagramPhotos:
   - id: BndRVOTAUsf
   - id: BnXERRxFXXS
