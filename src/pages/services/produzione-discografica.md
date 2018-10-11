@@ -4,47 +4,40 @@ title: Remix
 heroSection:
   image: /img/things-to-do-in-niagara-falls-1500x609.jpg
   payoff: Conosci qualche traccia che desideri remixare?
-featuresTitle: Lorem Ipsum dolor set inem ami mortes tua.
+featuresTitle: Come possiamo aiutarti
 featuresList:
-  - title: Build better apps faster
-    body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
-    cta: Learn more about our products
+  - cta: Learn more about our products
     img: /img/acoustic-guitar.svg
+    title: Che generi vuoi produrre?
+    body: >-
+      Partiamo da quello che è il settore House generale e che ramifica altri
+      generi come, Tribal, Dance, tech house, techno, deep house, drum e Bass,
+      funky / groove/ jackin’ house etc etc.
     url: /
-  - title: Build better apps faster
-    body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
-    cta: Learn more about our products
+  - cta: Learn more about our products
     img: /img/acoustic-guitar.svg
+    title: Trattiamo anche altri Generi
+    body: >-
+      Trattiamo anche produzioni di beats rap, hip-hop e Rnb con possibilità di
+      registrazione cantato. 
     url: /
-  - title: Build better apps faster
-    body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
-    cta: Learn more about our products
+  - cta: Learn more about our products
     img: /img/acoustic-guitar.svg
+    title: 'Fissa un appuntamento '
+    body: Contattaci per entrare in contatto con il nostro TEAM di Esperti!
     url: /
 services:
-  title: What can we offer you?
-  body: >-
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet itaque odit
-    labore omnis assumenda libero aliquid ab explicabo! Pariatur, ut esse.
-    Illum, fuga veniam omnis nostrum consequatur nam? Quae, inventore!
+  title: ''
+  body: ''
 latestNews:
   tag: tutorial
   title: Check out our cool Blog
 instagram:
-  user: clockbeatsbrescia
+  user: clockbeatsbergamo
 instagramPhotos:
   - id: BndRVOTAUsf
   - id: BnXERRxFXXS
   - id: BnUfbKpgire
   - id: BnDt1NwDOaa
 ---
-
+Conosci qualche traccia che desideri remixare? Assicurati di fornirci un link di download con maggiori riferimenti come, (sample pack, midi, acappella, file audio generali etc). Se si tratta di un concorso, inviaci un link con maggior informazioni.

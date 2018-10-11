@@ -4,40 +4,36 @@ seoSection:
   seoTitle: ''
 title: Ghost Produzione
 heroSection:
-  image: /img/things-to-do-in-niagara-falls-1500x609.jpg
-  payoff: Offriamo servizi di produzione Ghost partendo da zero
+  image: /img/7060fb3e-f72a-4ff3-bca4-e4248e94e244-lan.jpeg
+  payoff: >-
+    Offriamo servizi di produzione Ghost partendo da zero; attraverso soundcloud
+    o link di youtube, una traccia di riferimento è di solito sufficiente per
+    ottenere un punto di partenza per il tuo progetto. Essere specifici e capire
+    la tua idea è fondamentale.
 featuresTitle: Lorem Ipsum dolor set inem ami mortes tua.
 featuresList:
-  - title: Build better apps faster
-    body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
-    cta: Learn more about our products
+  - cta: Learn more about our products
     img: /img/acoustic-guitar.svg
+    title: 'Mandaci il tuo riferimento via mail '
+    body: >-
+      attraverso soundcloud o link di youtube, una traccia di riferimento è di
+      solito sufficiente per ottenere un punto di partenza per il tuo progetto. 
     url: /
-  - title: Build better apps faster
-    body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
-    cta: Learn more about our products
+  - cta: Learn more about our products
     img: /img/acoustic-guitar.svg
+    title: Fissiamo un incontro telefonico
+    body: |-
+      Essere specifici e capire la tua idea è fondamentale.
+      Avere un contatto diretto aiuta nel capire meglio le tue esigenze!
     url: /
-  - title: Build better apps faster
-    body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
-    cta: Learn more about our products
+  - cta: Learn more about our products
     img: /img/acoustic-guitar.svg
+    title: Facciamo la differenza
+    body: Trasformiamo e curiamo la tua idea al meglio.
     url: /
 services:
-  title: What can we offer you?
-  body: >-
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet itaque odit
-    labore omnis assumenda libero aliquid ab explicabo! Pariatur, ut esse.
-    Illum, fuga veniam omnis nostrum consequatur nam? Quae, inventore!
+  title: ''
+  body: ''
 latestNews:
   tag: tutorial
   title: Check out our cool Blog
@@ -49,4 +45,4 @@ instagramPhotos:
   - id: BnUfbKpgire
   - id: BnDt1NwDOaa
 ---
-
+Offriamo servizi di produzione Ghost partendo da zero; attraverso soundcloud o link di youtube, una traccia di riferimento è di solito sufficiente per ottenere un punto di partenza per il tuo progetto. Essere specifici e capire la tua idea è fondamentale.
