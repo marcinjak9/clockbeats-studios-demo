@@ -5,7 +5,7 @@ seoSection:
 title: Ghost Produzione
 heroSection:
   image: /img/7060fb3e-f72a-4ff3-bca4-e4248e94e244-lan.jpeg
-  payoff: Offriamo servizi di produzione Ghost partendo da zero
+  payoff: Offriamo servizi di produzione Ghost produzione.
 featuresTitle: Lorem Ipsum dolor set inem ami mortes tua.
 featuresList:
   - cta: Learn more about our products
