@@ -33,12 +33,12 @@ featuresList:
     title: Ti indirizziamo alla giusta label
     url: /
 descriptionImage:
-  body: >-
-    Siamo uno studio affiliato a clockbeats.com, siamo uno dei 15 studi in
-    Italia! Se il genere che fai non é affine al nostro standard verrai
-    indirizzato in un altro studio.
+  body: >
+    Crediamo fortemente in un tipo di servizio che possa dare una soluzione più
+    semplice, dinamica, rappresentativa per il cliente ed in linea con il
+    mercato generale.
   image: 'https://source.unsplash.com/collection/2068121/1280x850'
-  title: Con noi sei al sicuro
+  title: In cosa crediamo
 descriptionImageLinks:
   - text: First CTA
     url: /
