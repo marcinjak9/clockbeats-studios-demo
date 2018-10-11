@@ -3,7 +3,7 @@ templateKey: home-page
 title: Clockbeats Studio Bergamo
 heroSection:
   formTitle: Quale servizio ti interessa?
-  image: /img/7060fb3e-f72a-4ff3-bca4-e4248e94e244-lan.jpeg
+  image: /img/jonatan-pie-1093692-unsplash.jpg
   payoff: >-
     Clockbeats Studio Bergamo è una struttura ubicata a Bergamo, composta da uno
     studio di Produzione/Mix-Master
