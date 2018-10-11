@@ -7,9 +7,7 @@ heroSection:
   image: /img/7060fb3e-f72a-4ff3-bca4-e4248e94e244-lan.jpeg
   payoff: >-
     Offriamo servizi di produzione Ghost partendo da zero; attraverso soundcloud
-    o link di youtube, una traccia di riferimento è di solito sufficiente per
-    ottenere un punto di partenza per il tuo progetto. Essere specifici e capire
-    la tua idea è fondamentale.
+    o link di youtube.
 featuresTitle: Lorem Ipsum dolor set inem ami mortes tua.
 featuresList:
   - cta: Learn more about our products
