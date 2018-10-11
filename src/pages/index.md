@@ -73,11 +73,11 @@ formCtaLinks:
   - text: Second CTA
     url: /
 instagram:
-  user: clockbeatsbrescia
+  user: clockbeatsbergam
 instagramPhotos:
-  - id: BndRVOTAUsf
-  - id: BnXERRxFXXS
-  - id: BnUfbKpgire
-  - id: BnDt1NwDOaa
+  - id: BmOqvWHH-gS
+  - id: Bl8nyi7FQtM
+  - id: BnZKVIZH3dp
+  - id: BnorPnunDu9
 ---
 
