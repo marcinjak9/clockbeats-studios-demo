@@ -25,6 +25,14 @@
     font-weight: 700
 
   .menu-button
+    background: none
+    color: inherit
+    border: none
+    padding: 0
+    font: inherit
+    cursor: pointer
+    outline: inherit
+
     cursor: pointer
     .svg-inline--fa
       width: 20px
@@ -75,6 +83,19 @@
             opacity: 1
             margin-left: 1rem
      
+.nav-transition-appear
+  opacity: 0.01
+
+.nav-transition-appear.nav-transition-appear-active 
+  opacity: 1
+  transition: opacity .3s ease-in
+
+.nav-transition-leave
+  opacity: 1
+
+.nav-transition-leave.nav-transition-leave-active 
+  opacity: 0.01
+  transition: opacity 300ms ease-in
 
 
 @include media-breakpoint-down(md)
