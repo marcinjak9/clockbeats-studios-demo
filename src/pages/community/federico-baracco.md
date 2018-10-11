@@ -11,7 +11,7 @@ title: Massimo Carlozzo
 userBody: Main Producer di Clockbeats Studio
 image: 'https://source.unsplash.com/collection/2068121/1920x1080'
 userRole: Senior Producer
-avatar: 'http://i.pravatar.cc/300'
+avatar: /img/21368855_1700045736681203_8066659086080257016_o.jpg
 newsTitle: Scopri di più
 tag: clockbeatsbergamo
 instagram:
