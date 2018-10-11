@@ -40,7 +40,7 @@ services:
     produzione.
   title: I NOSTRI SERVIZI
 latestNews:
-  tag: tutorial
+  tag: collaboration
   title: Check out our cool Blog
 instagram:
   user: clockbeatsbergamo
