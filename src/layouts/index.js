@@ -19,9 +19,9 @@ class TemplateWrapper extends Component {
     return (
       <div style={{ position: 'relative' }}>
         <Helmet>
-          <title>Clockbeats Brescia</title>
+          <title>Clockbeats Studio</title>
           <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" />
-
+          <link rel="icon" href="https://i1.wp.com/store.clockbeats.com/wp-content/uploads/2016/09/cb_logo_icon.png?fit=32%2C32&amp;ssl=1" sizes="32x32" />
         </Helmet>
         <Navbar />
         <div>{children()}</div>
