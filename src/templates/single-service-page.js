@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
 import SingleServiceTemplate from './Wrappers/SingleServiceTemplate'
-import image from '../img/acoustic-guitar.svg'
+import Layout from '../layouts'
 
 const SingleService = (props) => {
   const {
@@ -24,32 +24,34 @@ const SingleService = (props) => {
     title: frontmatter.title,
   }))
   return (
-    <SingleServiceTemplate
-      hero={{
-        title,
-        payoff: heroSection.payoff,
-        image: heroSection.image,
-      }}
-      features={{
-        title: featuresTitle,
-        list: featuresList,
-      }}
-      services={{
-        title: services.title,
-        body: services.body,
-        list: servicesRef,
-      }}
-      latestNews={{
-        title: latestNews.title,
-        tag: latestNews.tag,
-      }}
-      instagram={{
-        user: instagram.user,
-        photos: instagramPhotos,
-      }}
-      contentComponent={HTMLContent}
-      content={html}
-    />
+    <Layout>
+      <SingleServiceTemplate
+        hero={{
+          title,
+          payoff: heroSection.payoff,
+          image: heroSection.image,
+        }}
+        features={{
+          title: featuresTitle,
+          list: featuresList,
+        }}
+        services={{
+          title: services.title,
+          body: services.body,
+          list: servicesRef,
+        }}
+        latestNews={{
+          title: latestNews.title,
+          tag: latestNews.tag,
+        }}
+        instagram={{
+          user: instagram.user,
+          photos: instagramPhotos,
+        }}
+        contentComponent={HTMLContent}
+        content={html}
+      />
+    </Layout>
   )
 }
 

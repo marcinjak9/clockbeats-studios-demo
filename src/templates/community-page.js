@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import image from '../img/acoustic-guitar.svg'
 import CommunityTemplate from './Wrappers/CommunityPageTemplate'
+import Layout from '../layouts'
 
 const Community = (props) => {
   const {
@@ -27,31 +28,33 @@ const Community = (props) => {
     spotify: frontmatter.socials.spotify,
   }))
   return (
-    <CommunityTemplate
-      hero={{
-        title,
-        payoff: heroSection.payoff,
-        image: heroSection.image,
-      }}
-      featuresTitle={featuresTitle}
-      featuresList={featuresList}
-      teamSection={{
-        title: team.title,
-        body: team.body,
-        list: teamList,
-      }}
-      latestNews={{
-        title: latestNews.title,
-        tag: latestNews.tag,
-      }}
-      instagram={{
-        user: instagram.user,
-        photos: instagramPhotos,
-      }}
-    // contentComponent={HTMLContent}
-    // title={post.frontmatter.title}
-    // content={post.html}
-    />
+    <Layout>
+      <CommunityTemplate
+        hero={{
+          title,
+          payoff: heroSection.payoff,
+          image: heroSection.image,
+        }}
+        featuresTitle={featuresTitle}
+        featuresList={featuresList}
+        teamSection={{
+          title: team.title,
+          body: team.body,
+          list: teamList,
+        }}
+        latestNews={{
+          title: latestNews.title,
+          tag: latestNews.tag,
+        }}
+        instagram={{
+          user: instagram.user,
+          photos: instagramPhotos,
+        }}
+      // contentComponent={HTMLContent}
+      // title={post.frontmatter.title}
+      // content={post.html}
+      />
+    </Layout>
   )
 }
 

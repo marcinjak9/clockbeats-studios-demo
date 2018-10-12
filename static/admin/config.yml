@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: viterbo
+  branch: develop
 
 media_folder: static/img
 public_folder: /img
@@ -367,6 +367,7 @@ collections:
 
           - label: Title (shown in Hero) 
             name: title
+            hint: Titolo della pagina
             widget: string
 
           - label: Hero Section 

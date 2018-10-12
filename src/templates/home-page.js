@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import HomePageTemplate from './Wrappers/HomePageTemplate'
+import Layout from '../layouts'
 
 const HomePage = (props) => {
   const {
@@ -34,51 +35,53 @@ const HomePage = (props) => {
     title: frontmatter.title,
   }))
   return (
-    <HomePageTemplate
-      hero={{
-        title,
-        payoff: heroSection.payoff,
-        image: heroSection.image,
-        ctaServices: heroSection.services,
-        formTitle: heroSection.formTitle,
-      }}
-      features={{
-        title: featuresTitle,
-        list: featuresList,
-      }}
-      descriptionImage={{
-        title: descriptionImage.title,
-        body: descriptionImage.body,
-        image: descriptionImage.image,
-        links: descriptionImageLinks,
-      }}
-      team={{
-        title: team.title,
-        body: team.body,
-        list: teamList,
-      }}
-      services={{
-        title: services.title,
-        body: services.body,
-        list: servicesRef,
-      }}
-      latestNews={{
-        title: latestNews.title,
-        tag: latestNews.tag,
-      }}
-      formCta={{
-        title: formCta.title,
-        image: formCta.image,
-        formTitle: formCta.formTitle,
-      }}
-      instagram={{
-        user: instagram.user,
-        photos: instagramPhotos,
-      }}
-      config={{
-        branch: config.backend.branch,
-      }}
-    />
+    <Layout>
+      <HomePageTemplate
+        hero={{
+          title,
+          payoff: heroSection.payoff,
+          image: heroSection.image,
+          ctaServices: heroSection.services,
+          formTitle: heroSection.formTitle,
+        }}
+        features={{
+          title: featuresTitle,
+          list: featuresList,
+        }}
+        descriptionImage={{
+          title: descriptionImage.title,
+          body: descriptionImage.body,
+          image: descriptionImage.image,
+          links: descriptionImageLinks,
+        }}
+        team={{
+          title: team.title,
+          body: team.body,
+          list: teamList,
+        }}
+        services={{
+          title: services.title,
+          body: services.body,
+          list: servicesRef,
+        }}
+        latestNews={{
+          title: latestNews.title,
+          tag: latestNews.tag,
+        }}
+        formCta={{
+          title: formCta.title,
+          image: formCta.image,
+          formTitle: formCta.formTitle,
+        }}
+        instagram={{
+          user: instagram.user,
+          photos: instagramPhotos,
+        }}
+        config={{
+          branch: config.backend.branch,
+        }}
+      />
+    </Layout>
   )
 }
 

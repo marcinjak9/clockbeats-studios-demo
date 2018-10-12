@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
 import UserTemplate from './Wrappers/UserTemplate'
+import Layout from '../layouts'
 
 const UserPage = (props) => {
   const {
@@ -15,20 +16,22 @@ const UserPage = (props) => {
     },
   } = props
   return (
-    <UserTemplate
-      name={title}
-      body={body}
-      image={image}
-      userRole={userRole}
-      avatar={avatar}
-      tag={tag}
-      newsTitle={newsTitle}
-      instagram={instagram}
-      instagramPhotos={instagramPhotos}
-      socials={socials}
-      contentComponent={HTMLContent}
-      content={html}
-    />
+    <Layout>
+      <UserTemplate
+        name={title}
+        body={body}
+        image={image}
+        userRole={userRole}
+        avatar={avatar}
+        tag={tag}
+        newsTitle={newsTitle}
+        instagram={instagram}
+        instagramPhotos={instagramPhotos}
+        socials={socials}
+        contentComponent={HTMLContent}
+        content={html}
+      />
+    </Layout>
   )
 }
 UserPage.propTypes = {

@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import ServicesTemplate from './Wrappers/ServicesTemplate'
+import Layout from '../layouts'
 
 const Services = (props) => {
   const {
@@ -21,30 +22,32 @@ const Services = (props) => {
     title: frontmatter.title,
   }))
   return (
-    <ServicesTemplate
-      hero={{
-        title,
-        payoff: heroSection.payoff,
-        image: heroSection.image,
-      }}
-      features={{
-        title: featuresTitle,
-        list: featuresList,
-      }}
-      services={{
-        title: services.title,
-        body: services.body,
-        list: servicesRef,
-      }}
-      latestNews={{
-        title: latestNews.title,
-        tag: latestNews.tag,
-      }}
-      instagram={{
-        user: instagram.user,
-        photos: instagramPhotos,
-      }}
-    />
+    <Layout>
+      <ServicesTemplate
+        hero={{
+          title,
+          payoff: heroSection.payoff,
+          image: heroSection.image,
+        }}
+        features={{
+          title: featuresTitle,
+          list: featuresList,
+        }}
+        services={{
+          title: services.title,
+          body: services.body,
+          list: servicesRef,
+        }}
+        latestNews={{
+          title: latestNews.title,
+          tag: latestNews.tag,
+        }}
+        instagram={{
+          user: instagram.user,
+          photos: instagramPhotos,
+        }}
+      />
+    </Layout>
   )
 }
 

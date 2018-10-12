@@ -24,16 +24,11 @@ class TemplateWrapper extends Component {
           <link rel="icon" href="https://i1.wp.com/store.clockbeats.com/wp-content/uploads/2016/09/cb_logo_icon.png?fit=32%2C32&amp;ssl=1" sizes="32x32" />
         </Helmet>
         <Navbar />
-        <div>{children()}</div>
+        <div>{children}</div>
         <Footer />
       </div>
     )
   }
-}
-
-
-TemplateWrapper.propTypes = {
-  children: PropTypes.func,
 }
 
 export default TemplateWrapper
