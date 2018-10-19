@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
 import Content, { HTMLContent } from '../components/Content'
 import UserTemplate from './Wrappers/UserTemplate'
 import Layout from '../layouts'

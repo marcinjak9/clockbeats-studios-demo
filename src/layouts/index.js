@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
 
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'

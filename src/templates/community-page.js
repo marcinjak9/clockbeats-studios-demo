@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
 import image from '../img/acoustic-guitar.svg'
 import CommunityTemplate from './Wrappers/CommunityPageTemplate'
 import Layout from '../layouts'

@@ -6,4 +6,4 @@ import CommunityPagePreview from './preview-templates/CommunityPagePreview'
 import '../layouts/all.sass'
 
 CMS.registerPreviewTemplate('home', HomePagePreview)
-CMS.registerPreviewTemplate('community-page', CommunityPagePreview)
+CMS.registerPreviewTemplate('community', CommunityPagePreview)
