@@ -1,6 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
+import Helmet from 'react-helmet'
 import HomePageTemplate from './Wrappers/HomePageTemplate'
+import Layout from '../layouts'
 
 const HomePage = (props) => {
   const {
@@ -8,7 +11,7 @@ const HomePage = (props) => {
       home: {
         frontmatter: {
           title, heroSection, featuresTitle, featuresList, descriptionImage, descriptionImageLinks,
-          team, services, latestNews, formCta, instagram, instagramPhotos,
+          team, services, latestNews, formCta, instagram, instagramPhotos, seoSection,
         },
       },
       users, servicesList, config,
@@ -34,51 +37,62 @@ const HomePage = (props) => {
     title: frontmatter.title,
   }))
   return (
-    <HomePageTemplate
-      hero={{
-        title,
-        payoff: heroSection.payoff,
-        image: heroSection.image,
-        ctaServices: heroSection.services,
-        formTitle: heroSection.formTitle,
-      }}
-      features={{
-        title: featuresTitle,
-        list: featuresList,
-      }}
-      descriptionImage={{
-        title: descriptionImage.title,
-        body: descriptionImage.body,
-        image: descriptionImage.image,
-        links: descriptionImageLinks,
-      }}
-      team={{
-        title: team.title,
-        body: team.body,
-        list: teamList,
-      }}
-      services={{
-        title: services.title,
-        body: services.body,
-        list: servicesRef,
-      }}
-      latestNews={{
-        title: latestNews.title,
-        tag: latestNews.tag,
-      }}
-      formCta={{
-        title: formCta.title,
-        image: formCta.image,
-        formTitle: formCta.formTitle,
-      }}
-      instagram={{
-        user: instagram.user,
-        photos: instagramPhotos,
-      }}
-      config={{
-        branch: config.backend.branch,
-      }}
-    />
+    <Layout>
+      {seoSection && (
+        <Helmet>
+          {seoSection.seoTitle && <title>{seoSection.seoTitle}</title>}
+          {seoSection.seoDescription && <meta name="description" content={seoSection.seoDescription} />}
+          {seoSection.ogTitle && <meta property="og:title" content={seoSection.ogTitle} />}
+          {seoSection.ogUrl && <meta property="og:url" content={seoSection.ogUrl} />}
+          {seoSection.ogImage && <meta property="og:image" content={seoSection.ogImage} />}
+        </Helmet>
+      )}
+      <HomePageTemplate
+        hero={{
+          title,
+          payoff: heroSection.payoff,
+          image: heroSection.image,
+          ctaServices: heroSection.services,
+          formTitle: heroSection.formTitle,
+        }}
+        features={{
+          title: featuresTitle,
+          list: featuresList,
+        }}
+        descriptionImage={{
+          title: descriptionImage.title,
+          body: descriptionImage.body,
+          image: descriptionImage.image,
+          links: descriptionImageLinks,
+        }}
+        team={{
+          title: team.title,
+          body: team.body,
+          list: teamList,
+        }}
+        services={{
+          title: services.title,
+          body: services.body,
+          list: servicesRef,
+        }}
+        latestNews={{
+          title: latestNews.title,
+          tag: latestNews.tag,
+        }}
+        formCta={{
+          title: formCta.title,
+          image: formCta.image,
+          formTitle: formCta.formTitle,
+        }}
+        instagram={{
+          user: instagram.user,
+          photos: instagramPhotos,
+        }}
+        config={{
+          branch: config.backend.branch,
+        }}
+      />
+    </Layout>
   )
 }
 
@@ -188,6 +202,14 @@ export const homePageQuery = graphql`
     home: markdownRemark(frontmatter: {templateKey: {eq: "home-page"}}) {
       frontmatter {
         title
+        seoSection {
+          seoTitle
+          seoKeywords
+          ogTitle
+          ogImage
+          ogUrl
+          seoDescription
+        }
         heroSection {
           image
           payoff
