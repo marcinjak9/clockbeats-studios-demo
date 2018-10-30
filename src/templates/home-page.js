@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import Helmet from 'react-helmet'
 import HomePageTemplate from './Wrappers/HomePageTemplate'
 import Layout from '../layouts'
 
@@ -10,7 +11,7 @@ const HomePage = (props) => {
       home: {
         frontmatter: {
           title, heroSection, featuresTitle, featuresList, descriptionImage, descriptionImageLinks,
-          team, services, latestNews, formCta, instagram, instagramPhotos,
+          team, services, latestNews, formCta, instagram, instagramPhotos, seoSection,
         },
       },
       users, servicesList, config,
@@ -37,6 +38,15 @@ const HomePage = (props) => {
   }))
   return (
     <Layout>
+      {seoSection && (
+        <Helmet>
+          {seoSection.seoTitle && <title>{seoSection.seoTitle}</title>}
+          {seoSection.seoDescription && <meta name="description" content={seoSection.seoDescription} />}
+          {seoSection.ogTitle && <meta property="og:title" content={seoSection.ogTitle} />}
+          {seoSection.ogUrl && <meta property="og:url" content={seoSection.ogUrl} />}
+          {seoSection.ogImage && <meta property="og:image" content={seoSection.ogImage} />}
+        </Helmet>
+      )}
       <HomePageTemplate
         hero={{
           title,
@@ -192,6 +202,14 @@ export const homePageQuery = graphql`
     home: markdownRemark(frontmatter: {templateKey: {eq: "home-page"}}) {
       frontmatter {
         title
+        seoSection {
+          seoTitle
+          seoKeywords
+          ogTitle
+          ogImage
+          ogUrl
+          seoDescription
+        }
         heroSection {
           image
           payoff

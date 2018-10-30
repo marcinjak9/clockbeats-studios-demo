@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import Helmet from 'react-helmet'
 import ServicesTemplate from './Wrappers/ServicesTemplate'
 import Layout from '../layouts'
 
@@ -10,6 +11,7 @@ const Services = (props) => {
       markdownRemark: {
         frontmatter: {
           title, heroSection, featuresTitle, featuresList, services, latestNews, instagram, instagramPhotos,
+          seoSection,
         },
       },
       servicesList,
@@ -24,6 +26,15 @@ const Services = (props) => {
   }))
   return (
     <Layout>
+      {seoSection && (
+        <Helmet>
+          {seoSection.seoTitle && <title>{seoSection.seoTitle}</title>}
+          {seoSection.seoDescription && <meta name="description" content={seoSection.seoDescription} />}
+          {seoSection.ogTitle && <meta property="og:title" content={seoSection.ogTitle} />}
+          {seoSection.ogUrl && <meta property="og:url" content={seoSection.ogUrl} />}
+          {seoSection.ogImage && <meta property="og:image" content={seoSection.ogImage} />}
+        </Helmet>
+      )}
       <ServicesTemplate
         hero={{
           title,
@@ -111,6 +122,14 @@ export const servicesQuery = graphql`
     markdownRemark(frontmatter: {templateKey: {eq: "services-page"}}) {
       frontmatter {
         title
+        seoSection {
+          seoTitle
+          seoKeywords
+          ogTitle
+          ogImage
+          ogUrl
+          seoDescription
+        }
         heroSection {
           image
           payoff

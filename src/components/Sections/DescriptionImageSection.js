@@ -7,10 +7,10 @@ const DescriptionImageSection = ({ title, body, links, image, cardRight, bodyCom
     {cardRight
       ? (
         <div className="row">
-          <div className="col-md-8 no-padding">
+          <div className="col-lg-8 no-padding">
             <img src={image} className="img-fluid image-card animated-background" alt="" />
           </div>
-          <div className="col-md-4 card absolute-card card-right">
+          <div className="col-lg-4 card absolute-card card-right">
             {bodyComponent
               ? bodyComponent()
               : (
@@ -28,7 +28,7 @@ const DescriptionImageSection = ({ title, body, links, image, cardRight, bodyCom
       )
       : (
         <div className="row">
-          <div className="col-md-4 card absolute-card">
+          <div className="col-lg-4 card absolute-card">
             <div className="card-body d-flex flex-column justify-content-around">
               <h2>{title}</h2>
               <p>{body}</p>
@@ -38,7 +38,7 @@ const DescriptionImageSection = ({ title, body, links, image, cardRight, bodyCom
             </div>
           </div>
 
-          <div className="col-md-8 no-padding">
+          <div className="col-lg-8 no-padding">
             <img src={image} className="img-fluid image-card animated-background" alt="" />
           </div>
         </div>

@@ -178,7 +178,7 @@ collections:
 
   - folder: src/pages/services
     label: Services
-    name: services
+    name: single-services
     create: true
     fields:
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
+import { graphql, StaticQuery } from 'gatsby'
 
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
@@ -18,38 +18,43 @@ class TemplateWrapper extends Component {
   render() {
     const { children } = this.props
     return (
-      <div style={{ position: 'relative' }}>
-        <Helmet>
-          <title>Clockbeats Studio</title>
-          <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" />
-          <link rel="icon" href="https://i1.wp.com/store.clockbeats.com/wp-content/uploads/2016/09/cb_logo_icon.png?fit=32%2C32&amp;ssl=1" sizes="32x32" />
-        </Helmet>
-        <Navbar />
-        <div>{children}</div>
-        <Footer />
-      </div>
+      <StaticQuery
+        query={graphql`
+          query SiteMetadata {
+            metadata: markdownRemark(frontmatter: { dataType: { eq: "options-site" } }) {
+              id
+              frontmatter {
+                generalSeoSection {
+                  seoTitle
+                  seoKeywords
+                  ogTitle
+                  ogImage
+                  ogUrl
+                  seoDescription
+                }
+              }
+            }
+          }
+      `}
+        render={({ metadata: { frontmatter: { generalSeoSection: { seoTitle, seoKeywords, ogTitle, seoDescription, ogImage, ogUrl } } } }) => (
+          <div style={{ position: 'relative' }}>
+            <Helmet>
+              <title>{seoTitle}</title>
+              <meta name="description" content={seoDescription} />
+              <meta property="og:title" content={ogTitle} />
+              <meta property="og:url" content={ogUrl} />
+              <meta property="og:image" content={ogImage} />
+              <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" />
+              <link rel="icon" href="https://i1.wp.com/store.clockbeats.com/wp-content/uploads/2016/09/cb_logo_icon.png?fit=32%2C32&amp;ssl=1" sizes="32x32" />
+            </Helmet>
+            <Navbar />
+            <div>{children}</div>
+            <Footer />
+          </div>
+        )}
+      />
     )
   }
 }
 
 export default TemplateWrapper
-
-// export const templateWrapperQuery = graphql`
-//   query SiteMetadata {
-//     metadata:allMetadataYaml(filter:{
-//       dataName: { eq:"siteMetadata" }
-//     }) {
-//       edges {
-//         node {
-//           headerMeta {
-//             keywords
-//             metaDescription
-//             metaTitle
-//             ogDescription
-//             ogUrl
-//           }
-//         }
-//       }
-//     }
-//   }
-// `

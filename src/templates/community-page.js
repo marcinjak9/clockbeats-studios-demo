@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import Helmet from 'react-helmet'
 import image from '../img/acoustic-guitar.svg'
 import CommunityTemplate from './Wrappers/CommunityPageTemplate'
 import Layout from '../layouts'
@@ -10,7 +11,8 @@ const Community = (props) => {
     data: {
       community: {
         frontmatter: {
-          title, heroSection, featuresTitle, featuresList, team, latestNews, instagram, instagramPhotos,
+          title, heroSection, featuresTitle, featuresList, team,
+          latestNews, instagram, instagramPhotos, seoSection,
         },
       },
       users,
@@ -30,6 +32,15 @@ const Community = (props) => {
   }))
   return (
     <Layout>
+      {seoSection && (
+        <Helmet>
+          {seoSection.seoTitle && <title>{seoSection.seoTitle}</title>}
+          {seoSection.seoDescription && <meta name="description" content={seoSection.seoDescription} />}
+          {seoSection.ogTitle && <meta property="og:title" content={seoSection.ogTitle} />}
+          {seoSection.ogUrl && <meta property="og:url" content={seoSection.ogUrl} />}
+          {seoSection.ogImage && <meta property="og:image" content={seoSection.ogImage} />}
+        </Helmet>
+      )}
       <CommunityTemplate
         hero={{
           title,
@@ -123,6 +134,14 @@ export const communityQuery = graphql`
     community: markdownRemark(frontmatter: {templateKey: {eq: "community-page"}}) {
       frontmatter {
         title
+        seoSection {
+          seoTitle
+          seoKeywords
+          ogTitle
+          ogImage
+          ogUrl
+          seoDescription
+        }
         heroSection {
           image
           payoff
