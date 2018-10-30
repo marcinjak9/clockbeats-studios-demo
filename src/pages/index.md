@@ -8,10 +8,16 @@ heroSection:
     Clockbeats Studio Bergamo è una struttura ubicata a Bergamo, composta da uno
     studio di Produzione/Mix-Master
   services:
-    - HeroCtaServicesItem: Prova
-    - HeroCtaServicesItem: Prova 2
-    - HeroCtaServicesItem: Prova 3
-featuresTitle: Accelera la tua carriera musicale con noi!
+    - HeroCtaServicesItem: Produzione Assistita
+    - HeroCtaServicesItem: Mix
+    - HeroCtaServicesItem: Mastering
+    - HeroCtaServicesItem: Support
+    - HeroCtaServicesItem: Registrazione
+    - HeroCtaServicesItem: Clocksession
+    - HeroCtaServicesItem: Social Managment
+    - HeroCtaServicesItem: Promozione Spotify
+    - HeroCtaServicesItem: Tutela Diritti D'Auture
+featuresTitle: Accelera la tua Carriera Musicale con noi!
 featuresList:
   - body: 'Ti creiamo un progetto in base alle tue prossime Release! '
     cta: Learn more about our products
@@ -67,7 +73,7 @@ latestNews:
   tag: tutorial
   title: Check out our cool Blog
 formCta:
-  formTitle: Contact us for an estimate
+  formTitle: Contattaci subito per piú info!
   image: 'https://source.unsplash.com/collection/2068121/1280x850'
   title: Lorem ipsum dolor set
 formCtaLinks:

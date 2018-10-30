@@ -18,9 +18,10 @@ instagram:
   user: ''
 instagramPhotos: []
 socials:
-  facebook: 'https://instagram.com'
-  instagram: 'https://instagram.com'
-  soundcloud: 'https://instagram.com'
-  spotify: 'https://instagram.com'
+  facebook: 'https://www.facebook.com/profile.php?id=100006689565475'
+  instagram: 'https://www.instagram.com/federico.baracco/'
+  soundcloud: 'https://soundcloud.com/tears-of-change'
+  spotify: >-
+    https://open.spotify.com/artist/7dZyOppq0idGDsRwxuuiAt?si=E-H4C9TjTpedc3tHSy_Jlw
 ---
 Main producer di Clockbeats Studio Bergamo, ha collaborato con più di 1000 artisti nella sua vita!
