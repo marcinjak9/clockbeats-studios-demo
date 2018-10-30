@@ -1,51 +1,29 @@
 ---
 templateKey: single-service-page
-path: /services/produzione-assistita
-
-title: Produzione assistita
+title: Meditazione
 heroSection:
-  image: /img/things-to-do-in-niagara-falls-1500x609.jpg
+  image: /img/body-clouds-early-morning-823694.jpg
   payoff: >-
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, illo!
     Possimus ipsam enim veritatis natus eveniet quae quo dolores harum.
-    
-featuresTitle: Lorem Ipsum dolor set inem ami mortes tua.
-featuresList:
-  - title: Build better apps faster
-    body: From effortless administration tools to robust compute, storage, and networking services, we provide an all-in-one cloud to help teams spend more time building better software for your customers.
-    cta: Learn more about our products
-    url: /
-    img: /img/acoustic-guitar.svg
-  - title: Build better apps faster
-    body: From effortless administration tools to robust compute, storage, and networking services, we provide an all-in-one cloud to help teams spend more time building better software for your customers.
-    cta: Learn more about our products
-    url: /
-    img: /img/acoustic-guitar.svg
-  - title: Build better apps faster
-    body: From effortless administration tools to robust compute, storage, and networking services, we provide an all-in-one cloud to help teams spend more time building better software for your customers.
-    cta: Learn more about our products
-    url: /
-    img: /img/acoustic-guitar.svg
-
+featuresTitle: “Conosci te stesso”
+featuresList: []
 services:
-  title: What can we offer you?
-  body: >-
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet itaque odit labore omnis assumenda
-    libero aliquid ab explicabo! Pariatur, ut esse. Illum, fuga veniam omnis nostrum consequatur nam?
-    Quae, inventore!
-
-
+  title: ''
+  body: ''
 latestNews:
-  title: Check out our cool Blog
   tag: tutorial
-
+  title: Check out our cool Blog
 instagram:
   user: clockbeatsbrescia
-
 instagramPhotos:
   - id: BndRVOTAUsf
   - id: BnXERRxFXXS
   - id: BnUfbKpgire
   - id: BnDt1NwDOaa
 ---
+“Conosci te stesso”
 
+Incontri serali di gruppo incentrati sull’educazione all’ascolto interiore, in collaborazione con i professionisti del Centro Studi Interiori di Brescia “Pranic Energy Healing” (https://centrostudiinteriori.it)
+
+Istruttore: Luigi Mazzocchi
