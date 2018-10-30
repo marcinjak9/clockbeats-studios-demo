@@ -1,60 +1,48 @@
 ---
 templateKey: single-service-page
-title: Post Produzione
+seoSection:
+  seoTitle: ''
+title: Produzione assistita
 heroSection:
-  image: /img/ff21c8fc-8b20-4e74-94c2-44b7396baeeb-lan-copia.jpeg
+  image: /img/7060fb3e-f72a-4ff3-bca4-e4248e94e244-lan.jpeg
   payoff: >-
-    Trasformiamo e curiamo la tua idea, hai un progetto non concluso, da
-    terminare o devi raggiungere un determinato standard? 
-
-    Rivedremo la tua traccia e ti informeremo se è possibile portarla ad un
-    livello successivo. 
-
-    Dovrai inviarci steli multi-traccia WAV e file MIDI. Miglioreremo la tua
-    traccia direttamente nella DAW anche con modifiche come: eliminazione audio
-    esistente, ricostruzione audio, aggiunta audio etc.
-featuresTitle: Struttura del lavoro
+    L’innovativa modalità Clockbeats di produzione assistita porterà l’artista a
+    focalizzarsi sul proprio lavoro con il fine di accelerare la propria
+    carriera musicale. 
+featuresTitle: Accelera la tua carriera musicale adesso!
 featuresList:
-  - cta: ''
+  - cta: Learn more about our products
     img: /img/acoustic-guitar.svg
-    title: Primo incontro
+    title: L'unico servizio targato Clockbeats
     body: >-
-      Fisseremo il primo incontro in studio per sentire il tuo (mix, idea,
-      riferimento) potrai portare una traccia stereo oppure possiamo caricare
-      già il multi-traccia se disponibile. Dopo l’ascolto ci scambieremo idee e
-      pensieri per ottenere una soluzione che possa soddisfarti.
+      L'unica servizio che non troverai da nessuna parte se non nei nostri
+      studi!
     url: /
   - cta: Learn more about our products
     img: /img/acoustic-guitar.svg
-    title: Secondo incontro
+    title: Crea tracce di successo
     body: >-
-      A metà progetto precisamente, o comunque quando riteniamo che il lavoro è
-      a metà dell’opera; quindi potrai ascoltare e vedere quanto è stato
-      applicato ed intervenire con richieste per apportare eventuali modifiche.
+      Impara a produrre mentre impari le tecniche piú nascoste di produzione con
+      uno dei nostri produttori assistiti.
     url: /
   - cta: Learn more about our products
     img: /img/acoustic-guitar.svg
-    title: Terzo incontro
+    title: 'Impara le tecniche di produzione nascoste '
     body: >-
-      consegniamo il progetto con l’ascolto e la valutazione in studio; nel caso
-      ci fossero ulteriori modifiche richieste dal cliente, avranno un prezzo
-      extra (da definire).
+      Le figure professionali necessarie a produrre musica sono sempre più
+      numerose e pertanto riuscire a gestirle diventa molto dispendioso sia da
+      un punto di vista economico che di tempo.
+
+      Concludi le tue tracce con i migliori professionisti.
     url: /
 services:
-  title: What can we offer you?
-  body: >-
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet itaque odit
-    labore omnis assumenda libero aliquid ab explicabo! Pariatur, ut esse.
-    Illum, fuga veniam omnis nostrum consequatur nam? Quae, inventore!
+  title: ''
+  body: ''
 latestNews:
-  tag: tutorial
-  title: Check out our cool Blog
+  tag: ''
+  title: ''
 instagram:
-  user: clockbeatsbergamo
-instagramPhotos:
-  - id: BndRVOTAUsf
-  - id: BnXERRxFXXS
-  - id: BnUfbKpgire
-  - id: BnDt1NwDOaa
+  user: ''
+instagramPhotos: []
 ---
-
+![null](/img/15133-squashed.jpg)
