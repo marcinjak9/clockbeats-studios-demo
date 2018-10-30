@@ -1,6 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
+import Helmet from 'react-helmet'
 import ServicesTemplate from './Wrappers/ServicesTemplate'
+import Layout from '../layouts'
 
 const Services = (props) => {
   const {
@@ -8,6 +11,7 @@ const Services = (props) => {
       markdownRemark: {
         frontmatter: {
           title, heroSection, featuresTitle, featuresList, services, latestNews, instagram, instagramPhotos,
+          seoSection,
         },
       },
       servicesList,
@@ -21,30 +25,41 @@ const Services = (props) => {
     title: frontmatter.title,
   }))
   return (
-    <ServicesTemplate
-      hero={{
-        title,
-        payoff: heroSection.payoff,
-        image: heroSection.image,
-      }}
-      features={{
-        title: featuresTitle,
-        list: featuresList,
-      }}
-      services={{
-        title: services.title,
-        body: services.body,
-        list: servicesRef,
-      }}
-      latestNews={{
-        title: latestNews.title,
-        tag: latestNews.tag,
-      }}
-      instagram={{
-        user: instagram.user,
-        photos: instagramPhotos,
-      }}
-    />
+    <Layout>
+      {seoSection && (
+        <Helmet>
+          {seoSection.seoTitle && <title>{seoSection.seoTitle}</title>}
+          {seoSection.seoDescription && <meta name="description" content={seoSection.seoDescription} />}
+          {seoSection.ogTitle && <meta property="og:title" content={seoSection.ogTitle} />}
+          {seoSection.ogUrl && <meta property="og:url" content={seoSection.ogUrl} />}
+          {seoSection.ogImage && <meta property="og:image" content={seoSection.ogImage} />}
+        </Helmet>
+      )}
+      <ServicesTemplate
+        hero={{
+          title,
+          payoff: heroSection.payoff,
+          image: heroSection.image,
+        }}
+        features={{
+          title: featuresTitle,
+          list: featuresList,
+        }}
+        services={{
+          title: services.title,
+          body: services.body,
+          list: servicesRef,
+        }}
+        latestNews={{
+          title: latestNews.title,
+          tag: latestNews.tag,
+        }}
+        instagram={{
+          user: instagram.user,
+          photos: instagramPhotos,
+        }}
+      />
+    </Layout>
   )
 }
 
@@ -107,6 +122,14 @@ export const servicesQuery = graphql`
     markdownRemark(frontmatter: {templateKey: {eq: "services-page"}}) {
       frontmatter {
         title
+        seoSection {
+          seoTitle
+          seoKeywords
+          ogTitle
+          ogImage
+          ogUrl
+          seoDescription
+        }
         heroSection {
           image
           payoff
