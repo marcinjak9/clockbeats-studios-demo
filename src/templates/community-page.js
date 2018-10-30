@@ -1,14 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
+import Helmet from 'react-helmet'
 import image from '../img/acoustic-guitar.svg'
 import CommunityTemplate from './Wrappers/CommunityPageTemplate'
+import Layout from '../layouts'
 
 const Community = (props) => {
   const {
     data: {
       community: {
         frontmatter: {
-          title, heroSection, featuresTitle, featuresList, team, latestNews, instagram, instagramPhotos,
+          title, heroSection, featuresTitle, featuresList, team,
+          latestNews, instagram, instagramPhotos, seoSection,
         },
       },
       users,
@@ -27,31 +31,42 @@ const Community = (props) => {
     spotify: frontmatter.socials.spotify,
   }))
   return (
-    <CommunityTemplate
-      hero={{
-        title,
-        payoff: heroSection.payoff,
-        image: heroSection.image,
-      }}
-      featuresTitle={featuresTitle}
-      featuresList={featuresList}
-      teamSection={{
-        title: team.title,
-        body: team.body,
-        list: teamList,
-      }}
-      latestNews={{
-        title: latestNews.title,
-        tag: latestNews.tag,
-      }}
-      instagram={{
-        user: instagram.user,
-        photos: instagramPhotos,
-      }}
-    // contentComponent={HTMLContent}
-    // title={post.frontmatter.title}
-    // content={post.html}
-    />
+    <Layout>
+      {seoSection && (
+        <Helmet>
+          {seoSection.seoTitle && <title>{seoSection.seoTitle}</title>}
+          {seoSection.seoDescription && <meta name="description" content={seoSection.seoDescription} />}
+          {seoSection.ogTitle && <meta property="og:title" content={seoSection.ogTitle} />}
+          {seoSection.ogUrl && <meta property="og:url" content={seoSection.ogUrl} />}
+          {seoSection.ogImage && <meta property="og:image" content={seoSection.ogImage} />}
+        </Helmet>
+      )}
+      <CommunityTemplate
+        hero={{
+          title,
+          payoff: heroSection.payoff,
+          image: heroSection.image,
+        }}
+        featuresTitle={featuresTitle}
+        featuresList={featuresList}
+        teamSection={{
+          title: team.title,
+          body: team.body,
+          list: teamList,
+        }}
+        latestNews={{
+          title: latestNews.title,
+          tag: latestNews.tag,
+        }}
+        instagram={{
+          user: instagram.user,
+          photos: instagramPhotos,
+        }}
+      // contentComponent={HTMLContent}
+      // title={post.frontmatter.title}
+      // content={post.html}
+      />
+    </Layout>
   )
 }
 
@@ -119,6 +134,14 @@ export const communityQuery = graphql`
     community: markdownRemark(frontmatter: {templateKey: {eq: "community-page"}}) {
       frontmatter {
         title
+        seoSection {
+          seoTitle
+          seoKeywords
+          ogTitle
+          ogImage
+          ogUrl
+          seoDescription
+        }
         heroSection {
           image
           payoff

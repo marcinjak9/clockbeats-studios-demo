@@ -24,10 +24,11 @@ instagramPhotos:
   - id: BnUfbKpgire
   - id: BnDt1NwDOaa
 socials:
-  facebook: 'https://instagram.com'
-  instagram: 'https://instagram.com'
-  soundcloud: 'https://instagram.com'
-  spotify: 'https://instagram.com'
+  facebook: 'https://www.facebook.com/profile.php?id=100006689565475'
+  instagram: 'https://www.instagram.com/federico.baracco/'
+  soundcloud: 'https://soundcloud.com/tears-of-change'
+  spotify: >-
+    https://open.spotify.com/artist/7dZyOppq0idGDsRwxuuiAt?si=E-H4C9TjTpedc3tHSy_Jlw
 ---
 Gabriele Levi è nato nel 1991 a Pordenone (Friuli Venezia Giulia), Italia.
 

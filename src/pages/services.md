@@ -2,7 +2,7 @@
 templateKey: services-page
 title: I Nostri Servizi
 heroSection:
-  image: /img/things-to-do-in-niagara-falls-1500x609.jpg
+  image: /img/383-squashed.jpg
   payoff: >-
     Il processo di composizione musicale coinvolge una moltitudine di figure
     professionali con differenti competenze, con compiti non esercitabili da una
@@ -38,7 +38,7 @@ services:
     Attraverso i suoi servizi, garantisce ed offre un’accelerazione della
     carriera musicale, a qualsiasi livello tu sia parlando di capacità di
     produzione.
-  title: ''
+  title: I NOSTRI SERVIZI EXTRA
 latestNews:
   tag: tutorial
   title: Check out our cool Blog

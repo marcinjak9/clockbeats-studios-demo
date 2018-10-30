@@ -23,7 +23,7 @@ const HomePageTemplate = (props) => {
         dropdownOptions={hero.ctaServices}
         formTitle={hero.formTitle}
         showForm
-        formName={`${config.branch}-form`}
+        formName={`${config ? config.branch : 'contact'}-form`}
       />
       <HomeFeatures
         title={features.title}

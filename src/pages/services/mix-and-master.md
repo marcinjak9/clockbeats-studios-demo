@@ -6,7 +6,7 @@ title: >-
   Armonia classica e jazz, Composizione, Orchestrazione, Teoria e Solfeggio,
   Storia della Musica
 heroSection:
-  image: /img/things-to-do-in-niagara-falls-1500x609.jpg
+  image: /img/5306-squashed.jpg
   payoff: >-
     Corsi cuciti sulle specifiche esigenze del singolo studente. Hai necessità
     di approfondire determinati argomenti? Preparazione agli esami? Sei nel
