@@ -1,13 +1,15 @@
 ---
 templateKey: community-page
 seoSection:
-  seoTitle: Clockbeats Brescia Community
-  seoKeywords: Studio, CLockbeats, music, production
-  ogTitle: Clockbeats studio brescia website
   ogImage: /img/things-to-do-in-niagara-falls-1500x609.jpg
-  ogUrl: https://brescia.clockbeats.com
+  ogTitle: Clockbeats studio brescia website
+  ogUrl: 'https://brescia.clockbeats.com'
   seoDescription: >-
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non rerum, quam itaque, voluptas qui atque illum perferendis vel in ut voluptatem modi, officia dicta quidem quae! Dicta magni pariatur rerum.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non rerum, quam
+    itaque, voluptas qui atque illum perferendis vel in ut voluptatem modi,
+    officia dicta quidem quae! Dicta magni pariatur rerum.
+  seoKeywords: 'Studio, CLockbeats, music, production'
+  seoTitle: Clockbeats Brescia Community
 title: Our rich community of Professionals & Artist
 heroSection:
   image: 'https://source.unsplash.com/collection/2068121/1920x1080'
@@ -34,12 +36,8 @@ featuresList:
     title: Migliora le tue skills
     url: /
 team:
-  body: >-
-    Essendo Clockbeats un portale web, il nostro piano di marketing ci vede
-    presenti su tutti I portali. Abbiamo ovviamente un’esperienza importante
-    sulla promozione di pagine su Facebook (150k + Likes) , Instagram (40k++
-    Followers) e la nostra Mailing list (60k Artist mail)
-  title: Scopri la nostra Community!
+  body: ''
+  title: ''
 latestNews:
   tag: tutorial
   title: Check out our cool Blog
