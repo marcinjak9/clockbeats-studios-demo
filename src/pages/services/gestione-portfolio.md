@@ -2,59 +2,28 @@
 templateKey: single-service-page
 seoSection:
   seoTitle: Prova
-title: Produzione assistita
+title: Musica antica
 heroSection:
   image: /img/things-to-do-in-niagara-falls-1500x609.jpg
-  payoff: >-
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, illo!
-    Possimus ipsam enim veritatis natus eveniet quae quo dolores harum.
-featuresTitle: Lorem Ipsum dolor set inem ami mortes tua.
-featuresList:
-  - title: Build better apps faster
-    body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
-    cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
-    url: /
-  - title: Build better apps faster
-    body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
-    cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
-    url: /
-  - title: Build better apps faster
-    body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
-    cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
-    url: /
+  payoff: Laboratorio dedicato alla musica cameristica
+featuresTitle: Musica antica
+featuresList: []
 services:
-  title: What can we offer you?
-  body: >-
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet itaque odit
-    labore omnis assumenda libero aliquid ab explicabo! Pariatur, ut esse.
-    Illum, fuga veniam omnis nostrum consequatur nam? Quae, inventore!
+  title: ''
+  body: ''
 latestNews:
   tag: tutorial
   title: Check out our cool Blog
 instagram:
-  user: clockbeatsbrescia
+  user: clockbeatsroncadelle
 instagramPhotos:
   - id: BndRVOTAUsf
   - id: BnXERRxFXXS
   - id: BnUfbKpgire
   - id: BnDt1NwDOaa
 ---
-## Cos'è la produzione assistita
+## Laboratorio dedicato alla musica cameristica: suonare insieme è la linfa vitale del Barocco. Il camerismo si presenta come un’arte nobile e complessa che richiede ascolto, prassi e competenza affinata dall’esperienza. Ogni strumentista che si trova nella situazione di approcciarsi con un cembalista, dovrebbe incrementare la propria capacità di ascolto critico nei riguardi del continuista. Ecco il motivo per il quale viene anche proposto un percorso specifico sulle basi del Basso continuo, una scienza esatta.
 
-> Nessuno nasce imparato
+## Inoltre, la possibilità di approfondire la trattatistica consentirà di ampliare il ventaglio delle proprie scelte.
 
-![Meeting space](/img/meeting-space.png)
-
-Tutti sono fighi
+## Istruttore: Gabriele Levi
