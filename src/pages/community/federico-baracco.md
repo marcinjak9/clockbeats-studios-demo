@@ -1,7 +1,7 @@
 ---
 templateKey: user-page
 seoSection:
-  ogImage: /img/flavor_wheel.jpg
+  ogImage: /img/23847084_2064482117118087_3021868791927342340_o.jpg
   ogTitle: Federico Baracco
   ogUrl: /
   seoDescription: >-
@@ -11,11 +11,13 @@ seoSection:
   seoKeywords: 'ciao, due, tre'
   seoTitle: Federico Baracco
 title: Federico Baracco
-userBody: sdasdasd
-image: 'https://source.unsplash.com/collection/2068121/1920x1080'
+userBody: |
+  Main Producer di Clockbeats Studio Brescia. 
+image: /img/401945-pcrx3y-933-squashed.jpg
 userRole: Senior Producer
-avatar: 'http://i.pravatar.cc/300'
+avatar: /img/23847084_2064482117118087_3021868791927342340_o.jpg
 newsTitle: Scopri di più
+tag: clockbeatsbrescia
 instagram:
   user: clockbeatsbrescia
 instagramPhotos:
@@ -24,9 +26,10 @@ instagramPhotos:
   - id: BnUfbKpgire
   - id: BnDt1NwDOaa
 socials:
-  facebook: 'https://instagram.com'
-  instagram: 'https://instagram.com'
-  soundcloud: 'https://instagram.com'
-  spotify: 'https://instagram.com'
+  facebook: 'https://www.facebook.com/profile.php?id=100006689565475'
+  instagram: 'https://www.instagram.com/federico.baracco/'
+  soundcloud: 'https://soundcloud.com/tears-of-change'
+  spotify: >-
+    https://open.spotify.com/artist/7dZyOppq0idGDsRwxuuiAt?si=E-H4C9TjTpedc3tHSy_Jlw
 ---
-sadasdaad
+Main producer di Clockbeats Studio Brescia, ha collaborato con più di 1000 artisti nella sua vita!

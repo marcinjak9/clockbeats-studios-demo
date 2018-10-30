@@ -2,44 +2,40 @@
 templateKey: single-service-page
 seoSection:
   seoTitle: Ciao
-title: Produzione assistita
+title: Studio Immagine
 heroSection:
-  image: /img/things-to-do-in-niagara-falls-1500x609.jpg
+  image: /img/5306-squashed.jpg
   payoff: >-
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, illo!
-    Possimus ipsam enim veritatis natus eveniet quae quo dolores harum.
-featuresTitle: Lorem Ipsum dolor set inem ami mortes tua.
+    Consigli sulla tua immagine, presenza sui social, marketing, mood e tutto
+    quello che è oltre alle produzioni, ma che nel 2018, costituisce una parte
+    fondamentale del progetto artista.
+featuresTitle: L'abito fa il monaco!
 featuresList:
-  - body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
-    cta: Learn more about our products
+  - cta: Learn more about our products
     img: /img/acoustic-guitar.svg
-    title: Build better apps faster
+    title: Entra in contatto con il nostro STAFF
+    body: >-
+      Entra in contatto con il nostro Staff e prenota un appuntamento
+      telefonico!
     url: /
-  - body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
-    cta: Learn more about our products
+  - cta: Learn more about our products
     img: /img/acoustic-guitar.svg
-    title: Build better apps faster
+    title: Costruisci la tua campagna Marketing
+    body: |-
+      Costruisci e personalizza la tua campagna Marketing. 
+      Il segreto per il successo é costruire al meglio la tua immagine artista.
     url: /
-  - body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
-    cta: Learn more about our products
+  - cta: Learn more about our products
     img: /img/acoustic-guitar.svg
-    title: Build better apps faster
+    title: GO!
+    body: Entra nella music industry con la tua nuova immagine!
     url: /
 services:
+  title: What can we offer you?
   body: >-
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet itaque odit
     labore omnis assumenda libero aliquid ab explicabo! Pariatur, ut esse.
     Illum, fuga veniam omnis nostrum consequatur nam? Quae, inventore!
-  title: What can we offer you?
 latestNews:
   tag: tutorial
   title: Check out our cool Blog
@@ -51,4 +47,4 @@ instagramPhotos:
   - id: BnUfbKpgire
   - id: BnDt1NwDOaa
 ---
-
+![](/img/5864-squashed.jpg)

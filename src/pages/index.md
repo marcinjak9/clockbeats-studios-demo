@@ -1,51 +1,56 @@
 ---
 templateKey: home-page
-title: Clockbeats Studio Viterbo
+title: Clockbeats Studio Brescia
 heroSection:
-  formTitle: Contact Us for an estimate
+  formTitle: Quale servizio ti interessa?
   image: /img/studio1b.jpg
   payoff: >-
     Clockbeats Studio Brescia è una struttura ubicata a Brescia, composta da
     studi di produzione, registrazione, post-produzione audio e video.
   services:
-    - HeroCtaServicesItem: Production
+    - HeroCtaServicesItem: Produzione Assistita
     - HeroCtaServicesItem: Mix
     - HeroCtaServicesItem: Mastering
     - HeroCtaServicesItem: Support
-featuresTitle: Accelera la tua carriera musicale con noi!
+    - HeroCtaServicesItem: Registrazione
+    - HeroCtaServicesItem: Clocksession
+    - HeroCtaServicesItem: Social Managment
+    - HeroCtaServicesItem: Promozione Spotify
+    - HeroCtaServicesItem: Tutela Diritti D'Auture
+featuresTitle: Accelera la tua Carriera Musicale con noi!
 featuresList:
-  - body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
+  - body: 'Ti creiamo un progetto in base alle tue prossime Release! '
     cta: Learn more about our products
     img: /img/acoustic-guitar.svg
-    title: 'Trova il tuo genere '
+    title: Creiamo il tuo progetto personalizzato
     url: /
   - body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
+      Dopo averti creato il progetto ad hoc, 
+
+      Per i 3 mesi successivi avrai il nostro tutoring (ad es. hai pronta per il
+      piazzamento una traccia, se per noi non è di livello di consigliamo come
+      sistemarla a seconda del goal e dell’etichetta a cui puntiamo, lavoriamo
+      insieme le bozze, hai una presenza costante in quello che fai).
     cta: Learn more about our products
     img: /img/acoustic-guitar.svg
-    title: Build better apps faster
+    title: Ti supportiamo 3 mesi!
     url: /
   - body: >-
-      From effortless administration tools to robust compute, storage, and
-      networking services, we provide an all-in-one cloud to help teams spend
-      more time building better software for your customers.
+      Lavoriamo allla traccia per 3 mesi in modo che tu possa metterti in
+      contatto con la Label piú opportuna!
     cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
-    title: Build better apps faster
+    img: /img/rocket.png
+    title: Ti indirizziamo alla giusta label
     url: /
 descriptionImage:
   body: >-
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis magnam
-    accusamus quo praesentium natus pariatur eum, molestiae cumque aliquam
-    necessitatibus eligendi eos labore harum odio perferendis est modi
-    perspiciatis ex.
-  image: 'https://source.unsplash.com/collection/2068121/1280x850'
-  title: Lorem ipsum dolor set
+    Siamo uno studio affiliato a clockbeats.com, siamo uno dei 15 studi in
+    Italia!
+
+    Se il genere che fai non é affine al nostro standard verrai indirizzato in
+    un altro studio.
+  image: /img/pablo.png
+  title: Con noi sei al sicuro
 descriptionImageLinks:
   - text: First CTA
     url: /
@@ -53,22 +58,25 @@ descriptionImageLinks:
     url: /
 team:
   body: >-
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quae distinctio
-    atque accusamus recusandae!  Neque, possimus? Architecto optio fugiat,
-    laudantium obcaecati, repellendus porro quo, deleniti velit quasi ea 
-    consectetur libero.
-  title: Check our super professional team!
+    L’innovativa modalità Clockbeats di produzione assistita porterà l’artista a
+    focalizzarsi sul proprio lavoro con il fine di accelerare la propria
+    carriera musicale. Grazie al costante aiuto di un team di professionisti che
+    valuterà le migliori tecniche di insegnamento per garantire al proprio
+    cliente una base solida,l’artista disporrà degli strumenti più adatti per
+    entrare nel mondo dell’industria musicale.
+  title: La nostra community di Brescia
 services:
   body: >-
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet itaque odit
-    labore omnis assumenda libero aliquid ab explicabo! Pariatur, ut esse.
-    Illum, fuga veniam omnis nostrum consequatur nam? Quae, inventore!
-  title: What can we offer you?
+    Grazie al costante aiuto di un team di professionisti che valuterà le
+    migliori tecniche di insegnamento per garantire al proprio cliente una base
+    solida,l’artista disporrà degli strumenti più adatti per entrare nel mondo
+    dell’industria musicale.
+  title: I nostri Servizi
 latestNews:
   tag: tutorial
   title: Check out our cool Blog
 formCta:
-  formTitle: Contact us for an estimate
+  formTitle: Contattaci subito per piú info!
   image: 'https://source.unsplash.com/collection/2068121/1280x850'
   title: Lorem ipsum dolor set
 formCtaLinks:
