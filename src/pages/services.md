@@ -38,7 +38,7 @@ services:
     Attraverso i suoi servizi, garantisce ed offre un’accelerazione della
     carriera musicale, a qualsiasi livello tu sia parlando di capacità di
     produzione.
-  title: I NOSTRI SERVIZI EXTRA
+  title: ''
 latestNews:
   tag: tutorial
   title: Check out our cool Blog
