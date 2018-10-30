@@ -1,7 +1,7 @@
 {
   "name": "clockbeats-studio-website",
   "description": "Static website for rapid replication for clockbeats studios",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Marcin Jakubik",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.4",
