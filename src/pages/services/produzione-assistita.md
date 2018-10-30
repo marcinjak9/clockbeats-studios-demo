@@ -1,36 +1,39 @@
 ---
 templateKey: single-service-page
-title: Promozione
+seoSection:
+  seoTitle: Produzione Assistita
+title: Produzione assistita
 heroSection:
-  image: /img/805-squashed.jpg
+  image: /img/pablo.png
   payoff: >-
-    Utilizziamo soprattutto Spotify e l’inserimento della traccia nelle playlist
-    del genere.
-
-    Il prezzo dipende dal numero delle playlist in cui si viene inseriti, e le
-    playlist come ben sai dipendono dal genere.
-
-    Viene poi calcolato al momento dell’ascolto della demo.
-featuresTitle: Più PLAYS più FAN!
+    L’innovativa modalità Clockbeats di produzione assistita porterà l’artista a
+    focalizzarsi sul proprio lavoro con il fine di accelerare la propria
+    carriera musicale. 
+featuresTitle: Accelera la tua carriera musicale adesso!
 featuresList:
   - cta: Learn more about our products
     img: /img/acoustic-guitar.svg
-    title: Inviaci la tua song!
-    body: Invia la tua song a studio.brescia@clockbeats.com e scopri di piú!
-    url: /
-  - cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
-    title: Aumenta le tue Plays su Youtube!
+    title: L'unico servizio targato Clockbeats
     body: >-
-      Attraverso la nostra promozione potrai aumentare le tue plays anche su
-      Youtube!
+      L'unica servizio che non troverai da nessuna parte se non nei nostri
+      studi!
     url: /
   - cta: Learn more about our products
     img: /img/acoustic-guitar.svg
-    title: Aumenta le tue Plays su Spotify
-    body: |-
-      Aumenta le tue Plays su Spotify organicamente. 
-      NO FAKE!
+    title: Crea tracce di successo
+    body: >-
+      Impara a produrre mentre impari le tecniche piú nascoste di produzione con
+      uno dei nostri produttori assistiti.
+    url: /
+  - cta: Learn more about our products
+    img: /img/acoustic-guitar.svg
+    title: 'Impara le tecniche di produzione nascoste '
+    body: >-
+      Le figure professionali necessarie a produrre musica sono sempre più
+      numerose e pertanto riuscire a gestirle diventa molto dispendioso sia da
+      un punto di vista economico che di tempo.
+
+      Concludi le tue tracce con i migliori professionisti.
     url: /
 services:
   title: What can we offer you?
@@ -49,4 +52,4 @@ instagramPhotos:
   - id: BnUfbKpgire
   - id: BnDt1NwDOaa
 ---
-
+![null](/img/15133-squashed.jpg)
