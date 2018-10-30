@@ -78,7 +78,11 @@ formCta:
   formTitle: ''
   image: 'https://source.unsplash.com/collection/2068121/1280x850'
   title: Contattaci subito per piú info!
-formCtaLinks: []
+formCtaLinks:
+  - text: First CTA
+    url: /
+  - text: Second CTA
+    url: /
 instagram:
   user: clockbeatsroncadelle
 instagramPhotos:
