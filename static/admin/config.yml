@@ -178,7 +178,7 @@ collections:
 
   - folder: src/pages/services
     label: Services
-    name: services
+    name: single-services
     create: true
     fields:
 
@@ -367,6 +367,7 @@ collections:
 
           - label: Title (shown in Hero) 
             name: title
+            hint: Titolo della pagina
             widget: string
 
           - label: Hero Section 
