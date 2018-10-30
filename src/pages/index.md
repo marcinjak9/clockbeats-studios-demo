@@ -10,7 +10,7 @@ heroSection:
 
     Offre servizi dalla musica classica fino alla musica elettronica.
   services:
-    - HeroCtaServicesItem: Corso di Produzione Elettronica
+    - HeroCtaServicesItem: Corso Produzione Musica Elettronica
     - HeroCtaServicesItem: Corso DJ
     - HeroCtaServicesItem: Musica antica
     - HeroCtaServicesItem: Propedeutica infantile
