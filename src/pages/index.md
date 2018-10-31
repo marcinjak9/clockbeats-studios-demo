@@ -75,7 +75,9 @@ formCta:
   formTitle: ''
   image: 'https://source.unsplash.com/collection/2068121/1280x850'
   title: ''
-formCtaLinks: []
+formCtaLinks:
+  - text: Test
+    url: /
 instagram:
   user: clockbeatsroncadelle
 instagramPhotos:
