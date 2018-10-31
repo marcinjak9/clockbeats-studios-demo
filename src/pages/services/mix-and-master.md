@@ -2,18 +2,11 @@
 templateKey: single-service-page
 seoSection:
   seoTitle: ''
-title: >-
-  Armonia classica e jazz, Composizione, Orchestrazione, Teoria e Solfeggio,
-  Storia della Musica
+title: Preparazione agli esami
 heroSection:
-  image: /img/5306-squashed.jpg
-  payoff: >-
-    Corsi cuciti sulle specifiche esigenze del singolo studente. Hai necessità
-    di approfondire determinati argomenti? Preparazione agli esami? Sei nel
-    posto giusto.
-featuresTitle: >-
-  Armonia classica e jazz, Composizione, Orchestrazione, Teoria e Solfeggio,
-  Storia della Musica
+  image: /img/258528-p4hynw-223-squashed.jpg
+  payoff: Corsi cuciti sulle specifiche esigenze del singolo studente.
+featuresTitle: Preparazione agli esami
 featuresList: []
 services:
   title: ''
@@ -29,4 +22,6 @@ instagramPhotos:
   - id: BnUfbKpgire
   - id: BnDt1NwDOaa
 ---
-Corsi cuciti sulle specifiche esigenze del singolo studente. Hai necessità di approfondire determinati argomenti? Preparazione agli esami? Sei nel posto giusto.
+Corsi cuciti sulle specifiche esigenze del singolo studente. Armonia classica e jazz, Composizione, Orchestrazione, Teoria e Solfeggio, Storia della Musica. 
+
+Hai necessità di approfondire determinati argomenti? Preparazione agli esami? Sei nel posto giusto!
