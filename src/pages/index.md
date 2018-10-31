@@ -23,25 +23,22 @@ heroSection:
     - HeroCtaServicesItem: 'Corso strumenti musicali (Pianoforte, chitarra, violino ecc.)'
 featuresTitle: Accelera la tua carriera musicale con noi!
 featuresList:
-  - body: 'Ti creiamo un progetto in base alle tue prossime Release! '
-    cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
+  - body: Ti creiamo un progetto/planning in base al percorso scelto
+    cta: ''
+    img: /img/lampadina.png
     title: Creiamo il tuo progetto personalizzato
     url: /
   - body: >-
-      Dopo averti creato il progetto ad hoc, Per i 3 mesi successivi avrai il
-      nostro tutoring (ad es. hai pronta per il piazzamento una traccia, se per
-      noi non è di livello di consigliamo come sistemarla a seconda del goal e
-      dell’etichetta a cui puntiamo, lavoriamo insieme le bozze, hai una
-      presenza costante in quello che fai).
-    cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
-    title: Ti supportiamo 3 mesi!
+      Dopo averti creato il progetto ad hoc, per i mesi successivi avrai il
+      nostro tutoring
+    cta: ''
+    img: /img/support.png
+    title: Ti supportiamo
     url: /
-  - body: Ti indirizziamo alla giusta label
-    cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
-    title: Ti indirizziamo alla giusta label
+  - body: ''
+    cta: ''
+    img: /img/goals.png
+    title: Ti indirizziamo verso i tuoi obiettivi
     url: /
 descriptionImage:
   body: >-
@@ -77,18 +74,14 @@ latestNews:
 formCta:
   formTitle: ''
   image: 'https://source.unsplash.com/collection/2068121/1280x850'
-  title: Contattaci subito per piú info!
-formCtaLinks:
-  - text: First CTA
-    url: /
-  - text: Second CTA
-    url: /
+  title: ''
+formCtaLinks: []
 instagram:
   user: clockbeatsroncadelle
 instagramPhotos:
-  - id: BndRVOTAUsf
-  - id: BnXERRxFXXS
-  - id: BnUfbKpgire
-  - id: BnDt1NwDOaa
+  - id: BoqmbGXiBfs
+  - id: BpB6E6kFQh8
+  - id: BpKVqZRl6c8
+  - id: BpWiuc_gG9P
 ---
 
