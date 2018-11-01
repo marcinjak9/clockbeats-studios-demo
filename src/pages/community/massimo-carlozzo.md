@@ -7,11 +7,11 @@ seoSection:
   seoDescription: ''
   seoKeywords: ''
   seoTitle: ''
-title: Massimo Carlozzo
+title: Max Kaarlos
 userBody: Main Producer di Clockbeats Studio
-image: 'https://source.unsplash.com/collection/2068121/1920x1080'
+image: /img/img_7886.jpg
 userRole: Senior Producer
-avatar: /img/21368855_1700045736681203_8066659086080257016_o.jpg
+avatar: /img/img_7886.jpg
 newsTitle: Scopri di più
 tag: clockbeatsbergamo
 instagram:
