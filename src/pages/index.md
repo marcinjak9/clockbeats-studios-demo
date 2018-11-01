@@ -3,7 +3,7 @@ templateKey: home-page
 title: Clockbeats Studio Roncadelle
 heroSection:
   formTitle: Contattaci per maggiori informazioni
-  image: /img/studio1b.jpg
+  image: /img/8c3eb43c-87bb-4a82-9dcb-97df2340352a.jpg
   payoff: >-
     Clockbeats Studio Roncadelle è una struttura ubicata a Brescia, composta da
     studio di produzione, DJ, sala prove.
