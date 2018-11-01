@@ -26,10 +26,7 @@ featuresList:
     url: /
   - body: >-
       Dopo averti creato il progetto ad hoc, per i 3 mesi successivi avrai il
-      nostro tutoring (ad es. hai pronta per il piazzamento una traccia, se per
-      noi non è di livello di consigliamo come sistemarla a seconda del goal e
-      dell’etichetta a cui puntiamo, lavoriamo insieme le bozze, hai una
-      presenza costante in quello che fai).
+      nostro tutoring
     cta: Learn more about our products
     img: /img/acoustic-guitar.svg
     title: Ti supportiamo 3 mesi!
