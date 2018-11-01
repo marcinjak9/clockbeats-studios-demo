@@ -4,9 +4,9 @@ seoSection:
   seoTitle: ''
 title: Luigi Mazzocchi
 userBody: 'Lezioni di Violino, Meditazione'
-image: /img/plexus.jpg
+image: /img/18076768_10212857850991508_5565205446510579_o.jpg
 userRole: Meditazione
-avatar: /img/plexus.jpg
+avatar: /img/18076768_10212857850991508_5565205446510579_o.jpg
 newsTitle: luigimazzocchi
 tag: luigimazzocchi
 instagram:
