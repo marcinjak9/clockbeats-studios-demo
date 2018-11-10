@@ -2,7 +2,7 @@
 templateKey: user-page
 title: Alessia Conciatori
 userBody: >-
-  Art director, artists manager, a&r, events manager e media marketing manager
+  Art director, Artists manager, A&R, Events manager e Media marketing manager
   in Italia e ad Amsterdam.
 image: /img/15133-squashed.jpg
 userRole: 'Senior Manager '
@@ -19,8 +19,8 @@ socials:
   facebook: 'https://www.facebook.com/alessia.conciatori?ref=br_rs'
   instagram: 'https://www.instagram.com/alessiamsterdam'
 ---
-Sono Alessia e lavoro nella music business da quasi 5 anni.
+Sono Alessia e lavoro nella **Music business** da quasi 5 anni.
 
-Ho lavorato come art director, artists manager, a&r, events manager e media marketing manager in Italia e ad Amsterdam.
+Ho lavorato come _art director, artists manager, a&r, events manager e media marketing manager_ in Italia e ad _**Amsterdam**_.
 
-Ora ho deciso di usare le mie conoscenze e capacità per aiutare gli artisti a velocizzare la loro carriera musicale.
+Ora ho deciso di aiutare gli artisti a velocizzare la loro carriera musicale la mia personale esperienza!
