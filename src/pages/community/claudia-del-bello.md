@@ -2,7 +2,7 @@
 templateKey: user-page
 title: Claudia Del Bello
 userBody: Propedeutica musicale infantile
-image: /img/42782794_2207958905945046_3563419110043811840_o.jpg
+image: /img/15133-squashed.jpg
 userRole: Teacher
 avatar: /img/42782794_2207958905945046_3563419110043811840_o.jpg
 newsTitle: Scopri di più
