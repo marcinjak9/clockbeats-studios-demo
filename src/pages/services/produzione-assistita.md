@@ -4,8 +4,9 @@ title: Meditazione
 heroSection:
   image: /img/body-clouds-early-morning-823694.jpg
   payoff: >-
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, illo!
-    Possimus ipsam enim veritatis natus eveniet quae quo dolores harum.
+    Incontri serali di gruppo incentrati sull’educazione all’ascolto interiore,
+    in collaborazione con i professionisti del Centro Studi Interiori di Brescia
+    “Pranic Energy Healing” 
 featuresTitle: “Conosci te stesso”
 featuresList: []
 services:
