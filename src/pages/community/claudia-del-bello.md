@@ -6,7 +6,7 @@ image: /img/15133-squashed.jpg
 userRole: Teacher
 avatar: /img/42782794_2207958905945046_3563419110043811840_o.jpg
 newsTitle: Scopri di più
-tag: tutorial
+tag: roncadelle
 instagram:
   user: clockbeatsroncadelle
 instagramPhotos:
@@ -20,7 +20,7 @@ socials:
   soundcloud: 'https://instagram.com'
   spotify: 'https://instagram.com'
 ---
-Prossima al conseguimento della Laurea specialsitica di II livello in Violino presso il Conservatorio “L. Marenzio” di Brescia, presso lo stesso si dedica anche a studi di Viola da gamba sotto la guida di Claudia Pasetto.  Si sta inoltre formando come musicoterapeuta presso la Scuola A.P.M.M. “Giulia Cremaschi-Trovesi” di Bergamo, ovvero in Pedagogia Musicale e Musicoterapia Umanistica. Musicista appassionata di generi diversi, ha fatto esperienza di varie formazioni: dall’orchestra alla musica da camera, musica folk-popolare, repertorio rinascimentale e barocco. Il lavoro di insegnamento comprende propedeutica musicale e lezioni di violino. Svolge attività musicali con bambini e ragazzi con disabilità. 
+Prossima al conseguimento della **Laurea specialsitica** di II livello in Violino presso il Conservatorio “L. Marenzio” di Brescia, presso lo stesso si dedica anche a studi di Viola da gamba sotto la guida di Claudia Pasetto.  Si sta inoltre formando come musicoterapeuta presso la Scuola A.P.M.M. “Giulia Cremaschi-Trovesi” di Bergamo, ovvero in Pedagogia Musicale e Musicoterapia Umanistica. Musicista appassionata di generi diversi, ha fatto esperienza di varie formazioni: dall’orchestra alla musica da camera, musica folk-popolare, repertorio rinascimentale e barocco. Il lavoro di insegnamento comprende propedeutica musicale e lezioni di violino. Svolge attività musicali con bambini e ragazzi con disabilità. 
 
 Attività di insegnamento svolte:
 
