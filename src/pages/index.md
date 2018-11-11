@@ -4,11 +4,10 @@ title: Clockbeats Studio Roncadelle
 heroSection:
   formTitle: Contattaci per maggiori informazioni
   image: /img/8c3eb43c-87bb-4a82-9dcb-97df2340352a.jpg
-  payoff: >-
-    Clockbeats Studio Roncadelle è una struttura ubicata a Brescia, composta da
-    studio di produzione, DJ, sala prove.
-
-    Offre servizi dalla musica classica fino alla musica elettronica.
+  payoff: |-
+    Struttura in provincia di Brescia -
+    Sala prove con strumenti, Studio di produzione, DJ set.
+    Offre servizi dalla musica antica a quella elettronica
   services:
     - HeroCtaServicesItem: Corso Produzione Musica Elettronica
     - HeroCtaServicesItem: Corso DJ
@@ -42,9 +41,10 @@ featuresList:
     url: /
 descriptionImage:
   body: >-
-    Siamo uno studio affiliato a clockbeats.com, siamo uno dei 15 studi in
-    Italia! Se il genere che fai non é affine al nostro standard verrai
-    indirizzato in un altro studio.
+    Siamo uno dei 15 studi in Italia affiliati a clockbeats.com! 
+
+    Se il genere che fai non é affine al nostro standard verrai indirizzato in
+    un altro studio.
   image: 'https://source.unsplash.com/collection/2068121/1280x850'
   title: Con noi sei al sicuro
 descriptionImageLinks:
@@ -65,7 +65,7 @@ services:
   body: >-
     Grazie al costante aiuto di un team di professionisti che valuterà le
     migliori tecniche di insegnamento per garantire al proprio cliente una base
-    solida,l’artista disporrà degli strumenti più adatti per entrare nel mondo
+    solida, l’artista disporrà degli strumenti più adatti per entrare nel mondo
     dell’industria musicale.
   title: I nostri Servizi
 latestNews:
