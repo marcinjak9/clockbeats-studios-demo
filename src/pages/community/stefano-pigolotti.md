@@ -1,8 +1,8 @@
 ---
 templateKey: user-page
 title: Stefano Pigolotti
-userBody: Lezioni di Produzione Elettronica e DJ
-image: /img/43880239_2000363283362852_4361804211260751872_n.jpg
+userBody: Produzione Elettronica / DJ
+image: /img/studio1b.jpg
 userRole: Producer
 avatar: /img/43880239_2000363283362852_4361804211260751872_n.jpg
 newsTitle: Scopri di più
