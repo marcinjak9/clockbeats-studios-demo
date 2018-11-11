@@ -10,10 +10,10 @@ seoSection:
     officia dicta quidem quae! Dicta magni pariatur rerum.
   seoKeywords: 'Studio, CLockbeats, music, production'
   seoTitle: Clockbeats Brescia Community
-title: Our rich community of Professionals & Artist
+title: Our great community of Professionals & Artist
 heroSection:
   image: 'https://source.unsplash.com/collection/2068121/1920x1080'
-  payoff: "clockbeats.com é stato studiato per collaborare a grandi distanze,\L a noi non serve vederti di persona!\L\n\L\nTi aiuteremo a capire cosa migliorare nelle tue produzioni direttamente dal nostro portale, evitando l’utilizzo di dropbox o altri servizi analoghi.\n                            "
+  payoff: "clockbeats.com é stato studiato per collaborare a grandi distanze,\L a noi non serve vederti di persona!\L\n\L\nTi aiuteremo a capire cosa migliorare nelle tue produzioni direttamente dal nostro portale.\n                            "
 featuresTitle: Entra a far parte della nostra community!
 featuresList:
   - body: I nostri producer hanno piú di 10 anni di esperienza alle spalle.
