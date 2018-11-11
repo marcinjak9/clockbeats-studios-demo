@@ -3,10 +3,7 @@ templateKey: single-service-page
 title: Meditazione
 heroSection:
   image: /img/body-clouds-early-morning-823694.jpg
-  payoff: >-
-    Incontri serali di gruppo incentrati sull’educazione all’ascolto interiore,
-    in collaborazione con i professionisti del Centro Studi Interiori di Brescia
-    “Pranic Energy Healing” 
+  payoff: 'Centro Studi Interiori  '
 featuresTitle: “Conosci te stesso”
 featuresList: []
 services:
@@ -23,8 +20,10 @@ instagramPhotos:
   - id: BnUfbKpgire
   - id: BnDt1NwDOaa
 ---
-“Conosci te stesso”
+Incontri serali di gruppo incentrati sull’educazione all’**ascolto interiore**, in collaborazione con i professionisti del _Centro Studi Interiori di Brescia “Pranic Energy Healing”_ (https://centrostudiinteriori.it)
 
-Incontri serali di gruppo incentrati sull’educazione all’ascolto interiore, in collaborazione con i professionisti del Centro Studi Interiori di Brescia “Pranic Energy Healing” (https://centrostudiinteriori.it)
 
-Istruttore: Luigi Mazzocchi
+
+****
+
+**Coach: Luigi Mazzocchi**
