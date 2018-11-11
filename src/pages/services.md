@@ -5,8 +5,8 @@ heroSection:
   image: /img/383-squashed.jpg
   payoff: >-
     Il processo di composizione musicale coinvolge una moltitudine di figure
-    professionali con differenti competenze, con compiti non esercitabili da una
-    singola persona o da un singolo studio di produzione musicale.
+    professionali con differenti competenze e con compiti non esercitabili da
+    una singola persona o da un singolo studio di produzione musicale.
 featuresTitle: Accelera la tua carriera Musicale
 featuresList:
   - body: >-
