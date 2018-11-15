@@ -2,7 +2,7 @@
 templateKey: single-service-page
 title: Propedeutica Musicale Infantile
 heroSection:
-  image: /img/things-to-do-in-niagara-falls-1500x609.jpg
+  image: /img/cbb_15.jpg
   payoff: ''
 featuresTitle: Propedeutica Musicale Infantile
 featuresList: []
