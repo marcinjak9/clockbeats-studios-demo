@@ -13,10 +13,14 @@ image: /img/img_7886.jpg
 userRole: Senior Producer
 avatar: /img/img_7886.jpg
 newsTitle: Scopri di più
-tag: clockbeatsbergamo
+tag: max kaarlos
 instagram:
-  user: ''
-instagramPhotos: []
+  user: maxkaarlos
+instagramPhotos:
+  - id: Blh6Hq_hyVl
+  - id: BXFzMdyB0ZO
+  - id: BlgYFL8hsN1
+  - id: BQcphsvlX8R
 socials:
   facebook: 'https://www.facebook.com/massimo.carlozzo.1'
   instagram: 'https://www.instagram.com/maxkaarlos/'
