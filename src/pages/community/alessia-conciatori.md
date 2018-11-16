@@ -5,7 +5,7 @@ userBody: >-
   Art director, artists manager, a&r, events manager e media marketing manager
   in Italia e ad Amsterdam.
 image: /img/15133-squashed.jpg
-userRole: 'Senior Manager '
+userRole: 'Senior Manager  '
 avatar: /img/31590030_10216520092655623_6658108231254016000_n.jpg
 newsTitle: News from our blog
 tag: support
