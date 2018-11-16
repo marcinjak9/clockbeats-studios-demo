@@ -1,5 +1,7 @@
 ---
 templateKey: home-page
+seoSection:
+  seoTitle: Clockbeats Studio Bergamo
 title: Clockbeats Studio Bergamo
 heroSection:
   formTitle: Quale servizio ti interessa ?
