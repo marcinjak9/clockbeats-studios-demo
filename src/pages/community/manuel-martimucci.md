@@ -8,7 +8,7 @@ avatar: /img/img_8007.jpg
 newsTitle: Our cool blog!
 tag: tutorial
 instagram:
-  user: clockbeatsbergamo
+  user: manuel_martimucci
 instagramPhotos: []
 socials:
   facebook: 'https://www.facebook.com/manuel.marty'
