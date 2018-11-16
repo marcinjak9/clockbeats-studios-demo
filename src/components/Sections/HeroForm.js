@@ -40,9 +40,8 @@ class HeroForm extends Component {
         className="card-body d-flex flex-column justify-content-center text-center"
         name={formName}
         data-netlify="true"
-        onSubmit={e => this.handleSubmit(e)}
+        onSubmit={this.handleOnSubmit}
         data-netlify-honeypot="bot-field"
-        netlify
       >
         <h2 className="form-title">{title}</h2>
         <Input type="email" value={email} placeholder="Email" onChange={e => this.setState({ email: e.target.value })} />
