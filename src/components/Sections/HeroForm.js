@@ -36,7 +36,13 @@ class HeroForm extends Component {
     const { dropdownOptions, title, formName } = this.props
     const { email, service } = this.state
     return (
-      <form className="card-body d-flex flex-column justify-content-center text-center" name={formName} data-netlify="true" onSubmit={e => this.handleSubmit(e)} data-netlify-honeypot="bot-field">
+      <form
+        className="card-body d-flex flex-column justify-content-center text-center"
+        name={formName}
+        data-netlify="true"
+        onSubmit={this.handleOnSubmit}
+        data-netlify-honeypot="bot-field"
+      >
         <h2 className="form-title">{title}</h2>
         <Input type="email" value={email} placeholder="Email" onChange={e => this.setState({ email: e.target.value })} />
         <Dropdown value={service} placeholder="Select a service" dropdownOptions={dropdownOptions} onChange={e => this.setState({ service: e.target.value })} />
