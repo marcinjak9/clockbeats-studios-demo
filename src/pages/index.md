@@ -21,7 +21,7 @@ featuresTitle: Accelera la tua Carriera Musicale con noi!
 featuresList:
   - body: 'Ti creiamo un progetto in base alle tue prossime Release! '
     cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
+    img: /img/208015-ozk0qo-952-squashed.jpg
     title: Creiamo il tuo progetto personalizzato
     url: /
   - body: >-
@@ -32,7 +32,7 @@ featuresList:
       sistemarla a seconda del goal e dell’etichetta a cui puntiamo, lavoriamo
       insieme le bozze, hai una presenza costante in quello che fai).
     cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
+    img: /img/270953-p5bmqp-240-squashed.jpg
     title: Ti supportiamo 3 mesi!
     url: /
   - body: >-
