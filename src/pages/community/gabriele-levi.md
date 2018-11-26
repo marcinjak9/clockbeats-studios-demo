@@ -15,18 +15,17 @@ avatar: /img/44979699_10213019968601750_1405732659857981440_n.jpg
 newsTitle: Scopri di più
 tag: gabrielelevi
 instagram:
-  user: clockbeatsroncadelle
+  user: gab_levi
 instagramPhotos:
-  - id: BndRVOTAUsf
-  - id: BnXERRxFXXS
-  - id: BnUfbKpgire
-  - id: BnDt1NwDOaa
+  - id: BqlREcAgtX6
+  - id: Bls8YNznoC8
+  - id: BnO1ySFnieA
+  - id: BoqjzKniqci
 socials:
-  facebook: 'https://www.facebook.com/profile.php?id=100006689565475'
-  instagram: 'https://www.instagram.com/federico.baracco/'
-  soundcloud: 'https://soundcloud.com/tears-of-change'
-  spotify: >-
-    https://open.spotify.com/artist/7dZyOppq0idGDsRwxuuiAt?si=E-H4C9TjTpedc3tHSy_Jlw
+  facebook: 'https://www.facebook.com/gabriele.levi'
+  instagram: 'https://www.instagram.com/gab_levi/'
+  soundcloud: ''
+  spotify: ''
 ---
 Gabriele Levi, classe 1991, si è specializzato in Organo e Clavicembalo con **Ton Koopman**, Tini Mathot, Fabio Bonizzoni e Patrick Ayrton presso il _**Conservatorio reale dell’Aia, in Olanda.**_
 
