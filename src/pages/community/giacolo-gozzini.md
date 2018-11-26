@@ -8,17 +8,17 @@ avatar: /img/906103_10207850081679693_727679955497487090_o.jpg
 newsTitle: Scopri di più
 tag: giacomogozzini
 instagram:
-  user: clockbeatsbrescia
+  user: giacomo.gozzini
 instagramPhotos:
-  - id: BndRVOTAUsf
-  - id: BnXERRxFXXS
-  - id: BnUfbKpgire
-  - id: BnDt1NwDOaa
+  - id: BoZwTuElG0J
+  - id: BU3-_dzAHdT
+  - id: 23Z1voSQv9
+  - id: Bdrr0qpH5Mg
 socials:
-  facebook: 'https://instagram.com'
-  instagram: 'https://instagram.com'
-  soundcloud: 'https://instagram.com'
-  spotify: 'https://instagram.com'
+  facebook: 'https://www.facebook.com/giacomo.gozzini'
+  instagram: 'https://www.instagram.com/giacomo.gozzini/'
+  soundcloud: ''
+  spotify: ''
 ---
 Si è formato al Conservatorio “Luca Marenzio” di Brescia dove si diploma in Organo e Composizione organistica con Pietro Pasquini e in Direzione d’Orchestra con Gilberto Serembe. Attualmente prosegue gli studi al Conservatorio “Arrigo Boito” di Parma nella classe di Composizione di Luca Tessadrelli. _**In qualità di compositore si è già distinto come vincitore del XI concorso Prime Esecuzioni - Memorial Bruna Liguori Valenti.**_
 
