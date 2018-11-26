@@ -14,10 +14,10 @@ instagramPhotos:
   - id: BijpW0WlaHg
   - id: BhoPbh4lX1k
 socials:
-  facebook: 'https://instagram.com'
+  facebook: 'https://www.facebook.com/stesnake'
   instagram: 'https://www.instagram.com/pigolottistefano/'
-  soundcloud: 'https://instagram.com'
-  spotify: 'https://instagram.com'
+  soundcloud: ''
+  spotify: ''
 ---
 Junior Producer di Clockbeats Studio Brescia. 
 
