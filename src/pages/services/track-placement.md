@@ -6,27 +6,24 @@ heroSection:
   payoff: ''
 featuresTitle: Diventa un produttore di successo
 featuresList:
-  - cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
-    title: Mandaci la tua traccia
+  - title: Mandaci la tua traccia
     body: 'Inviaci la tua traccia a studio.brescia@clockbeats.com '
-    url: /
-  - cta: Learn more about our products
+    cta: Learn more about our products
     img: /img/acoustic-guitar.svg
-    title: Diventa un produttore di successo
+    url: /
+  - title: Diventa un produttore di successo
     body: Fare Release di successo ti porterá ad essere un produttore di successo.
-    url: /
-  - cta: Learn more about our products
+    cta: Learn more about our products
     img: /img/acoustic-guitar.svg
-    title: Fai una Release su una TOP Label
+    url: /
+  - title: Fai una Release su una TOP Label
     body: Contattaci per sapere di piú!
+    cta: Learn more about our products
+    img: /img/acoustic-guitar.svg
     url: /
 services:
-  title: What can we offer you?
-  body: >-
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet itaque odit
-    labore omnis assumenda libero aliquid ab explicabo! Pariatur, ut esse.
-    Illum, fuga veniam omnis nostrum consequatur nam? Quae, inventore!
+  title: ''
+  body: ''
 latestNews:
   tag: tutorial
   title: Check out our cool Blog
