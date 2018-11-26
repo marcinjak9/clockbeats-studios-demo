@@ -8,16 +8,12 @@ avatar: /img/17883520_273648139712910_5088655836243263959_n.jpg
 newsTitle: Scopri di più
 tag: clockbeatsbrescia
 instagram:
-  user: clockbeatsbrescia
-instagramPhotos:
-  - id: BndRVOTAUsf
-  - id: BnXERRxFXXS
-  - id: BnUfbKpgire
-  - id: BnDt1NwDOaa
+  user: ''
+instagramPhotos: []
 socials:
-  facebook: 'https://instagram.com'
-  instagram: 'https://instagram.com'
-  soundcloud: 'https://instagram.com'
-  spotify: 'https://instagram.com'
+  facebook: 'https://www.facebook.com/olivadario94'
+  instagram: 'https://www.instagram.com/dario.oliva94/'
+  soundcloud: ''
+  spotify: ''
 ---
 Inizia il suo percorso con Clockbeats Studio Brescia nel 2010.
