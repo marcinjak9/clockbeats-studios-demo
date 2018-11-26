@@ -11,15 +11,18 @@ avatar: /img/scara.jpg
 newsTitle: clockbeatsbrescia
 tag: clockbeatsbrescia
 instagram:
-  user: clockbeatsbrescia.it
+  user: simone.scaramuzzi.producer
 instagramPhotos:
-  - id: BmCJsHCBKtF
-  - id: BlqIDYiBo9K
-  - id: Bfxud2AgUXa
-  - id: Bc-7KCHh77P
+  - id: Bp67fpaFMAe
+  - id: BojflBgilZ4
+  - id: Bduuhe6hYEj
+  - id: BcM8XGmBQSD
 socials:
-  facebook: 'https://www.facebook.com/martin.s.jakubik'
-  instagram: 'https://www.instagram.com/martin_m.j/'
+  facebook: 'https://www.facebook.com/sscaramuzzi1'
+  instagram: 'https://www.instagram.com/simone.scaramuzzi.producer/'
+  soundcloud: 'https://soundcloud.com/simone-scaramuzzi'
+  spotify: >-
+    https://open.spotify.com/artist/6xEVEz70o0IXnikF6W1yW6?si=i6AsyYOXRuK2NSFHzw8z8w
 ---
 Bresciano doc classe 76 Simone Scaramuzzi, s’innamora del Vinile e a soli 14 anni comincia a collezionarli, un’amore che lo accompagna sino ad oggi. In pochi anni la Musica prende sempre più piede nella sua vita: con una spiccata predisposizione per la Tech e la Deep House, Simone comincia a suonare in Club importanti come il Tenax di Firenze e il Mazoom di Sirmione del Garda, apre il suo studio di produzione ‘Doc DjStudio’ e comincia a produrre musica per varie etichette discografiche come: Green Force, Makin, Lapsus, Warenlift Musik, Lapsus, Armada Music, Rebirth, NoLabel, OceanDarck, Paul’boutique, M recording.
 
