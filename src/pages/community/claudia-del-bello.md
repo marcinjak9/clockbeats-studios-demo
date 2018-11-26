@@ -8,19 +8,15 @@ image: /img/15133-squashed.jpg
 userRole: Teacher
 avatar: /img/_dsc7459.jpg
 newsTitle: Scopri di più
-tag: roncadelle
+tag: claudiadelbello
 instagram:
-  user: clockbeatsroncadelle
-instagramPhotos:
-  - id: BndRVOTAUsf
-  - id: BnXERRxFXXS
-  - id: BnUfbKpgire
-  - id: BnDt1NwDOaa
+  user: ''
+instagramPhotos: []
 socials:
-  facebook: 'https://instagram.com'
-  instagram: 'https://instagram.com'
-  soundcloud: 'https://instagram.com'
-  spotify: 'https://instagram.com'
+  facebook: 'https://www.facebook.com/claudia.delbello'
+  instagram: ''
+  soundcloud: ''
+  spotify: ''
 ---
 Consegue la **Laurea specialistica** di II livello in _Violino_ presso il Conservatorio “Luca Marenzio” di Brescia e presso lo stesso si dedica anche a studi di _Viola da gamba_ sotto la guida della Prof.ssa Claudia Pasetto.  Si sta inoltre formando come **musicoterapeuta** presso la _Scuola A.P.M.M. “Giulia Cremaschi-Trovesi” di Bergamo, ovvero in Pedagogia Musicale e Musicoterapia Umanistica_.  Musicista appassionata di generi diversi, ha fatto esperienza di varie formazioni: dall’orchestra alla musica da camera, musica folk-popolare, repertorio rinascimentale e barocco. Il lavoro di insegnamento comprende propedeutica musicale e lezioni di violino. Svolge attività musicali con bambini e ragazzi con disabilità. 
 
