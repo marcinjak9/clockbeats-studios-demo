@@ -17,14 +17,14 @@ image: /img/401945-pcrx3y-933-squashed.jpg
 userRole: Senior Producer
 avatar: /img/23847084_2064482117118087_3021868791927342340_o.jpg
 newsTitle: Scopri di più
-tag: clockbeatsbrescia
+tag: federicobaracco
 instagram:
-  user: clockbeatsbrescia
+  user: federico.baracco
 instagramPhotos:
-  - id: BndRVOTAUsf
-  - id: BnXERRxFXXS
-  - id: BnUfbKpgire
-  - id: BnDt1NwDOaa
+  - id: Bppi2qJnnsf
+  - id: BjnESkRHbNO
+  - id: BgO0GbkBcQY
+  - id: BdXXkNFgi4R
 socials:
   facebook: 'https://www.facebook.com/profile.php?id=100006689565475'
   instagram: 'https://www.instagram.com/federico.baracco/'
