@@ -10,14 +10,15 @@ avatar: /img/31590030_10216520092655623_6658108231254016000_n.jpg
 newsTitle: News from our blog
 tag: support
 instagram:
-  user: alessiamsterdam
+  user: alessia.conciatori
 instagramPhotos:
-  - id: Bn3vrqanucm
-  - id: BlaTzQanBla
-  - id: BnqTuK3HMmV
+  - id: Bqmc5WWBg6g
+  - id: BqHjIF_hcXb
+  - id: BqC1QDNhVbw
+  - id: Bp0LzeABDCF
 socials:
-  facebook: 'https://www.facebook.com/alessia.conciatori?ref=br_rs'
-  instagram: 'https://www.instagram.com/alessiamsterdam'
+  facebook: 'https://www.facebook.com/alessia.conciatori'
+  instagram: 'https://www.instagram.com/alessia.conciatori/'
 ---
 Sono Alessia e lavoro nella **Music business** da quasi 5 anni.
 
