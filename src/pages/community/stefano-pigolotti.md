@@ -8,15 +8,14 @@ avatar: /img/31729898_2110593308981305_6042006395392360448_n.jpg
 newsTitle: Scopri di più
 tag: tutorial
 instagram:
-  user: clockbeatsbrescia
+  user: pigolottistefano
 instagramPhotos:
-  - id: BndRVOTAUsf
-  - id: BnXERRxFXXS
-  - id: BnUfbKpgire
-  - id: BnDt1NwDOaa
+  - id: BkcyPlll3sN
+  - id: BijpW0WlaHg
+  - id: BhoPbh4lX1k
 socials:
   facebook: 'https://instagram.com'
-  instagram: 'https://instagram.com'
+  instagram: 'https://www.instagram.com/pigolottistefano/'
   soundcloud: 'https://instagram.com'
   spotify: 'https://instagram.com'
 ---
