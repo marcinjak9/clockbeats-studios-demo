@@ -15,11 +15,10 @@ instagramPhotos:
   - id: BjXTI0VnqQC
   - id: Bdn1i8YgMsj
   - id: BhmmBy0n0MH
-  - {}
 socials:
-  facebook: 'https://instagram.com'
-  instagram: 'https://instagram.com'
-  soundcloud: 'https://instagram.com'
-  spotify: 'https://instagram.com'
+  facebook: 'https://www.facebook.com/nicholas.tango'
+  instagram: 'https://www.instagram.com/nicholastango/'
+  soundcloud: ''
+  spotify: ''
 ---
 Video Maker e Fotografo professionista.
