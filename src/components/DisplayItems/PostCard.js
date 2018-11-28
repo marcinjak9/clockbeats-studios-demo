@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const PostCard = ({ tag, title, body, author, url, image }) => (
   <div className="col-md-4">
     <div className="card blog-card">
-      <a href="/">
+      <a href={url}>
         <img src={image} alt="" />
       </a>
       <div className="card-body">

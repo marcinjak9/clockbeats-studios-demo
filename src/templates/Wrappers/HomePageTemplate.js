@@ -25,6 +25,27 @@ const HomePageTemplate = (props) => {
         showForm
         formName={`${config ? config.branch : 'contact'}-form`}
       />
+      <section className="platform-cta container-fluid">
+        <div className="container">
+          <div className="row d-flex flex-row justify-content-between align-items-center">
+            <div className="col-md-8">
+              <h2>
+                We create artists and their future.
+                {' '}
+                <span role="img" aria-label="rocket">💎</span>
+              </h2>
+              <h3 className="font-weight-bold">Check our collaboration pltaform</h3>
+            </div>
+            <div className="col-md-4">
+              <a href="https://clockbeats.com" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light">
+                Read about our collaboration pltaform
+                {' '}
+                <span role="img" aria-label="rocket">🚀</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
       <HomeFeatures
         title={features.title}
         features={features.list}
@@ -76,7 +97,7 @@ HomePageTemplate.propTypes = {
   hero: PropTypes.shape({
     title: PropTypes.string,
     payoff: PropTypes.string,
-    image: PropTypes.string,
+    image: PropTypes.any,
     ctaServices: PropTypes.arrayOf(PropTypes.shape({
       HeroCtaServicesItem: PropTypes.string,
     })),
@@ -86,7 +107,7 @@ HomePageTemplate.propTypes = {
     title: PropTypes.string,
     list: PropTypes.arrayOf(PropTypes.shape({
       title: PropTypes.string,
-      icon: PropTypes.string,
+      icon: PropTypes.any,
       body: PropTypes.string,
       url: PropTypes.string,
       text: PropTypes.string,
@@ -95,7 +116,7 @@ HomePageTemplate.propTypes = {
   descriptionImage: PropTypes.shape({
     title: PropTypes.string,
     body: PropTypes.string,
-    image: PropTypes.string,
+    image: PropTypes.any,
     links: PropTypes.arrayOf(PropTypes.shape({
       text: PropTypes.string,
       url: PropTypes.url,
@@ -107,7 +128,7 @@ HomePageTemplate.propTypes = {
     list: PropTypes.arrayOf(PropTypes.shape({
       id: PropTypes.string,
       title: PropTypes.string,
-      avatar: PropTypes.string,
+      avatar: PropTypes.any,
       link: PropTypes.string,
       profession: PropTypes.string,
       bio: PropTypes.string,
@@ -136,7 +157,7 @@ HomePageTemplate.propTypes = {
   }),
   formCta: PropTypes.shape({
     title: PropTypes.string,
-    image: PropTypes.string,
+    image: PropTypes.any,
   }),
   instagram: PropTypes.shape({
     user: PropTypes.string,

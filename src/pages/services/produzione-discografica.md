@@ -7,19 +7,19 @@ heroSection:
 featuresTitle: Registra la tua prossima HIT
 featuresList:
   - cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
+    img: /img/rocket.png
     title: Prenota la tua sessione
     body: Prenota la tua sessione in studio in pochissimi passaggi!
     url: /
   - cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
+    img: /img/rocket.png
     title: Entra in contatto con la nostra community
     body: >-
       Entra in contatto con la nostra community e scegli il tuo Fonico
       preferito!
     url: /
   - cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
+    img: /img/rocket.png
     title: Registra la tua song!
     body: Utilizza il meglio che la tecnlogia puó offrire nel mondo Audio!
     url: /

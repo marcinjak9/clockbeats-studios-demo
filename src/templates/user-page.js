@@ -81,15 +81,29 @@ export const userQuery = graphql`
           seoTitle
           seoKeywords
           ogTitle
-          ogImage
+          ogImage {
+            id
+          }
           ogUrl
           seoDescription
         }
         title
         body: userBody
-        image
+        image {
+          childImageSharp {
+            fluid(maxWidth: 2880) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         userRole
-        avatar
+        avatar {
+          childImageSharp {
+            fluid(maxWidth: 500) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         tag
         newsTitle
         instagram {
