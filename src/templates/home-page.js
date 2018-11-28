@@ -171,6 +171,7 @@ HomePage.propTypes = {
           }),
         }),
       })),
+
     }),
     servicesList: PropTypes.shape({
       edges: PropTypes.arrayOf(PropTypes.shape({
