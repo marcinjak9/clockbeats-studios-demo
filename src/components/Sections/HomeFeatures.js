@@ -30,7 +30,7 @@ HomeFeatures.propTypes = {
     body: PropTypes.string,
     cta: PropTypes.string,
     url: PropTypes.string,
-    img: PropTypes.string,
+    img: PropTypes.any,
   })),
 }
 

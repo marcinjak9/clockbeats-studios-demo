@@ -12,21 +12,21 @@ heroSection:
 featuresTitle: L'abito fa il monaco!
 featuresList:
   - cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
+    img: /img/rocket.png
     title: Entra in contatto con il nostro STAFF
     body: >-
       Entra in contatto con il nostro Staff e prenota un appuntamento
       telefonico!
     url: /
   - cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
+    img: /img/rocket.png
     title: Costruisci la tua campagna Marketing
     body: |-
       Costruisci e personalizza la tua campagna Marketing. 
       Il segreto per il successo é costruire al meglio la tua immagine artista.
     url: /
   - cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
+    img: /img/rocket.png
     title: GO!
     body: Entra nella music industry con la tua nuova immagine!
     url: /

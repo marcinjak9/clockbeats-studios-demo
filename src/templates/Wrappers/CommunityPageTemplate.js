@@ -39,14 +39,14 @@ CommunityTemplate.propTypes = {
   hero: PropTypes.shape({
     title: PropTypes.string,
     payoff: PropTypes.string,
-    image: PropTypes.string,
+    image: PropTypes.any,
   }),
   featuresList: PropTypes.arrayOf(PropTypes.shape({
     title: PropTypes.string,
     body: PropTypes.string,
     cta: PropTypes.string,
     url: PropTypes.string,
-    img: PropTypes.string,
+    img: PropTypes.any,
   })),
   featuresTitle: PropTypes.string,
   teamSection: PropTypes.shape({

@@ -1,18 +1,22 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faSpotify, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import Image, { getImageLink } from '../Image'
 
 const UserHeader = (props) => {
   const {
     title, payoff, backgroundImage, userRole, avatar, socials,
   } = props
   return (
-    <section className="container-fluid user-header d-flex flex-column justify-content-center" style={{ backgroundImage: `url('${backgroundImage}')` }}>
+    <section
+      className="container-fluid user-header d-flex flex-column justify-content-center"
+      style={{ backgroundImage: `url('${getImageLink(backgroundImage)}')` }}
+    >
       <div className="hero-overlay" />
       <div className="container">
         <div className="row">
           <div className="col-md-3 text-center">
-            <img src={avatar} alt="" className="img-fluid avatar" />
+            <Image image={avatar} alt="" className="img-fluid avatar" />
           </div>
           <div className="col-md-7 text-col">
             <h1 className="text-white title">{title}</h1>
