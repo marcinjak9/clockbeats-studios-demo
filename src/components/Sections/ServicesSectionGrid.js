@@ -15,10 +15,10 @@ const ServicesSection = ({ title, body, services }) => (
 
       <div className="grid-wrapper">
         {services.map(service => (
-          <Link key={shortid.generate()} to={service.url} className="grid-cell" style={{ backgroundImage: `url('${service.img}')` }}>
+          <Link key={shortid.generate()} to={service.url} className="grid-cell" style={{ backgroundImage: `url('${service.img.childImageSharp.fluid.src}')` }}>
             <div className="overlay-cell">
               <h3>{service.title}</h3>
-              <p className="short">{service.body}</p>
+              {/* <p className="short">{service.body}</p> */}
               <p className="cta brand-text">
                 <strong>Show More </strong>
                 <i className="fas fa-angle-right" />

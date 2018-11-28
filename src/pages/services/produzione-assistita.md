@@ -14,19 +14,19 @@ heroSection:
 featuresTitle: Più PLAYS più FAN!
 featuresList:
   - cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
+    img: /img/rocket.png
     title: Inviaci la tua song!
     body: Invia la tua song a studio.brescia@clockbeats.com e scopri di piú!
     url: /
   - cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
+    img: /img/rocket.png
     title: Aumenta le tue Plays su Youtube!
     body: >-
       Attraverso la nostra promozione potrai aumentare le tue plays anche su
       Youtube!
     url: /
   - cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
+    img: /img/rocket.png
     title: Aumenta le tue Plays su Spotify
     body: |-
       Aumenta le tue Plays su Spotify organicamente. 

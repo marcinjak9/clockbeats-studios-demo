@@ -76,7 +76,7 @@ HomePageTemplate.propTypes = {
   hero: PropTypes.shape({
     title: PropTypes.string,
     payoff: PropTypes.string,
-    image: PropTypes.string,
+    image: PropTypes.any,
     ctaServices: PropTypes.arrayOf(PropTypes.shape({
       HeroCtaServicesItem: PropTypes.string,
     })),
@@ -86,7 +86,7 @@ HomePageTemplate.propTypes = {
     title: PropTypes.string,
     list: PropTypes.arrayOf(PropTypes.shape({
       title: PropTypes.string,
-      icon: PropTypes.string,
+      icon: PropTypes.any,
       body: PropTypes.string,
       url: PropTypes.string,
       text: PropTypes.string,
@@ -95,7 +95,7 @@ HomePageTemplate.propTypes = {
   descriptionImage: PropTypes.shape({
     title: PropTypes.string,
     body: PropTypes.string,
-    image: PropTypes.string,
+    image: PropTypes.any,
     links: PropTypes.arrayOf(PropTypes.shape({
       text: PropTypes.string,
       url: PropTypes.url,
@@ -107,7 +107,7 @@ HomePageTemplate.propTypes = {
     list: PropTypes.arrayOf(PropTypes.shape({
       id: PropTypes.string,
       title: PropTypes.string,
-      avatar: PropTypes.string,
+      avatar: PropTypes.any,
       link: PropTypes.string,
       profession: PropTypes.string,
       bio: PropTypes.string,
@@ -136,7 +136,7 @@ HomePageTemplate.propTypes = {
   }),
   formCta: PropTypes.shape({
     title: PropTypes.string,
-    image: PropTypes.string,
+    image: PropTypes.any,
   }),
   instagram: PropTypes.shape({
     user: PropTypes.string,

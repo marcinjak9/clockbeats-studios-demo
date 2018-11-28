@@ -102,7 +102,7 @@ HomePage.propTypes = {
       frontmatter: PropTypes.shape({
         title: PropTypes.string,
         heroSection: PropTypes.shape({
-          image: PropTypes.string,
+          image: PropTypes.any,
           payoff: PropTypes.string,
           formTitle: PropTypes.string,
           services: PropTypes.arrayOf(PropTypes.shape({
@@ -115,12 +115,12 @@ HomePage.propTypes = {
           body: PropTypes.string,
           cta: PropTypes.string,
           url: PropTypes.string,
-          img: PropTypes.string,
+          img: PropTypes.any,
         })),
         descriptionImage: PropTypes.shape({
           title: PropTypes.string,
           body: PropTypes.string,
-          image: PropTypes.string,
+          image: PropTypes.any,
         }),
         descriptionImageLinks: PropTypes.arrayOf(PropTypes.shape({
           text: PropTypes.string,
@@ -141,7 +141,7 @@ HomePage.propTypes = {
         formCta: PropTypes.shape({
           title: PropTypes.string,
           formTitle: PropTypes.string,
-          image: PropTypes.string,
+          image: PropTypes.any,
         }),
         instagram: PropTypes.shape({
           user: PropTypes.string,
@@ -206,12 +206,20 @@ export const homePageQuery = graphql`
           seoTitle
           seoKeywords
           ogTitle
-          ogImage
+          ogImage {
+            id
+          }
           ogUrl
           seoDescription
         }
         heroSection {
-          image
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2880) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           payoff
           services {
             HeroCtaServicesItem
@@ -224,12 +232,24 @@ export const homePageQuery = graphql`
           body
           cta
           url
-          img
+          img {
+            childImageSharp {
+              fluid(maxWidth: 220) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
         descriptionImage {
           title
           body
-          image
+          image {
+            childImageSharp {
+              fluid(maxWidth: 1200) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
         descriptionImageLinks {
           text
@@ -249,7 +269,13 @@ export const homePageQuery = graphql`
         }
         formCta {
           title
-          image
+          image {
+            childImageSharp {
+              fluid(maxWidth: 1200) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           formTitle
         }
         formCtaLinks {
@@ -264,7 +290,7 @@ export const homePageQuery = graphql`
         }
       }
     }
-    
+
     users: allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "user-page"}}} limit: 4) {
       edges {
         node {
@@ -276,7 +302,13 @@ export const homePageQuery = graphql`
             title
             body: userBody
             userRole
-            avatar
+            avatar {
+              childImageSharp {
+                fluid(maxWidth: 300) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             socials {
               instagram
               facebook
@@ -298,7 +330,13 @@ export const homePageQuery = graphql`
           frontmatter {
             title
             heroSection {
-              image
+              image {
+                childImageSharp {
+                  fluid(maxHeight: 800, quality: 70) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
               payoff
             }
           }
