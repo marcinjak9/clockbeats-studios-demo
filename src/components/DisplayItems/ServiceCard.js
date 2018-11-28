@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'gatsby-link'
 import Image from '../Image'
 
 const ServiceCard = ({ title, body, url, img }) => (
@@ -12,11 +13,11 @@ const ServiceCard = ({ title, body, url, img }) => (
         <p>
           {body}
         </p>
-        <a href={url} className="card-link">
+        <Link to={url} className="card-link">
           See Details
           {' '}
           <i className="fas fa-angle-right" />
-        </a>
+        </Link>
       </div>
     </div>
   </div>

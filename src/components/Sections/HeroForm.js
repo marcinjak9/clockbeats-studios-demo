@@ -34,7 +34,7 @@ class HeroForm extends Component {
       fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: this.encode({ 'form-name': formName, email, service }),
+        body: this.encode({ 'form-name': formName, email, service, privacy }),
       })
         .then(() => {
           this.setState({ email: '', service: '', completed: true })
