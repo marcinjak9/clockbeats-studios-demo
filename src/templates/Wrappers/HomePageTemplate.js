@@ -25,6 +25,27 @@ const HomePageTemplate = (props) => {
         showForm
         formName={`${config ? config.branch : 'contact'}-form`}
       />
+      <section className="platform-cta container-fluid">
+        <div className="container">
+          <div className="row d-flex flex-row justify-content-between align-items-center">
+            <div className="col-md-8">
+              <h2>
+                We create artists and their future.
+                {' '}
+                <span role="img" aria-label="rocket">💎</span>
+              </h2>
+              <h3 className="font-weight-bold">Check our collaboration pltaform</h3>
+            </div>
+            <div className="col-md-4">
+              <a href="https://clockbeats.com" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light">
+                Read about our collaboration pltaform
+                {' '}
+                <span role="img" aria-label="rocket">🚀</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
       <HomeFeatures
         title={features.title}
         features={features.list}
