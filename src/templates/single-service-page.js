@@ -130,13 +130,21 @@ export const singleServiceQuery = graphql`
           seoTitle
           seoKeywords
           ogTitle
-          ogImage
+          ogImage {
+            id
+          }
           ogUrl
           seoDescription
         }
         title
         heroSection {
-          image
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2880) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           payoff
         }
         featuresTitle
@@ -145,7 +153,13 @@ export const singleServiceQuery = graphql`
           body
           cta
           url
-          img
+          img {
+            childImageSharp {
+              fluid(maxWidth: 220) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
         services {
           title
@@ -174,7 +188,13 @@ export const singleServiceQuery = graphql`
           frontmatter {
             title
             heroSection {
-              image
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 500) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
               payoff
             }
           }

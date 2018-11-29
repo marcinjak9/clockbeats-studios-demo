@@ -1,16 +1,22 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { getImageLink } from '../Image'
 import HeroForm from './HeroForm'
 
 const HeroSection = (props) => {
   const {
-    title, payoff, backgroundImage, dropdownOptions, formTitle, showForm, formName,
+    backgroundImage, title, payoff, dropdownOptions, formTitle, showForm, formName,
   } = props
   if (!title) {
     return null
   }
   return (
-    <section className="container-fluid hero d-flex flex-column justify-content-center" style={{ backgroundImage: `url('${backgroundImage}')` }}>
+    <section
+      className="container-fluid hero d-flex flex-column justify-content-center"
+      style={{
+        backgroundImage: `url('${getImageLink(backgroundImage)}')`,
+      }}
+    >
       <div className="hero-overlay" />
       <div className="container">
         <div className="row">
@@ -38,7 +44,7 @@ const HeroSection = (props) => {
 HeroSection.propTypes = {
   title: PropTypes.string,
   payoff: PropTypes.string,
-  backgroundImage: PropTypes.string,
+  backgroundImage: PropTypes.any,
   dropdownOptions: PropTypes.arrayOf(PropTypes.shape({
     HeroCtaServicesItem: PropTypes.string,
   })),

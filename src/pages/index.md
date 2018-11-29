@@ -23,14 +23,14 @@ featuresTitle: Accelera la tua Carriera Musicale con noi!
 featuresList:
   - body: 'Ti creiamo un progetto in base alle tue prossime Release! '
     cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
+    img: /img/rocket.png
     title: Creiamo il tuo progetto personalizzato
     url: /
   - body: >-
       Dopo averti creato il progetto ad hoc, per i 3 mesi successivi avrai il
       nostro tutoring
     cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
+    img: /img/rocket.png
     title: Ti supportiamo 3 mesi!
     url: /
   - body: >-
@@ -73,7 +73,7 @@ latestNews:
   title: Check out our cool Blog
 formCta:
   formTitle: Contattaci subito per piú info!
-  image: 'https://source.unsplash.com/collection/2068121/1280x850'
+  image: /img/pablo.png
   title: Lorem ipsum dolor set
 formCtaLinks:
   - text: First CTA

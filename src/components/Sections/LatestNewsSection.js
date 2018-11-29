@@ -56,9 +56,9 @@ class LatestNewsSection extends Component {
 
 
   render() {
-    const { title } = this.props
+    const { title, tag } = this.props
     const { posts, error } = this.state
-    if (error) {
+    if (error || !tag || posts.length === 0) {
       return null
     }
     return (

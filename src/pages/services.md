@@ -13,14 +13,14 @@ featuresList:
       I nostri servizi sono completamente personalizzati a seconda del tuo
       talento.
     cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
-    title: Servizio personalizzato
+    img: /img/rocket.png
+    title: Servizio Personalizzato
     url: /
   - body: >-
       Ti supportiamo in ogni fase della creazione, dalla composizione alla post
       produzione alla promozione!
     cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
+    img: /img/rocket.png
     title: Supporto a 360 gradi
     url: /
   - body: >-
@@ -30,7 +30,7 @@ featuresList:
       carriera musicale, a qualsiasi livello tu sia parlando di capacità di
       produzione. 
     cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
+    img: /img/rocket.png
     title: Entra a far parte della nostra community!
     url: /
 services:
