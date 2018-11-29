@@ -48,13 +48,13 @@ SingleServiceTemplate.propTypes = {
   hero: PropTypes.shape({
     title: PropTypes.string,
     payoff: PropTypes.string,
-    image: PropTypes.string,
+    image: PropTypes.any,
   }),
   features: PropTypes.shape({
     title: PropTypes.string,
     list: PropTypes.arrayOf(PropTypes.shape({
       title: PropTypes.string,
-      icon: PropTypes.string,
+      icon: PropTypes.any,
       body: PropTypes.string,
       url: PropTypes.string,
       text: PropTypes.string,
@@ -67,7 +67,7 @@ SingleServiceTemplate.propTypes = {
       id: PropTypes.string,
       title: PropTypes.string,
       subtitle: PropTypes.string,
-      avatar: PropTypes.string,
+      avatar: PropTypes.any,
       link: PropTypes.string,
       shortDescription: PropTypes.string,
       longDescription: PropTypes.string,

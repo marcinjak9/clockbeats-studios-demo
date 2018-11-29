@@ -77,7 +77,7 @@ latestNews:
   title: Check out our cool Blog
 formCta:
   formTitle: Contattaci subito per piú info!
-  image: 'https://source.unsplash.com/collection/2068121/1280x850'
+  image: /img/pablo.png
   title: Lorem ipsum dolor set
 formCtaLinks:
   - text: First CTA
