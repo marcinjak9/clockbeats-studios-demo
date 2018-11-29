@@ -1,17 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import shortid from 'shortid'
-import Img from 'gatsby-image'
+import Image from '../Image'
 
 const DescriptionImageSection = ({
-  image: { childImageSharp: { fluid } },
-  title, body, links, cardRight, bodyComponent }) => (
+  image, title, body, links, cardRight, bodyComponent }) => (
     <section className="container default-section">
       {cardRight
         ? (
           <div className="row">
             <div className="col-lg-8 no-padding">
-              <Img fluid={fluid} className="img-fluid image-card animated-background" alt="" />
+              <Image image={image} className="img-fluid image-card animated-background" alt="" />
             </div>
             <div className="col-lg-4 card absolute-card card-right">
               {bodyComponent
@@ -42,7 +41,7 @@ const DescriptionImageSection = ({
             </div>
 
             <div className="col-lg-8 no-padding">
-              <Img fluid={fluid} className="img-fluid image-card animated-background" alt="" />
+              <Image image={image} className="img-fluid image-card animated-background" alt="" />
             </div>
           </div>
         )
