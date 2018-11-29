@@ -37,7 +37,7 @@ featuresList:
       Lavoriamo alla traccia per 3 mesi in modo che tu possa metterti in
       contatto con la Label più opportuna!
     cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
+    img: /img/rocket.png
     title: Ti indirizziamo alla giusta label
     url: /
 descriptionImage:
@@ -45,7 +45,7 @@ descriptionImage:
     Crediamo fortemente in un tipo di servizio che possa dare una soluzione più
     semplice, dinamica, rappresentativa per il cliente ed in linea con il
     mercato generale.
-  image: 'https://source.unsplash.com/collection/2068121/1280x850'
+  image: /img/new.jpeg
   title: In cosa crediamo
 descriptionImageLinks:
   - text: First CTA
