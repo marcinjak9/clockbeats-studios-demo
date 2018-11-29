@@ -43,7 +43,7 @@ ServicesTemplate.propTypes = {
   hero: PropTypes.shape({
     title: PropTypes.string,
     payoff: PropTypes.string,
-    image: PropTypes.string,
+    image: PropTypes.any,
   }),
   features: PropTypes.shape({
     title: PropTypes.string,

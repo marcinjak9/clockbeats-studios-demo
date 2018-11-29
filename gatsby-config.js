@@ -1,10 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: 'Cup of Data',
-    author: 'Cup of Data Team',
-    authorLink: 'https://github.com/cupofdata',
+    title: 'Clockbeats Studios',
+    author: 'Marcin Jakubik',
+    authorLink: 'https://github.com/marcinjak9',
   },
   plugins: [
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/static/img`,
+        name: 'static/images',
+      },
+    },
     'gatsby-transformer-yaml',
     {
       resolve: 'gatsby-source-filesystem',
@@ -34,26 +41,6 @@ module.exports = {
         name: 'images',
       },
     },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/static/img`,
-        name: 'static/images',
-      },
-    },
-    {
-      resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: ['gatsby-remark-prismjs'],
-      },
-    },
-    // {
-    //   resolve: 'gatsby-plugin-eslint',
-    //   options: {
-    //     exclude: /(node_modules|cache|public)/,
-    //     test: /\.js$|\.jsx$/,
-    //   },
-    // },
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
@@ -62,7 +49,22 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-        plugins: [],
+        plugins: [
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {},
+          },
+          {
+            resolve: 'gatsby-remark-relative-images',
+            options: {
+              name: 'static/images',
+            },
+          },
+          {
+            resolve: 'gatsby-remark-images',
+            options: {},
+          },
+        ],
       },
     },
     {
