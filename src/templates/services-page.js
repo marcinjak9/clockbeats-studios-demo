@@ -69,7 +69,7 @@ Services.propTypes = {
       frontmatter: PropTypes.shape({
         title: PropTypes.string,
         heroSection: PropTypes.shape({
-          image: PropTypes.string,
+          image: PropTypes.any,
           payoff: PropTypes.string,
         }),
         featuresTitle: PropTypes.string,
@@ -78,7 +78,7 @@ Services.propTypes = {
           body: PropTypes.string,
           cta: PropTypes.string,
           url: PropTypes.string,
-          img: PropTypes.string,
+          img: PropTypes.any,
         })),
         services: PropTypes.shape({
           title: PropTypes.string,
@@ -126,12 +126,20 @@ export const servicesQuery = graphql`
           seoTitle
           seoKeywords
           ogTitle
-          ogImage
+          ogImage {
+            id
+          }
           ogUrl
           seoDescription
         }
         heroSection {
-          image
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2880) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           payoff
         }
         featuresTitle
@@ -140,7 +148,13 @@ export const servicesQuery = graphql`
           body
           cta
           url
-          img
+          img {
+            childImageSharp {
+              fluid(maxWidth: 220) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
         services {
           title
@@ -169,7 +183,13 @@ export const servicesQuery = graphql`
           frontmatter {
             title
             heroSection {
-              image
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 500) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
               payoff
             }
           }

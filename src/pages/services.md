@@ -12,22 +12,26 @@ featuresList:
   - body: >-
       I nostri servizi sono completamente personalizzati a seconda del tuo
       talento.
-    cta: ''
-    img: /img/acoustic-guitar.svg
+    cta: Learn more about our products
+    img: /img/rocket.png
     title: Servizio Personalizzato
     url: /
   - body: >-
       Ti supportiamo in ogni fase della creazione, dalla composizione alla post
       produzione alla promozione!
-    cta: ''
-    img: /img/acoustic-guitar.svg
+    cta: Learn more about our products
+    img: /img/rocket.png
     title: Supporto a 360 gradi
     url: /
   - body: >-
       Clockbeats è una realtà enorme, con più di 10 studi in Italia,
       un’orchestra e un team preparato e con esperienza nel music business.
-    cta: ''
-    img: /img/acoustic-guitar.svg
+
+      Attraverso i suoi servizi, garantisce ed offre un’accelerazione della
+      carriera musicale, a qualsiasi livello tu sia parlando di capacità di
+      produzione.
+    cta: Learn more about our products
+    img: /img/rocket.png
     title: Entra a far parte della nostra community!
     url: /
 services:

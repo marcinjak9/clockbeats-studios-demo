@@ -45,7 +45,7 @@ descriptionImage:
 
     Se il genere che fai non é affine al nostro standard verrai indirizzato in
     un altro studio.
-  image: 'https://source.unsplash.com/collection/2068121/1280x850'
+  image: /img/things-to-do-in-niagara-falls-1500x609.jpg
   title: Con noi sei al sicuro
 descriptionImageLinks:
   - text: First CTA
@@ -72,9 +72,9 @@ latestNews:
   tag: tutorial
   title: Check out our cool Blog
 formCta:
-  formTitle: ''
-  image: 'https://source.unsplash.com/collection/2068121/1280x850'
-  title: ''
+  formTitle: Contattaci subito per piú info!
+  image: /img/pablo.png
+  title: Lorem ipsum dolor set
 formCtaLinks:
   - text: Test
     url: /

@@ -12,27 +12,27 @@ seoSection:
   seoTitle: Clockbeats Brescia Community
 title: Our great community of Professionals & Artist
 heroSection:
-  image: 'https://source.unsplash.com/collection/2068121/1920x1080'
+  image: /img/things-to-do-in-niagara-falls-1500x609.jpg
   payoff: "clockbeats.com é stato studiato per collaborare a grandi distanze,\L a noi non serve vederti di persona!\L\n\L\nTi aiuteremo a capire cosa migliorare nelle tue produzioni direttamente dal nostro portale.\n                            "
 featuresTitle: Entra a far parte della nostra community!
 featuresList:
   - body: I nostri producer hanno piú di 10 anni di esperienza alle spalle.
     cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
+    img: /img/rocket.png
     title: Una community di professionisti
     url: /
   - body: >-
       I produttori che scelgono di cominciare un percorso con noi riescono a
       vivere nel mondo della musica.
     cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
+    img: /img/rocket.png
     title: Lavora con noi!
     url: /
   - body: |-
       Collaborare con altri musicisti ti porterá ad aumentare le tue skills.
       Nella musica c'é sempre da imparare!
     cta: Learn more about our products
-    img: /img/acoustic-guitar.svg
+    img: /img/rocket.png
     title: Migliora le tue skills
     url: /
 team:

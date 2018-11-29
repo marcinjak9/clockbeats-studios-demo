@@ -28,7 +28,9 @@ class TemplateWrapper extends Component {
                   seoTitle
                   seoKeywords
                   ogTitle
-                  ogImage
+                  ogImage {
+                    publicURL
+                  }
                   ogUrl
                   seoDescription
                 }
@@ -43,7 +45,7 @@ class TemplateWrapper extends Component {
               <meta name="description" content={seoDescription} />
               <meta property="og:title" content={ogTitle} />
               <meta property="og:url" content={ogUrl} />
-              <meta property="og:image" content={ogImage} />
+              <meta property="og:image" content={ogImage.publicURL} />
               <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" />
               <link rel="icon" href="https://i1.wp.com/store.clockbeats.com/wp-content/uploads/2016/09/cb_logo_icon.png?fit=32%2C32&amp;ssl=1" sizes="32x32" />
             </Helmet>

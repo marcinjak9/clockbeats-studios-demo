@@ -52,6 +52,7 @@
     "react/no-unused-prop-types": 1,
     "react/forbid-prop-types": 1,
     "react/prop-types": 1,
-    "object-curly-newline": 0
+    "object-curly-newline": 0,
+    "jsx-a11y/label-has-associated-control": 0
   }
 }

@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
-import image from '../img/acoustic-guitar.svg'
 import CommunityTemplate from './Wrappers/CommunityPageTemplate'
 import Layout from '../layouts'
 
@@ -76,7 +75,7 @@ Community.propTypes = {
       frontmatter: PropTypes.shape({
         title: PropTypes.string,
         heroSection: PropTypes.shape({
-          image: PropTypes.string,
+          image: PropTypes.any,
           payoff: PropTypes.string,
         }),
         featuresTitle: PropTypes.string,
@@ -85,7 +84,7 @@ Community.propTypes = {
           body: PropTypes.string,
           cta: PropTypes.string,
           url: PropTypes.string,
-          img: PropTypes.string,
+          img: PropTypes.any,
         })),
         team: PropTypes.shape({
           title: PropTypes.string,
@@ -114,7 +113,7 @@ Community.propTypes = {
           title: PropTypes.string,
           body: PropTypes.string,
           userRole: PropTypes.string,
-          avatar: PropTypes.string,
+          avatar: PropTypes.any,
           socials: PropTypes.shape({
             instagram: PropTypes.string,
             facebook: PropTypes.string,
@@ -138,12 +137,20 @@ export const communityQuery = graphql`
           seoTitle
           seoKeywords
           ogTitle
-          ogImage
+          ogImage {
+            id
+          }
           ogUrl
           seoDescription
         }
         heroSection {
-          image
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2880) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           payoff
         }
         featuresTitle
@@ -152,7 +159,13 @@ export const communityQuery = graphql`
           body
           cta
           url
-          img
+          img {
+            childImageSharp {
+              fluid(maxWidth: 220) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
         team {
           title
@@ -181,7 +194,13 @@ export const communityQuery = graphql`
             title
             body: userBody
             userRole
-            avatar
+            avatar {
+              childImageSharp {
+                fluid(maxWidth: 300) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             socials {
               instagram
               facebook
