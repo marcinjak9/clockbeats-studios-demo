@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import shortid from 'shortid'
+import { getImageLink } from '../Image'
 
 const ServicesSection = ({ title, body, services }) => (
   <section className="full-wrapper text-center default-section">
@@ -15,7 +16,7 @@ const ServicesSection = ({ title, body, services }) => (
 
       <div className="grid-wrapper">
         {services.map(service => (
-          <Link key={shortid.generate()} to={service.url} className="grid-cell" style={{ backgroundImage: `url('${service.img.childImageSharp.fluid.src}')` }}>
+          <Link key={shortid.generate()} to={service.url} className="grid-cell" style={{ backgroundImage: `url('${getImageLink(service.img)}')` }}>
             <div className="overlay-cell">
               <h3>{service.title}</h3>
               {/* <p className="short">{service.body}</p> */}

@@ -2,6 +2,9 @@ import React from 'react'
 import Img from 'gatsby-image'
 
 const Image = ({ image, className, style, alt = '' }) => {
+  if (!image) {
+    return null
+  }
   if (image.childImageSharp) {
     const { childImageSharp } = image
     if (childImageSharp.fluid) {
@@ -36,6 +39,16 @@ const Image = ({ image, className, style, alt = '' }) => {
       />
     )
   }
+  if (image.value) {
+    return (
+      <img
+        src={image.value}
+        className={className}
+        style={style}
+        alt={alt}
+      />
+    )
+  }
   return null
 }
 
@@ -48,6 +61,9 @@ export const getImageLink = (image) => {
     if (childImageSharp.fixed) {
       return childImageSharp.fixed.src
     }
+  }
+  if (image.value) {
+    return image.value
   }
   return ''
 }
