@@ -1,6 +1,7 @@
 ---
 templateKey: home-page
 seoSection:
+  ogImage: /img/pablo.png
   ogTitle: Clockbeast Brescia - We create artists and their future.
   ogUrl: 'https://brescia.clockbeats.studio'
   seoDescription: >-
