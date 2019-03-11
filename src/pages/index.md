@@ -86,7 +86,7 @@ services:
     domande!
   title: I nostri Servizi
 latestNews:
-  tag: clockbeats
+  tag: Studio Brescia
   title: Notizie dal nostro Blog
 formCta:
   formTitle: Contattaci subito per piú info!
