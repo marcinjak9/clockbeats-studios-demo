@@ -109,37 +109,25 @@ instagramPhotos:
   - id: Buej_IaB34F
   - id: Bs_SkmVDdaE
 ---
-Immagina uno spazio dove condividere le tue idee, trovare una community che ti possa aiutare e che ti ascolti.
+![](/img/fb0a7302.jpg)
 
 
 
+**Immagina uno spazio** dove condividere le tue idee, trovare una community che ti possa aiutare e che ti ascolti.
 
-
-Immagina uno spazio accessibile in piena autonomia attraverso il tuo Smartphone. 
+**Immagina uno spazio** accessibile in piena autonomia attraverso il tuo Smartphone. 
 
 Studi completamente attrezzati, trattati e insonorizzati in modo che tu possa fare musica anche alle 3.00 di mattina!
 
-
-
-Immagina più di 100 Synth/strumenti o drums che puoi utilizzare quando vuoi, per alimentare la tua creatività! 
-
-
-
-
-
-
+**Immagina più di 100 Synth/strumenti o drums** che puoi utilizzare quando vuoi, per alimentare la tua creatività! 
 
 Questo spazio è l'HQ di Clockbeats SRL,  il primo Coworking musicale in Italia, uno spazio per produttori musicisti e cantanti di tutte le età, un vero paradiso per la MUSIC CREATION!
 
+**Se sei alle prime armi potrai usare le nostre lezioni di produzioni assistita** (uno dei programmi dell'accelerazione della carriera artistica) e utilizzare lo spazio come meglio credi. 
 
+![](/img/fb0a7312.jpg)
 
-Se sei alle prime armi potrai usare le nostre lezioni di produzioni assistita (uno dei programmi dell'accelerazione della carriera artistica) e utilizzare lo spazio come meglio credi. 
-
-
-
-Se sei autonomo e utilizzi il Coworking potrai usare tutti i nostri servizi interni scontati al 50% solo quando ne avrei necessità tra cui : 
-
-
+**Se sei autonomo e utilizzi il Coworking potrai usare tutti i nostri servizi** interni scontati al 50% solo quando ne avrei necessità tra cui : 
 
 • Mixing e Mastering 
 
@@ -159,14 +147,6 @@ Se sei autonomo e utilizzi il Coworking potrai usare tutti i nostri servizi inte
 
 E molto altro... 
 
-
-
-
-
-
-
 Non sei di Brescia?
-
-
 
 Puoi raggiungerci in treno e poi alla fermata di S. Faustino della metropolitana di Brescia.
