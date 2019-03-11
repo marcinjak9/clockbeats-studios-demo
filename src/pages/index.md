@@ -13,7 +13,7 @@ seoSection:
 title: 'Clockbeats Studio Brescia '
 heroSection:
   formTitle: Sono interessato a..
-  image: /img/studio1b.jpg
+  image: /img/fb0a7302.jpg
   payoff: >-
     Clockbeats Studio Brescia è una struttura composta da studi di produzione,
     registrazione, post-produzione audio e video.
