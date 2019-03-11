@@ -86,7 +86,7 @@ services:
     domande!
   title: I nostri Servizi
 latestNews:
-  tag: Studio Brescia
+  tag: Brescia
   title: Notizie dal nostro Blog
 formCta:
   formTitle: Contattaci subito per piú info!
