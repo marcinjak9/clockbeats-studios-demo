@@ -79,7 +79,22 @@ heroSection:
     Utilizza i nostri studi di produzione & registrazione in piena autonomia
     24/24 ore 7 giorni su 7!
 featuresTitle: 'Come funziona? '
-featuresList: []
+featuresList:
+  - title: Aperti 24 ore su 24
+    body: 'Utilizza la nostra struttura in piena autonomia 24 ore su 24. '
+    img: /img/rocket.png
+  - title: 'Utilizza Studi completamente insonorizzati, trattati e attrezzati!'
+    body: >-
+      Utilizza i nostri studi all'avanguardia in piena autonomia. 
+
+      I nostri studi sono completamente insonorizzati, trattati e attrezzati
+      come se fossi a casa tua.
+    img: /img/rocket.png
+  - title: 'Hai accesso a piú di 100 strumenti, drums & synth'
+    body: >-
+      Utilizza la nostra teca di strumenti e dai il via libera alla tua fantasia
+      con tutta la strumentazione di cui necessiti, a portata di mano!
+    img: /img/rocket.png
 services:
   title: Scopri i prezzi per accedere alla nostra struttura!
   body: Invia una mail a info@clockbeats.com
