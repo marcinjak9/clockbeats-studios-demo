@@ -1,7 +1,7 @@
 ---
 templateKey: community-page
 seoSection:
-  ogImage: /img/things-to-do-in-niagara-falls-1500x609.jpg
+  ogImage: /img/271095-p5bn4d-980-squashed.jpg
   ogTitle: Clockbeats studio brescia website
   ogUrl: 'https://brescia.clockbeats.com'
   seoDescription: >-
@@ -12,7 +12,7 @@ seoSection:
   seoTitle: Clockbeats Brescia Community
 title: Our great community of Professionals & Artist
 heroSection:
-  image: /img/things-to-do-in-niagara-falls-1500x609.jpg
+  image: /img/208015-ozk0qo-952-squashed.jpg
   payoff: "clockbeats.com é stato studiato per collaborare a grandi distanze,\L a noi non serve vederti di persona!\L\n\L\nTi aiuteremo a capire cosa migliorare nelle tue produzioni direttamente dal nostro portale.\n                            "
 featuresTitle: Entra a far parte della nostra community!
 featuresList:
