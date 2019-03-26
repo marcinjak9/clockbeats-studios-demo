@@ -1,13 +1,12 @@
 ---
 templateKey: home-page
-title: Clockbeats Studio Roncadelle
+title: Clockbeats Academy
 heroSection:
   formTitle: Contattaci per maggiori informazioni
-  image: /img/8c3eb43c-87bb-4a82-9dcb-97df2340352a.jpg
-  payoff: |-
-    Struttura in provincia di Brescia -
-    Sala prove con strumenti, Studio di produzione, DJ set.
-    Offre servizi dalla musica antica a quella elettronica
+  image: /img/258528-p4hynw-223-squashed.jpg
+  payoff: >-
+    Tutto ció che ti serve sapere per poter lavorare all'interno della music
+    Industry!
   services:
     - HeroCtaServicesItem: Corso Produzione Musica Elettronica
     - HeroCtaServicesItem: Corso DJ
@@ -45,7 +44,7 @@ descriptionImage:
 
     Se il genere che fai non é affine al nostro standard verrai indirizzato in
     un altro studio.
-  image: /img/things-to-do-in-niagara-falls-1500x609.jpg
+  image: /img/support.png
   title: Con noi sei al sicuro
 descriptionImageLinks:
   - text: First CTA
