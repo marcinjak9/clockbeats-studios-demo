@@ -2,7 +2,7 @@
 templateKey: services-page
 title: I nostri servizi
 heroSection:
-  image: /img/ff21c8fc-8b20-4e74-94c2-44b7396baeeb-lan-copia.jpeg
+  image: /img/_78a8396-squashed.jpg
   payoff: >-
     Il processo di composizione musicale coinvolge una moltitudine di figure
     professionali con differenti competenze, con compiti non esercitabili da una
