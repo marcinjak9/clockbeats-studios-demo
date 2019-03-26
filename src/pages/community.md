@@ -39,10 +39,10 @@ team:
   body: ''
   title: ''
 latestNews:
-  tag: tutorial
+  tag: academy
   title: Check out our cool Blog
 instagram:
-  user: clockbeatsbrescia
+  user: clockbeatsacademy
 instagramPhotos:
   - id: BndRVOTAUsf
   - id: BnXERRxFXXS
