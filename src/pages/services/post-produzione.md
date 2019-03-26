@@ -2,7 +2,7 @@
 templateKey: single-service-page
 title: Post Produzione
 heroSection:
-  image: /img/ff21c8fc-8b20-4e74-94c2-44b7396baeeb-lan-copia.jpeg
+  image: /img/_78a8371-squashed.jpg
   payoff: >-
     Trasformiamo e curiamo la tua idea, hai un progetto non concluso, da
     terminare o devi raggiungere un determinato standard?
