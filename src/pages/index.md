@@ -68,7 +68,7 @@ services:
     dell’industria musicale.
   title: I nostri Servizi
 latestNews:
-  tag: tutorial
+  tag: academy
   title: Check out our cool Blog
 formCta:
   formTitle: Contattaci subito per piú info!
@@ -78,7 +78,7 @@ formCtaLinks:
   - text: Test
     url: /
 instagram:
-  user: clockbeatsroncadelle
+  user: clockbeatsacademy
 instagramPhotos:
   - id: BoqmbGXiBfs
   - id: BpB6E6kFQh8
