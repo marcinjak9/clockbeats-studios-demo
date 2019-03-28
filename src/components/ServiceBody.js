@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const ServiceBody = ({ content, contentComponent: ContentComponent }) => (
   <div className="container">
@@ -6,6 +6,6 @@ const ServiceBody = ({ content, contentComponent: ContentComponent }) => (
       <ContentComponent content={content} />
     </div>
   </div>
-)
+);
 
-export default ServiceBody
+export default ServiceBody;
