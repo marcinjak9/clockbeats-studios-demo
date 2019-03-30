@@ -1,12 +1,12 @@
-import React from 'react'
-import Img from 'gatsby-image'
+import React from 'react';
+import Img from 'gatsby-image';
 
 const Image = ({ image, className, style, alt = '' }) => {
   if (!image) {
-    return null
+    return null;
   }
   if (image.childImageSharp) {
-    const { childImageSharp } = image
+    const { childImageSharp } = image;
     if (childImageSharp.fluid) {
       return (
         <Img
@@ -15,7 +15,7 @@ const Image = ({ image, className, style, alt = '' }) => {
           className={className}
           style={style}
         />
-      )
+      );
     }
     if (childImageSharp.fixed) {
       return (
@@ -25,47 +25,35 @@ const Image = ({ image, className, style, alt = '' }) => {
           className={className}
           style={style}
         />
-      )
+      );
     }
-    return null
+    return null;
   }
   if (typeof image === 'string') {
-    return (
-      <img
-        src={image}
-        className={className}
-        style={style}
-        alt={alt}
-      />
-    )
+    return <img src={image} className={className} style={style} alt={alt} />;
   }
   if (image.value) {
     return (
-      <img
-        src={image.value}
-        className={className}
-        style={style}
-        alt={alt}
-      />
-    )
+      <img src={image.value} className={className} style={style} alt={alt} />
+    );
   }
-  return null
-}
+  return null;
+};
 
 export const getImageLink = (image) => {
-  if (image.childImageSharp) {
-    const { childImageSharp } = image
+  if (image && image.childImageSharp) {
+    const { childImageSharp } = image;
     if (childImageSharp.fluid) {
-      return childImageSharp.fluid.src
+      return childImageSharp.fluid.src;
     }
     if (childImageSharp.fixed) {
-      return childImageSharp.fixed.src
+      return childImageSharp.fixed.src;
     }
   }
-  if (image.value) {
-    return image.value
+  if (image && image.value) {
+    return image.value;
   }
-  return ''
-}
+  return '';
+};
 
-export default Image
+export default Image;
