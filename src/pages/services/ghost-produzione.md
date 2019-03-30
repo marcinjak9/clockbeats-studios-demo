@@ -4,7 +4,7 @@ seoSection:
   seoTitle: ''
 title: Ghost Produzione
 heroSection:
-  image: /img/_78a8388-squashed.jpg
+  image: /img/_78a8366-squashed.jpg
   payoff: >-
     Offriamo servizi di produzione Ghost partendo da zero; attraverso soundcloud
     o link di youtube.
