@@ -1,12 +1,11 @@
 backend:
   name: git-gateway
-  branch: roncadelle
+  branch: academy
 
 media_folder: static/img
 public_folder: /img
 
 collections:
-
   ######
   # OPTIONS
   #####
@@ -19,8 +18,8 @@ collections:
       - file: src/options/index.md
         label: SEO and site options
         name: configuration
-        
-        fields: 
+
+        fields:
           - label: Data type
             name: dataType
             widget: hidden
@@ -29,7 +28,7 @@ collections:
           - label: SEO Section
             name: generalSeoSection
             widget: object
-            fields: 
+            fields:
               - label: SEO Page title
                 name: seoTitle
                 required: false
@@ -49,7 +48,7 @@ collections:
                 name: ogTitle
                 required: false
                 widget: string
-              
+
               - label: Open Graph Image
                 name: ogImage
                 required: false
@@ -59,257 +58,252 @@ collections:
                 name: ogUrl
                 required: false
                 widget: string
-  
+
   - folder: src/pages/community
     label: Community
     name: users
     create: true
     fields:
+      - label: Template Key
+        name: templateKey
+        widget: hidden
+        default: user-page
 
-    - label: Template Key
-      name: templateKey
-      widget: hidden
-      default: user-page
+      - label: SEO Section
+        name: seoSection
+        required: false
+        widget: object
+        fields:
+          - label: SEO Page title
+            name: seoTitle
+            required: false
+            widget: string
 
-    - label: SEO Section
-      name: seoSection
-      required: false
-      widget: object
-      fields: 
-        - label: SEO Page title
-          name: seoTitle
-          required: false
-          widget: string
+          - label: SEO Page description
+            name: seoDescription
+            required: false
+            widget: text
 
-        - label: SEO Page description
-          name: seoDescription
-          required: false
-          widget: text
+          - label: SEO Keywords
+            name: seoKeywords
+            required: false
+            widget: string
 
-        - label: SEO Keywords
-          name: seoKeywords
-          required: false
-          widget: string
+          - label: Open Graph Title
+            name: ogTitle
+            required: false
+            widget: string
 
-        - label: Open Graph Title
-          name: ogTitle
-          required: false
-          widget: string
-        
-        - label: Open Graph Image
-          name: ogImage
-          required: false
-          widget: image
+          - label: Open Graph Image
+            name: ogImage
+            required: false
+            widget: image
 
-        - label: Open Graph Url
-          name: ogUrl
-          required: false
-          widget: string
+          - label: Open Graph Url
+            name: ogUrl
+            required: false
+            widget: string
 
-    - label: name
-      name: title
-      widget: string
+      - label: name
+        name: title
+        widget: string
 
-    - label: User Summary
-      name: userBody
-      widget: text
+      - label: User Summary
+        name: userBody
+        widget: text
 
-    - label: Cover Image
-      name: image
-      widget: image
+      - label: Cover Image
+        name: image
+        widget: image
 
-    - label: User Role/Professione
-      name: userRole
-      widget: string
-    
-    - label: avatar
-      name: avatar
-      widget: image
+      - label: User Role/Professione
+        name: userRole
+        widget: string
 
-    - label: Service Full Content
-      name: body
-      widget: markdown
+      - label: avatar
+        name: avatar
+        widget: image
 
-    - label: Blog section title
-      name: newsTitle
-      widget: string
+      - label: Service Full Content
+        name: body
+        widget: markdown
 
-    - label: Blog post tag
-      name: tag
-      widget: string
+      - label: Blog section title
+        name: newsTitle
+        widget: string
 
-    - label: Instagram data 
-      name: instagram
-      widget: object
-      fields:
-        - label: username 
-          name: user
-          widget: string
-        
-    - label: Instagram Photos 
-      name: instagramPhotos
-      widget: list
-      fields:
-        - label: ID 
-          name: id
-          widget: string
-    
-    - label: User Socials
-      name: socials
-      widget: object
-      fields: 
-        - label: Instagram
-          name: instagram
-          widget: string
-          required: false
-        - label: Facebook
-          name: facebook
-          widget: string
-          required: false
-        - label: Souncloud
-          name: soundcloud
-          widget: string
-          required: false
-        - label: Spotify
-          name: spotify
-          widget: string
-          required: false
+      - label: Blog post tag
+        name: tag
+        widget: string
 
+      - label: Instagram data
+        name: instagram
+        widget: object
+        fields:
+          - label: username
+            name: user
+            widget: string
+
+      - label: Instagram Photos
+        name: instagramPhotos
+        widget: list
+        fields:
+          - label: ID
+            name: id
+            widget: string
+
+      - label: User Socials
+        name: socials
+        widget: object
+        fields:
+          - label: Instagram
+            name: instagram
+            widget: string
+            required: false
+          - label: Facebook
+            name: facebook
+            widget: string
+            required: false
+          - label: Souncloud
+            name: soundcloud
+            widget: string
+            required: false
+          - label: Spotify
+            name: spotify
+            widget: string
+            required: false
 
   - folder: src/pages/services
     label: Services
     name: single-services
     create: true
     fields:
+      - label: Template Key
+        name: templateKey
+        widget: hidden
+        default: single-service-page
 
-    - label: Template Key
-      name: templateKey
-      widget: hidden
-      default: single-service-page
+      - label: SEO Section
+        name: seoSection
+        required: false
+        widget: object
+        fields:
+          - label: SEO Page title
+            name: seoTitle
+            required: false
+            widget: string
 
-    - label: SEO Section
-      name: seoSection
-      required: false
-      widget: object
-      fields: 
-        - label: SEO Page title
-          name: seoTitle
-          required: false
-          widget: string
+          - label: SEO Page description
+            name: seoDescription
+            required: false
+            widget: text
 
-        - label: SEO Page description
-          name: seoDescription
-          required: false
-          widget: text
+          - label: SEO Keywords
+            name: seoKeywords
+            required: false
+            widget: string
 
-        - label: SEO Keywords
-          name: seoKeywords
-          required: false
-          widget: string
+          - label: Open Graph Title
+            name: ogTitle
+            required: false
+            widget: string
 
-        - label: Open Graph Title
-          name: ogTitle
-          required: false
-          widget: string
-        
-        - label: Open Graph Image
-          name: ogImage
-          required: false
-          widget: image
+          - label: Open Graph Image
+            name: ogImage
+            required: false
+            widget: image
 
-        - label: Open Graph Url
-          name: ogUrl
-          required: false
-          widget: string
+          - label: Open Graph Url
+            name: ogUrl
+            required: false
+            widget: string
 
-    - label: Titolo
-      name: title
-      widget: string
-    
-    - label: Hero Section 
-      name: heroSection
-      widget: object
-      fields:
-        - label: Hero Background Image 
-          name: image
-          widget: image
+      - label: Titolo
+        name: title
+        widget: string
 
-        - label: Hero Payoff 
-          name: payoff
-          widget: text
+      - label: Hero Section
+        name: heroSection
+        widget: object
+        fields:
+          - label: Hero Background Image
+            name: image
+            widget: image
 
-    - label: Features Section title 
-      name: featuresTitle
-      widget: string
+          - label: Hero Payoff
+            name: payoff
+            widget: text
 
-    - label: Features Section items 
-      name: featuresList
-      widget: list
-      fields:
+      - label: Features Section title
+        name: featuresTitle
+        widget: string
 
-        - label: Title 
-          name: title
-          widget: string
+      - label: Features Section items
+        name: featuresList
+        widget: list
+        fields:
+          - label: Title
+            name: title
+            widget: string
 
-        - label: Body 
-          name: body
-          widget: text
+          - label: Body
+            name: body
+            widget: text
 
-        - label: Cta text 
-          name: cta
-          widget: string
+          - label: Cta text
+            name: cta
+            widget: string
 
-        - label: Cta url 
-          name: url
-          widget: string
+          - label: Cta url
+            name: url
+            widget: string
 
-        - label: Image 
-          name: img
-          widget: image
+          - label: Image
+            name: img
+            widget: image
 
-    - label: Service Full Content
-      name: body
-      widget: markdown
+      - label: Service Full Content
+        name: body
+        widget: markdown
 
-    - label: Services
-      name: services
-      widget: object
-      fields:
-        - label: Title
-          name: title
-          widget: string
-        - label: Body
-          name: body
-          widget: text
+      - label: Services
+        name: services
+        widget: object
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Body
+            name: body
+            widget: text
 
-    - label: Blog section
-      name: latestNews
-      widget: object
-      fields:
-        - label: Title
-          name: title
-          widget: string
-        - label: Tag
-          name: tag
-          widget: string
+      - label: Blog section
+        name: latestNews
+        widget: object
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Tag
+            name: tag
+            widget: string
 
-    - label: Instagram data 
-      name: instagram
-      widget: object
-      fields:
-        - label: username 
-          name: user
-          widget: string
-        
-    - label: Instagram Photos 
-      name: instagramPhotos
-      widget: list
-      fields:
-        - label: ID 
-          name: id
-          widget: string
-    
-      
+      - label: Instagram data
+        name: instagram
+        widget: object
+        fields:
+          - label: username
+            name: user
+            widget: string
+
+      - label: Instagram Photos
+        name: instagramPhotos
+        widget: list
+        fields:
+          - label: ID
+            name: id
+            widget: string
+
   ######
   # PAGES
   #####
@@ -328,12 +322,12 @@ collections:
             name: templateKey
             widget: hidden
             default: home-page
-          
+
           - label: SEO Section
             name: seoSection
             required: false
             widget: object
-            fields: 
+            fields:
               - label: SEO Page title
                 name: seoTitle
                 required: false
@@ -353,7 +347,7 @@ collections:
                 name: ogTitle
                 required: false
                 widget: string
-              
+
               - label: Open Graph Image
                 name: ogImage
                 required: false
@@ -364,168 +358,166 @@ collections:
                 required: false
                 widget: string
 
-
-          - label: Title (shown in Hero) 
+          - label: Title (shown in Hero)
             name: title
             hint: Titolo della pagina
             widget: string
 
-          - label: Hero Section 
+          - label: Hero Section
             name: heroSection
             widget: object
             fields:
-              - label: Hero Background Image 
+              - label: Hero Background Image
                 name: image
                 widget: image
 
-              - label: Hero Payoff 
+              - label: Hero Payoff
                 name: payoff
                 widget: text
 
-              - label: Hero form title 
+              - label: Hero form title
                 name: formTitle
                 widget: string
-              
-              - label: Hero Cta Services List 
+
+              - label: Hero Cta Services List
                 name: services
                 widget: list
-                fields: 
-                  - label: Service Name 
+                fields:
+                  - label: Service Name
                     name: HeroCtaServicesItem
                     widget: string
-              
-          - label: Features Section title 
+
+          - label: Features Section title
             name: featuresTitle
             widget: string
 
-          - label: Features Section items 
+          - label: Features Section items
             name: featuresList
             widget: list
             fields:
-
-              - label: Title 
+              - label: Title
                 name: title
                 widget: string
 
-              - label: Body 
+              - label: Body
                 name: body
                 widget: text
 
-              - label: Cta text 
+              - label: Cta text
                 name: cta
                 widget: string
 
-              - label: Cta url 
+              - label: Cta url
                 name: url
                 widget: string
 
-              - label: Image 
+              - label: Image
                 name: img
                 widget: image
-          - label: Description Image 
+          - label: Description Image
             name: descriptionImage
             widget: object
             fields:
-              - label: Title 
+              - label: Title
                 name: title
                 widget: string
-              - label: Body 
+              - label: Body
                 name: body
                 widget: text
-              - label: Image 
+              - label: Image
                 name: image
                 widget: image
-          - label: Description Images Links 
+          - label: Description Images Links
             name: descriptionImageLinks
             widget: list
             fields:
-              - label: Text 
+              - label: Text
                 name: text
                 widget: string
-              - label: url 
+              - label: url
                 name: url
                 widget: string
 
-          - label: Team Section 
+          - label: Team Section
             name: team
             widget: object
             fields:
-              - label: Title 
+              - label: Title
                 name: title
                 widget: string
-              - label: Body 
+              - label: Body
                 name: body
                 widget: text
 
-          - label: Services Section 
+          - label: Services Section
             name: services
             widget: object
             fields:
-              - label: Title 
+              - label: Title
                 name: title
                 widget: string
-              - label: Body 
+              - label: Body
                 name: body
                 widget: text
 
-          - label: Latest News 
+          - label: Latest News
             name: latestNews
             widget: object
             fields:
-              - label: Title 
+              - label: Title
                 name: title
                 widget: string
-              - label: Blog Tag 
+              - label: Blog Tag
                 name: tag
                 widget: string
 
-          - label: Form Call to action 
+          - label: Form Call to action
             name: formCta
             widget: object
             fields:
-              - label: Title 
+              - label: Title
                 name: title
                 widget: string
-              - label: Form Title 
+              - label: Form Title
                 name: formTitle
                 widget: string
-              - label: Image 
+              - label: Image
                 name: image
                 widget: image
 
-          - label: Form Call to action links 
+          - label: Form Call to action links
             name: formCtaLinks
             widget: list
             fields:
-              - label: Text 
+              - label: Text
                 name: text
                 widget: string
-              - label: url 
+              - label: url
                 name: url
                 widget: string
-          - label: Instagram data 
+          - label: Instagram data
             name: instagram
             widget: object
             fields:
-              - label: username 
+              - label: username
                 name: user
                 widget: string
-              
-          - label: Instagram Photos 
+
+          - label: Instagram Photos
             name: instagramPhotos
             widget: list
             fields:
-              - label: ID 
+              - label: ID
                 name: id
                 widget: string
-    
+
       ######
       # SERVICES
       #####
       - file: src/pages/services.md
         label: Services
         name: services
-        fields: 
+        fields:
           - label: Template Key
             name: templateKey
             widget: hidden
@@ -535,7 +527,7 @@ collections:
             name: seoSection
             required: false
             widget: object
-            fields: 
+            fields:
               - label: SEO Page title
                 name: seoTitle
                 required: false
@@ -555,7 +547,7 @@ collections:
                 name: ogTitle
                 required: false
                 widget: string
-              
+
               - label: Open Graph Image
                 name: ogImage
                 required: false
@@ -565,87 +557,86 @@ collections:
                 name: ogUrl
                 required: false
                 widget: string
-          
-          - label: Title (shown in Hero) 
+
+          - label: Title (shown in Hero)
             name: title
             widget: string
 
-          - label: Hero Section 
+          - label: Hero Section
             name: heroSection
             widget: object
             fields:
-              - label: Hero Background Image 
+              - label: Hero Background Image
                 name: image
                 widget: image
 
-              - label: Hero Payoff 
+              - label: Hero Payoff
                 name: payoff
                 widget: text
 
-          - label: Features Section title 
+          - label: Features Section title
             name: featuresTitle
             widget: string
 
-          - label: Features Section items 
+          - label: Features Section items
             name: featuresList
             widget: list
             fields:
-
-              - label: Title 
+              - label: Title
                 name: title
                 widget: string
 
-              - label: Body 
+              - label: Body
                 name: body
                 widget: text
 
-              - label: Cta text 
+              - label: Cta text
                 name: cta
                 widget: string
 
-              - label: Cta url 
+              - label: Cta url
                 name: url
                 widget: string
 
-              - label: Image 
+              - label: Image
                 name: img
                 widget: image
 
-          - label: Services Section 
+          - label: Services Section
             name: services
             widget: object
             fields:
-              - label: Title 
+              - label: Title
                 name: title
                 widget: string
-              - label: Body 
+              - label: Body
                 name: body
                 widget: text
 
-          - label: Latest News 
+          - label: Latest News
             name: latestNews
             widget: object
             fields:
-              - label: Title 
+              - label: Title
                 name: title
                 widget: string
-              - label: Blog Tag 
+              - label: Blog Tag
                 name: tag
                 widget: string
 
-          - label: Instagram data 
+          - label: Instagram data
             name: instagram
             widget: object
             fields:
-              - label: username 
+              - label: username
                 name: user
                 widget: string
-              
-          - label: Instagram Photos 
+
+          - label: Instagram Photos
             name: instagramPhotos
             widget: list
             fields:
-              - label: ID 
+              - label: ID
                 name: id
                 widget: string
 
@@ -656,17 +647,17 @@ collections:
       - file: src/pages/community.md
         label: Community
         name: community
-        fields: 
+        fields:
           - label: Template Key
             name: templateKey
             widget: hidden
             default: community-page
-          
+
           - label: SEO Section
             name: seoSection
             required: false
             widget: object
-            fields: 
+            fields:
               - label: SEO Page title
                 name: seoTitle
                 required: false
@@ -686,7 +677,7 @@ collections:
                 name: ogTitle
                 required: false
                 widget: string
-              
+
               - label: Open Graph Image
                 name: ogImage
                 required: false
@@ -696,86 +687,85 @@ collections:
                 name: ogUrl
                 required: false
                 widget: string
-          
-          - label: Title (shown in Hero) 
+
+          - label: Title (shown in Hero)
             name: title
             widget: string
 
-          - label: Hero Section 
+          - label: Hero Section
             name: heroSection
             widget: object
             fields:
-              - label: Hero Background Image 
+              - label: Hero Background Image
                 name: image
                 widget: image
 
-              - label: Hero Payoff 
+              - label: Hero Payoff
                 name: payoff
                 widget: text
 
-          - label: Features Section title 
+          - label: Features Section title
             name: featuresTitle
             widget: string
 
-          - label: Features Section items 
+          - label: Features Section items
             name: featuresList
             widget: list
             fields:
-
-              - label: Title 
+              - label: Title
                 name: title
                 widget: string
 
-              - label: Body 
+              - label: Body
                 name: body
                 widget: text
 
-              - label: Cta text 
+              - label: Cta text
                 name: cta
                 widget: string
 
-              - label: Cta url 
+              - label: Cta url
                 name: url
                 widget: string
 
-              - label: Image 
+              - label: Image
                 name: img
                 widget: image
 
-          - label: Team Section 
+          - label: Team Section
             name: team
             widget: object
             fields:
-              - label: Title 
+              - label: Title
                 name: title
                 widget: string
-              - label: Body 
+              - label: Body
                 name: body
                 widget: text
 
-          - label: Latest News 
+          - label: Latest News
             name: latestNews
             widget: object
             fields:
-              - label: Title 
+              - label: Title
                 name: title
                 widget: string
-              - label: Blog Tag 
+              - label: Blog Tag
                 name: tag
                 widget: string
 
-          - label: Instagram data 
+          - label: Instagram data
             name: instagram
             widget: object
             fields:
-              - label: username 
+              - label: username
                 name: user
                 widget: string
-              
-          - label: Instagram Photos 
+
+          - label: Instagram Photos
             name: instagramPhotos
             widget: list
             fields:
-              - label: ID 
+              - label: ID
                 name: id
                 widget: string
