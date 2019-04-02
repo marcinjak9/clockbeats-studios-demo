@@ -18,6 +18,8 @@ instagram:
 instagramPhotos:
   - id: BsXiSU9H8sa
   - id: BjnESkRHbNO
+  - id: Bcoug-lANl_
+  - id: BZs8UJ5gn5R
 socials:
   instagram: 'https://www.instagram.com/federico.baracco/'
 ---
