@@ -1,5 +1,11 @@
 ---
 templateKey: home-page
+seoSection:
+  seoDescription: >-
+    Tutto cioò che ti serve sapere per poter lavorare all'interno della music
+    industry !
+  seoKeywords: 'Academy, scuola di musica'
+  seoTitle: Clockbeats Academy
 title: Clockbeats Academy
 heroSection:
   formTitle: Contattaci per maggiori informazioni
@@ -19,12 +25,12 @@ heroSection:
     - HeroCtaServicesItem: Teoria e Solfeggio
     - HeroCtaServicesItem: Storia della Musica
     - HeroCtaServicesItem: 'Corso strumenti musicali (Pianoforte, chitarra, violino ecc.)'
-featuresTitle: Accelera la tua carriera musicale con noi!
+featuresTitle: Diventa un professionista della musica
 featuresList:
   - body: Ti creiamo un progetto/planning in base al percorso scelto
     cta: ''
     img: /img/lampadina.png
-    title: Creiamo il tuo progetto personalizzato
+    title: Creiamo il tuo percorso personalizzato
     url: /
   - body: >-
       Dopo averti creato il progetto ad hoc, per i mesi successivi avrai il
@@ -40,12 +46,12 @@ featuresList:
     url: /
 descriptionImage:
   body: >-
-    Siamo uno dei 15 studi in Italia affiliati a clockbeats.com! 
+    Clockbeats Academy fa parte del mondo clockbeats.com. 
 
-    Se il genere che fai non é affine al nostro standard verrai indirizzato in
-    un altro studio.
-  image: /img/support.png
-  title: Con noi sei al sicuro
+    Lavoriamo con 500 artisti al mese attraverso più di 10 studi affiliati,
+    un'orchestra e più di 500 etichette disocgrafiche.
+  image: /img/_dsc0308.jpg
+  title: L'unica Academy di musica che ti aiuta ad entrare nel mondo del lavoro.
 descriptionImageLinks:
   - text: First CTA
     url: /
