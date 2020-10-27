@@ -81,11 +81,7 @@ formCtaLinks:
   - text: Second CTA
     url: /
 instagram:
-  user: clockbeatsbergamo
-instagramPhotos:
-  - id: BmOqvWHH-gS
-  - id: Bl8nyi7FQtM
-  - id: BnZKVIZH3dp
-  - id: BnorPnunDu9
+  user: clockbeatsacademy
+instagramPhotos: []
 ---
 
